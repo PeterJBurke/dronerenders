@@ -37,7 +37,7 @@
     <li><span class="sw" style="background:#2f86d6"></span><b>Propellers</b> - 4x HQProp T5x2x3 T-mount tri-blade, 127 mm, 2.0 in pitch, blue; 2 CW + 2 CCW (pitch-correct for both hands)</li>
     <li><span class="sw" style="background:#3b4149"></span><b>ESCs</b> - 4x Lumenier Razor Pro F4 45A AM32 singles, 12 x 28 x 5 mm, 3 g, on the arms</li>
     <li><span class="sw" style="background:#1d6e3c"></span><b>Companion computer</b> - one at a time on the top plate, chosen in the Options panel on the right: Raspberry Pi Zero 2 W (default, 65 x 30 mm, velcro pad), Raspberry Pi 5 (85 x 56 mm, crossbars), Arduino UNO Q (68.6 x 53.4 mm, green, crossbars) or none. Mounts: README.</li>
-    <li><span class="sw" style="background:#2b2d31"></span><b>GPS, radios</b> - Triumph M9N GPS + compass (27 x 25 x 9 mm) on a 45 mm printed mast; RFD900ux-US (25 x 33 x 10.4 mm, 10 g) on a printed tray on the top-plate tail with two RFDesign RFDFLEX2-ux flex antennas (79 x 55 mm, u.FL, upright V 90 deg apart); Ewing EA2400RX (12 x 16.5 x 4.5 mm) on the rear-left standoff, 2.4 GHz T antenna. Mount positions ASSUMED (README).</li>
+    <li><span class="sw" style="background:#2b2d31"></span><b>GPS, radios</b> - Triumph M9N GPS + compass (27 x 25 x 9 mm) on a 45 mm printed mast; RFD900ux-US (25 x 33 x 10.4 mm, 10 g) on a printed tray on the top-plate tail (antennas not drawn); Ewing EA2400RX (12 x 16.5 x 4.5 mm) on the rear-left standoff, 2.4 GHz T antenna. Mount positions ASSUMED (README).</li>
     <li><span class="sw" style="background:#1f5fd6"></span><b>Dupont leads</b> - 26 AWG; black housings on right-angle Wing headers, straight pins with upright housings on F1 / F2 (wiring report): blue TX, green RX, black GND, red 5 V, purple I2C, yellow DShot; beige JST at the parts. Wires on/off (#nowires).</li>
   </ol>
   <div class="scale">Scale: 1 scene unit = 1 mm. Grid: 10 mm fine, 50 mm bold. Arrow on grid = nose. Scale bar: inches (1 in = 25.4 mm). The camera is perspective: the bar is exact on the grid; in the top view parts at motor / prop height read about 3-7 percent larger. Drag to orbit, wheel to zoom, right-drag or shift-drag to pan.</div>
@@ -231,6 +231,7 @@
       var m = shadowed(new THREE.Mesh(g, M.alu)); m.position.set(p[0], yDeck + F.standoffH / 2, -p[1]); quad.add(m);
       var bt = shadowed(new THREE.Mesh(b, M.aluDark)); bt.position.set(p[0], yTopFace + 0.65, -p[1]); quad.add(bt);
       var bb = shadowed(new THREE.Mesh(b, M.aluDark)); bb.position.set(p[0], yBottom - 0.65, -p[1]); quad.add(bb);
+      if (p[1] === 27) (window.__midPosts = window.__midPosts || []).push(m, bt, bb);   // rev 12: hidden with the Cube
     });
     var nf = new THREE.CylinderGeometry(2.4, 2.4, 0.8, 16);
     F.pressNuts.forEach(function (p) {
@@ -693,7 +694,7 @@
       quad.add(g);
       window.__headerPins = headerCount;
     }
-    var LABEL = ['Cube Orange+ on standard carrier', 'Carrier 94.5 x 44.3 x 13.4 + cube 38.2 x 38.2 x 22.3 mm, 73 g', 'Inside the 45 mm stack, turned 90 deg, 2 mm adapter + foam tape', '2.54 mm servo rail 3x15 out the rear; JST-GH 1.25 mm ports', 'Molex Clik-Mate power; micro-USB; 31.4 mm tall', 'NDAA: GREEN (DCMA Blue UAS 2024-05-06; California / Taiwan)'];
+    var LABEL = ['Cube Orange+ on standard carrier', 'Carrier 94.5 x 44.3 x 13.4 + cube 38.2 x 38.2 x 22.3 mm, 73 g', 'Inside the 45 mm stack, fore-aft; middle posts out; 2 mm adapter + foam tape', '2.54 mm servo rail 3x15 out the rear; JST-GH 1.25 mm ports', 'Molex Clik-Mate power; micro-USB; 31.4 mm tall', 'NDAA: GREEN (DCMA Blue UAS 2024-05-06; California / Taiwan)'];
 
     // CubePilot standard carrier (ADS-B version shares the outline): 94.46 (Z) x 44.29 (X) x 13.4 mm black enclosure, cube
     // 38.2 x 38.2 x 22.3 mm, 31.42 mm overall; mount holes 85 x 34.4 mm dia 2.5; connector zone 29.31 mm at the front,
@@ -703,7 +704,7 @@
 
     // 2 mm carbon adapter plate on the four M3 press-nut heads (rev 11): carrier outline, local to this board group
     (function () { var s = roundedRectShape(CL, CW, 3); [[15.25, 15.25], [-15.25, 15.25], [15.25, -15.25], [-15.25, -15.25]].forEach(function (p) {
-      var q = [-p[1], -p[0]]; s.holes.push(hole(q[0], q[1], 1.6)); }); g.add(plate(s, 2, F.fcNutH, M.carbonEdge || M.carbon)); })();
+      var q = [p[0], -p[1] + 1.5]; s.holes.push(hole(q[0], q[1], 1.6)); }); g.add(plate(s, 2, F.fcNutH, M.carbonEdge || M.carbon)); })();
     (function () { var fm = new THREE.MeshStandardMaterial({ color: 0x2a2c30, roughness: 0.95 });
       [[0, 30], [0, -30]].forEach(function (p) { box(30, 3, 20, fm, p[0], F.fcNutH + 2 + 1.5, p[1]); }); })();
     var holes = [[17.2, 42.5], [-17.2, 42.5], [17.2, -42.5], [-17.2, -42.5]];
@@ -730,7 +731,7 @@
     // two micro-USB on the left side
     box(3, 2.6, 7.5, M.usb, -CW / 2 - 0.2, y0 + 9.5, -5.2); box(3, 2.6, 7.5, M.usb, -CW / 2 - 0.2, y0 + 9.5, 9.8);
     finish(LABEL, yCube, CL / 2 + 6, new THREE.Vector3(0, yCube, CL / 2 - 20));
-    g.rotation.y = Math.PI / 2;   // rev 11: long axis lateral (94.5 mm does not fit the 80.5 mm fore-aft span)
+    g.position.z = -1.5;   // rev 12: long axis fore-aft (normal orientation), frame y = +1.5; middle standoff pair hidden
   })();
   window.__fcSet['cube'] = window.__fcGroup;
   // ARKV6X + PAB carrier
@@ -927,7 +928,7 @@
     quad.add(escG);
     CO('4x T-Motor F2004-size motor', 'T-mount, HQProp T5x2x3 props', anchorAt(escG, F.motorX, yAT + 19, -F.motorY));
     (function () {   // FC callouts, one per option (shown with its board)
-      var FCL = { wing: ['Triumph Lucid H7 Wing (FC + PDB)', '54 x 36 x 13 mm on M3 grommets'], h7: ['Triumph Lucid H7 V2 (non-Wing) + PDB', '36 x 36 mm FC over a separate PDB'], matek: ['Matek F405-WMO (FC + PDB)', '32 x 22 mm; 18 x 12 M2: adapter or VHB'], ark: ['ARKV6X + PAB carrier', 'in the stack on a 2 mm adapter plate'], cube: ['Cube Orange+ (standard carrier)', 'in the stack, turned 90 deg, adapter plate'] };
+      var FCL = { wing: ['Triumph Lucid H7 Wing (FC + PDB)', '54 x 36 x 13 mm on M3 grommets'], h7: ['Triumph Lucid H7 V2 (non-Wing) + PDB', '36 x 36 mm FC over a separate PDB'], matek: ['Matek F405-WMO (FC + PDB)', '32 x 22 mm; 18 x 12 M2: adapter or VHB'], ark: ['ARKV6X + PAB carrier', 'in the stack on a 2 mm adapter plate'], cube: ['Cube Orange+ (standard carrier)', 'in the stack, fore-aft, middle posts out'] };
       quad.updateMatrixWorld(true);
       Object.keys(FCL).forEach(function (k) {
         var g = (window.__fcSet || {})[k]; if (!g) return;
@@ -1095,6 +1096,8 @@
       bx(radG, 5.5, 3.6, 14.5, RM.jst, 15.25, yT + 1.6 + 2.1, RF.z0 + 3 + 7.65);           // its plug
       RF.plug = { x: 18, y: yT + 1.6 + 2.1, z: RF.z0 + 3 + 7.65 };
       // printed V-clip at the tray's rear end, two flex antennas, u.FL leads from the radio's rear end
+      // RFD_ANTENNAS flag (onboard_wiring.py): off since 2026-11-09 (designer: rendered wrong, to be redone)
+      if (false) {
       var zV = zR + 3.5, flexM = new THREE.MeshStandardMaterial({ color: 0x1e2024, roughness: 0.7, metalness: 0.05 }),
           trace = new THREE.MeshStandardMaterial({ color: 0x6b5a3a, roughness: 0.5, metalness: 0.4 });
       bx(radG, 14, 2, 7, RM.printed, 0, H0 + 1, zV);
@@ -1107,6 +1110,7 @@
         a.updateMatrix(); var feed = new THREE.Vector3(9, 10, 0).applyMatrix4(a.matrix);
         tubeW(radG, [[s * 4, yT + 1.8, zR - 1.5], [s * 4.5, yT + 4, zR + 1.5], [feed.x - s * 1, feed.y - 2, feed.z - 1], [feed.x, feed.y, feed.z]], 0.55, RM.coax);   // u.FL lead
       });
+      }
     })();
     // EA2400RX: 12 x 16.5 x 4.5 mm, upright on the outside of the rear-left standoff (-8, frame y -57.5), between the plates
     var RXP = { x: -8 - 2 - 0.1 - 2.25, y0: yDeck + 8, z: 57.5 };
@@ -1124,10 +1128,23 @@
         bx(radG, 9, 2, 0.8, RM.tie, (RXP.x - 2.65 - 5.6) / 2 + 0.2, y, RXP.z - 6.7); bx(radG, 9, 2, 0.8, RM.tie, (RXP.x - 2.65 - 5.6) / 2 + 0.2, y, RXP.z + 6.7);
       });
     })();
+    // FPV camera + VTX placeholder (designer 2026-11-09, "put a small box in front for fpv camera/vtx"). Sizes ASSUMED (no dims in
+    // the notes): Fat Shark Aura analog as a 19 x 19 mm micro camera, 20 mm deep; Triumph Unify Pro32 DP as 30 x 30 x 8 mm, upright
+    // behind it. Between the plates at the nose: camera between the nose standoffs (y = +55, x = +/-13.5), front face at frame y
+    // = +62; VTX upright across the stack at frame y = +37 (between the y = +27 and +55 standoff pairs). No wiring, no antenna yet.
+    var CAM = { y0: yDeck + 12 };
+    if (false) (function () {
+      var bm = new THREE.MeshStandardMaterial({ color: 0x2b2d31, roughness: 0.7, metalness: 0.1 }),
+          gl = new THREE.MeshStandardMaterial({ color: 0x0d1a26, roughness: 0.15, metalness: 0.6 });
+      bx(radG, 19, 19, 20, bm, 0, CAM.y0 + 9.5, -52);                                       // camera body, frame y +42 .. +62
+      var ln = new THREE.Mesh(new THREE.CylinderGeometry(6, 6, 3, 24), gl); ln.rotation.x = Math.PI / 2; ln.position.set(0, CAM.y0 + 9.5, -63.5); addTo(radG, ln);   // lens
+      bx(radG, 30, 30, 8, bm, 0, yDeck + 15, -37);                                          // VTX, upright, frame y +33 .. +41
+    })();
     quad.add(radG);
     CO('Triumph M9N GPS + compass', '27 x 25 x 9 mm on a 45 mm printed mast', anchor(radG, 0, GP.yP + GP.H, GP.z));
     CO('RFD900ux-US telemetry radio', '25 x 33 x 10.4 mm, 10 g, tray on the top-plate tail', anchor(radG, 4, H0 + 2 + RF.H, RF.z0 + RF.L / 2));
-    CO('2x RFDesign RFDFLEX2-ux antennas', '79 x 55 mm flex, 1.3 g each, u.FL; V on the tail, 90 deg apart', anchor(radG, 20, H0 + 60, RF.z0 + RF.L + 22));
+    if (false) CO('FPV camera + VTX (placeholder)', 'Aura 19 x 19 mm + Unify Pro32 30 x 30 x 8 mm, ASSUMED sizes', anchor(radG, 0, CAM.y0 + 19, -52));
+    if (false) CO('2x RFDesign RFDFLEX2-ux antennas', '79 x 55 mm flex, 1.3 g each, u.FL; V on the tail, 90 deg apart', anchor(radG, 20, H0 + 60, RF.z0 + RF.L + 22));
     CO('Ewing EA2400RX receiver', 'about 12 x 16.5 x 4.5 mm, rear-left standoff', anchor(radG, RXP.x - 2.25, RXP.y0 + 12, RXP.z), { top: 1 });
     // ---- Dupont wiring at the Lucid H7 Wing (tools/render/onboard_wiring.py; research/wiring/Lucid_H7_Wing_Wiring_2026-11-09.md) ----
     var WC = {
@@ -1499,6 +1516,7 @@
     var bw = document.getElementById('bWires');
     function apply() {
       if (FCS) fcKeys.forEach(function (k) { FCS[k].visible = k === st.fc; });
+      (window.__midPosts || []).forEach(function (m) { m.visible = !(FCS && st.fc === 'cube'); });   // Cube fore-aft needs the y = +27 pair out (rev 12)
       var pw = window.__escPwr || {}, pk = FCS ? (pw[st.fc] ? st.fc : 'low') : 'only';
       Object.keys(pw).forEach(function (k) { pw[k].visible = k === pk; });
       ['zero', 'pi5', 'uno'].forEach(function (k) { if (C[k]) C[k].visible = k === st.pc; });
