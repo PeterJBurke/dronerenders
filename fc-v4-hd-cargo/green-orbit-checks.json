@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "drag_projection_checks": {
+    "right": {
+      "x": 0.1397161399280126,
+      "y_screen": -0.028573055789663016
+    },
+    "left": {
+      "x": -0.13971613992801235,
+      "y_screen": -0.028573055789661406
+    },
+    "down": {
+      "x": 1.815963288861031e-16,
+      "y_screen": 0.11834927062178136
+    },
+    "up": {
+      "x": 9.274227351235086e-18,
+      "y_screen": -0.18599193921493445
+    }
+  },
+  "right_drag_pan": "PASS",
+  "camera_and_toggle_controls": "PASS",
+  "mobile_no_overflow": true,
+  "browser_errors": [],
+  "pcb_substrate_color": "#086b32",
+  "render_sha256": {
+    "FC-V4-HD-Cargo-angled-open.png": "2e6a8f0768ea2cb7cccd3706ea053ee1abe47333e07852e9064d9db17f720527",
+    "FC-V4-HD-Cargo-top-open.png": "21b326908b7cdcd82edbee6624aa600ad0c3935aabedc2034d5c95cb38e4d1a7",
+    "FC-V4-HD-Cargo-fc-detail.png": "dff11f391e88007b0c4fce6857e35d7f3cba29c8b7ae069f6916a2da6b16572b",
+    "FC-V4-HD-Cargo-angled-roof.png": "3cb50b0b1ae4f894c5b7a9078a2ac1e3a38480b13f68b888123dff797815618e"
+  }
+}

@@ -22,11 +22,12 @@
       "controls_visible": true
     }
   },
-  "visual_inspection": "All four final PNG views inspected; actual native PCB material colors and dark carbon frame verified.",
+  "visual_inspection": "All four refreshed PNGs inspected: green PCB substrates, native component colours, unchanged frame and placement.",
   "render_sha256": {
-    "FC-V4-HD-Cargo-angled-open.png": "88c4c849d4480245e58948f59004df2263c5261d0fde1f22be72e34d744f323f",
-    "FC-V4-HD-Cargo-angled-roof.png": "7221cdde057d2b8f3423df0d424b8a24d427730359e2b09532a12fe1d36de660",
-    "FC-V4-HD-Cargo-fc-detail.png": "7a4e9f1f4feb7be079b696c72198c8e9e08f299ebf0fe692e8799ef1ced210a2",
-    "FC-V4-HD-Cargo-top-open.png": "dff45c92937bd793236e78217f1c97a4054e5b010023aaea6c1ef917b7f28770"
-  }
+    "FC-V4-HD-Cargo-angled-open.png": "2e6a8f0768ea2cb7cccd3706ea053ee1abe47333e07852e9064d9db17f720527",
+    "FC-V4-HD-Cargo-top-open.png": "21b326908b7cdcd82edbee6624aa600ad0c3935aabedc2034d5c95cb38e4d1a7",
+    "FC-V4-HD-Cargo-fc-detail.png": "dff11f391e88007b0c4fce6857e35d7f3cba29c8b7ae069f6916a2da6b16572b",
+    "FC-V4-HD-Cargo-angled-roof.png": "3cb50b0b1ae4f894c5b7a9078a2ac1e3a38480b13f68b888123dff797815618e"
+  },
+  "appearance_update": "Green PCB substrates; see green-orbit-checks.json for direction checks."
 }

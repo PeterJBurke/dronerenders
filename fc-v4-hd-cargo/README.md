@@ -18,7 +18,7 @@ Frame source: MOD-L by **ledroneclub**, Thingiverse item **4295478**, licensed *
 
 The central bottom-plate DXF holes are exactly X/Y **±10 mm**, matching the selected 20 × 20 mm mounting centres. A second rear pattern is approximately 20 × 20 mm at Y−28/−48 mm. The top v1-1 does not provide the same stack mounting pattern. Source DXF circles were inspected; this is a frame interface finding, not a finished carrier design.
 
-The flight controller uses the existing **V4 native UpperLogic/LowerPower mesh assembly** from the November 6 CAD checkpoint `abe43c2`, including actual component geometry and material base colours. It retains the existing **8.64 mm facing-board gap**. This is our V4 stack, not the template's simplified Matek FC. The separate Service board is omitted because its placement is not defined; this view shows the main FC stack. No motors, props, battery, other electronics or cable are modeled.
+The flight controller uses the existing **V4 native UpperLogic/LowerPower mesh assembly** from the November 6 CAD checkpoint `abe43c2`, including actual component geometry and native component material base colours; the two PCB substrates use the requested green appearance (#086b32). It retains the existing **8.64 mm facing-board gap**. This is our V4 stack, not the template's simplified Matek FC. The separate Service board is omitted because its placement is not defined; this view shows the main FC stack. No motors, props, battery, other electronics or cable are modeled.
 
 ## Placement and checks
 
@@ -38,7 +38,7 @@ No canonical PCB source, native project, board placement or routing was modified
 
 `build-assembly.py` assembles the source geometry, computes collision/distance evidence, exports GLBs and packs the browser mesh data. Use `tools/placement-venv/bin/python`; it refuses to overwrite its outputs. Preserve existing output files into a dated draft before adapting/re-running. `capture-views.py` uses global Python Playwright and local Chrome to capture the viewer; preserve previous images before re-running.
 
-Native geometry material colours are used for the FC; they are simplified base colours from the native model, not photorealistic soldermask/silkscreen textures. First captures revealed lost PBR base colours in the mesh packing; those images are preserved in dated drafts, and final captures use the corrected base-colour mapping and sRGB conversion. No source geometry changed during that correction.
+The PCB substrates use green (#086b32); component materials retain their native base colours. These are simplified materials, not photorealistic soldermask/silkscreen textures. Left-button dragging rotates the near side of the model in the drag direction; right-button dragging pans and the wheel zooms. The orbit signs account for this viewer’s Z-up coordinates. First captures revealed lost PBR base colours in the mesh packing; those images are preserved in dated drafts, and final captures use the corrected base-colour mapping and sRGB conversion. No source geometry changed during that correction.
 
 The portable Three.js runtime is r160, from the same CDN version used by the template, with its MIT license included under `assets/`. It is a runtime viewer asset, not a build dependency. The final viewer has no external script, network model fetch or service dependency.
 
