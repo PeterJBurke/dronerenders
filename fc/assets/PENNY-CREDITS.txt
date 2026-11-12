@@ -1,0 +1,10 @@
+Penny appearance reused from Peter Burke’s reference drone gallery.
+Dimensions: 19.05 mm diameter, 1.52 mm thickness.
+
+Obverse: United States Mint, public-domain US government work.
+Source: https://commons.wikimedia.org/wiki/File:2010_cent_obverse.png
+
+Interactive reverse texture: Leopard2A7m, CC BY-SA 4.0.
+Source: https://commons.wikimedia.org/wiki/File:Union_Shield_Cent.jpg
+License: https://creativecommons.org/licenses/by-sa/4.0/
+The embedded reverse image was resized by the reference viewer; reused unchanged here. It faces the ground in the default view.
