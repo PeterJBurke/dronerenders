@@ -1,0 +1,13 @@
+/* Shared connector table for the FC Details panes. */
+#legend{box-sizing:border-box;width:min(430px,calc(100vw - 36px));max-height:calc(100vh - 90px);overflow:auto;overscroll-behavior:contain;scrollbar-gutter:stable}
+[data-fc-pin-table]{margin-top:18px;border-top:1px solid var(--line,#c3c8cf);padding-top:12px;color:var(--fg,#18232c)}
+[data-fc-pin-table] h2{font-size:16px;margin:0 0 8px}
+.pin-group{border-top:1px solid var(--line,#c3c8cf);padding:9px 0}
+.pin-group summary{cursor:pointer;font-size:13px;font-weight:650;line-height:1.4;padding:3px 0}
+.pin-group summary:focus-visible{outline:2px solid #2988c7;outline-offset:3px}
+.pin-table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:12px;line-height:1.4}
+.pin-table th,.pin-table td{text-align:left;vertical-align:top;padding:7px 5px;border-bottom:1px solid var(--line,#c3c8cf);overflow-wrap:anywhere}
+.pin-table thead th{font-weight:700;background:var(--bg,#f4f6f8)}
+.pin-table th:first-child{width:19%}.pin-table th:nth-child(2){width:32%}.pin-table tbody th{font-weight:600}
+.pin-scope{font-size:11px!important}
+@media(max-width:850px){#legend{max-height:55vh;width:min(430px,calc(100vw - 36px))}.pin-table{font-size:11px}.pin-table th,.pin-table td{padding:6px 4px}}
