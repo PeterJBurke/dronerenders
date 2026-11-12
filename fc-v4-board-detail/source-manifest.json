@@ -11,16 +11,16 @@
   "penny_thickness_mm": 1.52,
   "penny_texture_sha256": "3b12cd077a05c5802491b898e55b2f4e27a22ed338d26d8ce3630ea4e9132cdb",
   "penny_texture_credit": "United States Mint, 2010 cent obverse, via Wikimedia Commons; public-domain US government work. Reused from Peter Burke reference gallery.",
-  "rendering": "Blender Cycles, original native mesh positions; display materials and scale props only.",
+  "rendering": "Native V4 components; native Gerber artwork/drills; drawing-derived J20/J21 display geometry; presentation materials.",
   "missing_models": [
-    "UpperLogic J20",
-    "LowerPower J21"
+    "Native CAD binding: UpperLogic J20 (drawing-derived display model added)",
+    "Native CAD binding: LowerPower J21 (drawing-derived display model added)"
   ],
   "limitations": [
-    "Library geometry is not manufacturer-certified.",
-    "No added invented component bodies or fabricated traces.",
-    "Native PCB mesh thickness differs from saved fabrication stack.",
-    "Stack gap8.64mm is provisional; Service board unplaced and omitted."
+    "Native library shapes and drawing-derived connector contact details are not certified fit models.",
+    "Exposed-pad gold finish is a presentation assumption.",
+    "Native slab thickness differs from fabrication stack.",
+    "8.64 mm stack gap provisional; screw supports/carrier unfinished; Service board omitted."
   ],
   "studio_render": {
     "engine": "Blender 4.0.2 Cycles CPU",
@@ -31,5 +31,8 @@
     "samples_max": 48,
     "adaptive_threshold": 0.06,
     "denoising": "Intel Open Image Denoise 2.5.1 CPU; LDR, sRGB, quality high; raw Cycles images preserved."
-  }
+  },
+  "surface_manifest": "surface-manifest.json",
+  "geometry_recipe": "design/V4/mechanical/board-detail-2026-11-12/build-realistic-geometry.py",
+  "date": "2026-11-12"
 }

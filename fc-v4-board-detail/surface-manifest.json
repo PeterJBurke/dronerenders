@@ -1,0 +1,5486 @@
+{
+  "format_version": 1,
+  "texture_size_px": [
+    2112,
+    3072
+  ],
+  "physical_size_mm": [
+    22,
+    32
+  ],
+  "coordinate_mapping": {
+    "left_x_mm": -11,
+    "right_x_mm": 11,
+    "top_y_mm": 16,
+    "bottom_y_mm": -16,
+    "u": "(x+11)/22",
+    "v_blender": "(y+16)/32",
+    "pixel_row": "(16-y)/32*height",
+    "bottom_maps_mirrored": false,
+    "note": "All top/bottom files share physical XY orientation. Do not mirror image pixels. For bottom mesh use the same XY-basedUV formula and reverse normals/winding. PNG top edge is physical+Y. Three.Texture defaultflipY=true maps this correctly with u=(x+11)/22,v=(y+16)/32."
+  },
+  "rendering_appearance": {
+    "mask": "#086b32 on copper; slightly darker green in copper-free regions",
+    "exposed_copper": "gold/ENIG-like presentation material, not a fabrication-finish specification",
+    "silkscreen": "warm white from exact native silkGerber strokes",
+    "copper_relief": "subtle height/color only where nativecopper exists",
+    "hole_policy": "all-drill-opacity cuts actualsubstrate holes; surface-opacity cuts only exposeddrill openings and retains native tentedmaskfilm",
+    "data_maps": "metalness/roughness/opacity/relief are linear scalar 0..1, load Non-Color. Basecolor is sRGB."
+  },
+  "boards": {
+    "UpperLogic": {
+      "sources": {
+        "Drill_PTH_Through.DRL": "384d7eddd192ad91cbd1579082b145f20beeb0d7428779a064f11aa7d2d6fc46",
+        "PCB\u4e0b\u5355\u5fc5\u8bfb.txt": "7bd5bac16cb8612e3a9fd98efbd0d7c22b3f93ce970801b0d9adc93bb590d9b9",
+        "Gerber_TopPasteMaskLayer.GTP": "0fa88dd5c0a2fa9c264653a35f82a5d775b711e2e2478fd34f6b6b8a9402b8c6",
+        "Gerber_TopSilkscreenLayer.GTO": "1e7da900d8cd9444cbbd7b761738b2ddd1fd1f072b0d3e077f78f9baeaa6b44d",
+        "Gerber_InnerLayer2.G2": "fd11c28ae36d1ffd5e771703d1b8567aefffe9b8ef02b79ddf2724e8e9892acc",
+        "Gerber_BottomSilkscreenLayer.GBO": "fabce4d4c2c3687987477c4c90529132b23b60af05e34f9644b8943f4d89e2d4",
+        "native-gerbers.zip": "ac1e34c54ab0d31f969014ee3d3edb0172b5720ae5f20473214067043c6594dc",
+        "Drill_PTH_Through_Via.DRL": "5a0d21df8dde79a5e161886718712e406ca4ec3f270a19c4279d2832f0ce9597",
+        "Gerber_BoardOutlineLayer.GKO": "d0bfe24d3f8010ac087e59683c1672acd0c827e7d86639e07734a16377e2ac7b",
+        "Gerber_BottomSolderMaskLayer.GBS": "b9a2c565c5b6d33a73ea2d2577bcc78d5ce17d68931ca5f6992bc848caa5fc2a",
+        "FlyingProbeTesting.json": "bf0d5f696da9780db513db8d94df31e518586474a00cb08867992c09fc2aef2a",
+        "Gerber_TopLayer.GTL": "623283884c943b70554424159fd7fc0787e39bdf92296a771323de037c914b38",
+        "Gerber_InnerLayer3.G3": "404015b13cdc1d15b43a56e191f9845ca52bbcbc82e48583396633681d1012c0",
+        "Gerber_BottomLayer.GBL": "6a5f10f91317e3427fbd837d4c639ac9681fe4be8c95d1f86269d795505e38eb",
+        "Gerber_InnerLayer4.G4": "eec0a1ab1bde1ff331a2fdad0e42b80e8c6e1d8655157a0e4165749cc3a115f0",
+        "Gerber_DocumentLayer.GDL": "6047ad67d30c3317296269ab0a0de46f12903dda7328761b992824aeabc963b6",
+        "Gerber_TopSolderMaskLayer.GTS": "436f0890dde257911140fd7b73f6bdb98c93589755fff5493bf7344383a42f11",
+        "Gerber_InnerLayer1.G1": "bc30143fc99c11700268ca6c9485135839358a04eb2bea49fb08b7ee77721699",
+        "Gerber_BottomPasteMaskLayer.GBP": "ecc1f27004ba3b0767ac261ab7d71312d1a883c6db849f9dd1d051c41172047e"
+      },
+      "holes": [
+        {
+          "shape": "circle",
+          "center_mm": [
+            9.391401,
+            0.937699
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            8.856701,
+            5.753499
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            1.4121,
+            4.388599
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            3.788301,
+            -14.509199
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            5.5302,
+            -6.8112
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -7.202,
+            -5.6793
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -10.449601,
+            -14.820001
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -4.4372,
+            8.5528
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -9.7631,
+            6.912501
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -8.406801,
+            -6.2
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -8.7452,
+            -12.258901
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            4.8514,
+            4.046799
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -8.229801,
+            -15.402001
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -0.1578,
+            4.88
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -1.7221,
+            -1.373401
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -2.551999,
+            -3.5584
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            4.5658,
+            1.8882
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            6.629999,
+            5.7996
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -7.5649,
+            5.300101
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            2.500399,
+            5.780001
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -5.820001,
+            -0.7504
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -1.165799,
+            0.588201
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -0.395201,
+            -9.2883
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -4.015001,
+            7.5043
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            5.9406,
+            -8.0791
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            3.326201,
+            8.4998
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -8.825799,
+            -14.857301
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -7.210999,
+            -14.2737
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -9.765901,
+            -13.101899
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            9.5488,
+            6.9691
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            10.355999,
+            -2.291301
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            9.580601,
+            -5.663001
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            8.823899,
+            -8.9203
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -9.9038,
+            -6.824901
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            0.297101,
+            -11.593901
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            0.485899,
+            -13.6193
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            9.5499,
+            4.650199
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            8.938199,
+            4.267799
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -3.522,
+            -2.117601
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -1.667901,
+            -0.712
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -2.722199,
+            -10.178999
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            9.2324,
+            2.2511
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -3.188,
+            -9.1208
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -3.320699,
+            -4.082801
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            4.2348,
+            -5.913699
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -3.9067,
+            -1.2884
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -0.943,
+            4.444299
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -4.8971,
+            -1.749301
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -3.940701,
+            3.8181
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            7.9561,
+            -9.7187
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            9.1935,
+            -2.970601
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -9.700001,
+            2.6929
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            7.0145,
+            8.887501
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            2.4668,
+            -8.086999
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            2.985,
+            -8.089001
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            7.5349,
+            -1.2
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            7.002201,
+            7.463099
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            2.9794,
+            4.082699
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -4.0686,
+            -8.871199
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -3.515101,
+            -8.0796
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -8.83,
+            0.085499
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -0.0351,
+            -8.092201
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            0.484901,
+            -8.076001
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -5.820001,
+            -5.7504
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            4.597301,
+            -14.3507
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -4.619099,
+            0.884799
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            9.802899,
+            3.1539
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -4.895499,
+            0.249601
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -0.058699,
+            0.2119
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -5.820001,
+            1.249401
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -0.057501,
+            0.843699
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -4.880099,
+            2.1628
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            6.1509,
+            -1.853499
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -4.5304,
+            -9.5142
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -1.9701,
+            -10.3651
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -0.963201,
+            8.419099
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -2.291001,
+            -11.368601
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -1.5135,
+            8.576099
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            3.6263,
+            -11.4497
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            5.8158,
+            3.7568
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            5.957801,
+            -15.003201
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            0.398501,
+            -5.895599
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            0.615899,
+            3.705101
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            4.3496,
+            3.8684
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            2.062599,
+            -9.166101
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -0.515099,
+            -8.329099
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            0.1438,
+            -9.1078
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            1.8491,
+            -5.890199
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -1.740499,
+            -8.907701
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -1.984601,
+            -8.361101
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -4.676899,
+            -3.0723
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -3.7108,
+            -13.704999
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -4.716099,
+            -12.409701
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            6.113399,
+            -4.0013
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -8.730899,
+            -12.928699
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -7.8151,
+            -4.2251
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -7.5649,
+            -4.7001
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -8.736,
+            -13.8819
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -1.677101,
+            -12.2317
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -1.165799,
+            -3.312
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -1.686601,
+            -12.999999
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -1.339799,
+            -3.962001
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -2.199,
+            -14.447599
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -1.165799,
+            -2.661999
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            3.2566,
+            -8.8495
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            3.410001,
+            -14.17
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -3.7108,
+            -11.259701
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -8.4647,
+            1.693601
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -6.8718,
+            -9.3361
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -7.5649,
+            0.800001
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -8.755301,
+            -11.281801
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -4.7428,
+            3.589401
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -6.035101,
+            -7.749901
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            5.826801,
+            4.406001
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            5.198999,
+            -1.361999
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            6.090699,
+            -2.478499
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            7.5349,
+            -0.2
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -4.517799,
+            -8.607699
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            3.527501,
+            -2.334999
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -5.007201,
+            -7.548001
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            4.5658,
+            -3.312
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -5.515099,
+            -7.749901
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            4.5658,
+            -2.661999
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -7.5649,
+            -3.200001
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -9.680699,
+            -9.8395
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -7.329401,
+            -2.718801
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -3.7108,
+            -12.252701
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -7.5649,
+            -2.200001
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -10.126901,
+            -10.774299
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            9.6047,
+            -1.206701
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -7.5649,
+            2.799999
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -4.727499,
+            1.615399
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            8.689101,
+            -3.8154
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -6.2851,
+            4.8511
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            0.425,
+            -15.4
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -9.9009,
+            -4.016809
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -1.672511,
+            -2.18281
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -5.499029,
+            -11.834579
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            9.800631,
+            -11.804851
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            1.918099,
+            -0.71216
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            0.600621,
+            -14.21
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            8.679939,
+            -3.0013
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            4.574611,
+            1.366731
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -7.564999,
+            3.80013
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            0.799549,
+            -12.014759
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            8.199999,
+            6.975
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            9.800001,
+            2.625001
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            0.974999,
+            4.075001
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -6.2,
+            -9.325
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            8.225,
+            -6.699999
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -2.424999,
+            -13.95
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -3.524999,
+            -5.750001
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            1.985241,
+            -14.17545
+          ],
+          "diameter_mm": 0.2,
+          "radius_mm": 0.1,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -5.800001,
+            -3.8
+          ],
+          "diameter_mm": 0.299999,
+          "radius_mm": 0.1499995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -5.800001,
+            -4.800001
+          ],
+          "diameter_mm": 0.299999,
+          "radius_mm": 0.1499995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            0.0,
+            6.2
+          ],
+          "diameter_mm": 0.299999,
+          "radius_mm": 0.1499995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            1.2,
+            6.100001
+          ],
+          "diameter_mm": 0.299999,
+          "radius_mm": 0.1499995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "slot",
+          "start_mm": [
+            8.595459,
+            14.800001
+          ],
+          "end_mm": [
+            8.600539,
+            14.800001
+          ],
+          "diameter_mm": 1.020064,
+          "radius_mm": 0.510032,
+          "plated": true,
+          "kind": "component_pth"
+        },
+        {
+          "shape": "slot",
+          "start_mm": [
+            8.595459,
+            12.260001
+          ],
+          "end_mm": [
+            8.600539,
+            12.260001
+          ],
+          "diameter_mm": 1.020064,
+          "radius_mm": 0.510032,
+          "plated": true,
+          "kind": "component_pth"
+        },
+        {
+          "shape": "slot",
+          "start_mm": [
+            8.595459,
+            9.720001
+          ],
+          "end_mm": [
+            8.600539,
+            9.720001
+          ],
+          "diameter_mm": 1.020064,
+          "radius_mm": 0.510032,
+          "plated": true,
+          "kind": "component_pth"
+        },
+        {
+          "shape": "slot",
+          "start_mm": [
+            6.055459,
+            14.800001
+          ],
+          "end_mm": [
+            6.060539,
+            14.800001
+          ],
+          "diameter_mm": 1.020064,
+          "radius_mm": 0.510032,
+          "plated": true,
+          "kind": "component_pth"
+        },
+        {
+          "shape": "slot",
+          "start_mm": [
+            6.055459,
+            12.260001
+          ],
+          "end_mm": [
+            6.060539,
+            12.260001
+          ],
+          "diameter_mm": 1.020064,
+          "radius_mm": 0.510032,
+          "plated": true,
+          "kind": "component_pth"
+        },
+        {
+          "shape": "slot",
+          "start_mm": [
+            6.055459,
+            9.720001
+          ],
+          "end_mm": [
+            6.060539,
+            9.720001
+          ],
+          "diameter_mm": 1.020064,
+          "radius_mm": 0.510032,
+          "plated": true,
+          "kind": "component_pth"
+        },
+        {
+          "shape": "slot",
+          "start_mm": [
+            3.515459,
+            14.800001
+          ],
+          "end_mm": [
+            3.520539,
+            14.800001
+          ],
+          "diameter_mm": 1.020064,
+          "radius_mm": 0.510032,
+          "plated": true,
+          "kind": "component_pth"
+        },
+        {
+          "shape": "slot",
+          "start_mm": [
+            3.515459,
+            12.260001
+          ],
+          "end_mm": [
+            3.520539,
+            12.260001
+          ],
+          "diameter_mm": 1.020064,
+          "radius_mm": 0.510032,
+          "plated": true,
+          "kind": "component_pth"
+        },
+        {
+          "shape": "slot",
+          "start_mm": [
+            3.515459,
+            9.720001
+          ],
+          "end_mm": [
+            3.520539,
+            9.720001
+          ],
+          "diameter_mm": 1.020064,
+          "radius_mm": 0.510032,
+          "plated": true,
+          "kind": "component_pth"
+        },
+        {
+          "shape": "slot",
+          "start_mm": [
+            0.975459,
+            14.800001
+          ],
+          "end_mm": [
+            0.980539,
+            14.800001
+          ],
+          "diameter_mm": 1.020064,
+          "radius_mm": 0.510032,
+          "plated": true,
+          "kind": "component_pth"
+        },
+        {
+          "shape": "slot",
+          "start_mm": [
+            0.975459,
+            12.260001
+          ],
+          "end_mm": [
+            0.980539,
+            12.260001
+          ],
+          "diameter_mm": 1.020064,
+          "radius_mm": 0.510032,
+          "plated": true,
+          "kind": "component_pth"
+        },
+        {
+          "shape": "slot",
+          "start_mm": [
+            0.975459,
+            9.720001
+          ],
+          "end_mm": [
+            0.980539,
+            9.720001
+          ],
+          "diameter_mm": 1.020064,
+          "radius_mm": 0.510032,
+          "plated": true,
+          "kind": "component_pth"
+        },
+        {
+          "shape": "slot",
+          "start_mm": [
+            -1.564541,
+            14.800001
+          ],
+          "end_mm": [
+            -1.559461,
+            14.800001
+          ],
+          "diameter_mm": 1.020064,
+          "radius_mm": 0.510032,
+          "plated": true,
+          "kind": "component_pth"
+        },
+        {
+          "shape": "slot",
+          "start_mm": [
+            -1.564541,
+            12.260001
+          ],
+          "end_mm": [
+            -1.559461,
+            12.260001
+          ],
+          "diameter_mm": 1.020064,
+          "radius_mm": 0.510032,
+          "plated": true,
+          "kind": "component_pth"
+        },
+        {
+          "shape": "slot",
+          "start_mm": [
+            -1.564541,
+            9.720001
+          ],
+          "end_mm": [
+            -1.559461,
+            9.720001
+          ],
+          "diameter_mm": 1.020064,
+          "radius_mm": 0.510032,
+          "plated": true,
+          "kind": "component_pth"
+        },
+        {
+          "shape": "slot",
+          "start_mm": [
+            -4.104541,
+            14.800001
+          ],
+          "end_mm": [
+            -4.099461,
+            14.800001
+          ],
+          "diameter_mm": 1.020064,
+          "radius_mm": 0.510032,
+          "plated": true,
+          "kind": "component_pth"
+        },
+        {
+          "shape": "slot",
+          "start_mm": [
+            -4.104541,
+            12.260001
+          ],
+          "end_mm": [
+            -4.099461,
+            12.260001
+          ],
+          "diameter_mm": 1.020064,
+          "radius_mm": 0.510032,
+          "plated": true,
+          "kind": "component_pth"
+        },
+        {
+          "shape": "slot",
+          "start_mm": [
+            -4.104541,
+            9.720001
+          ],
+          "end_mm": [
+            -4.099461,
+            9.720001
+          ],
+          "diameter_mm": 1.020064,
+          "radius_mm": 0.510032,
+          "plated": true,
+          "kind": "component_pth"
+        },
+        {
+          "shape": "slot",
+          "start_mm": [
+            -6.644541,
+            14.800001
+          ],
+          "end_mm": [
+            -6.639461,
+            14.800001
+          ],
+          "diameter_mm": 1.020064,
+          "radius_mm": 0.510032,
+          "plated": true,
+          "kind": "component_pth"
+        },
+        {
+          "shape": "slot",
+          "start_mm": [
+            -6.644541,
+            12.260001
+          ],
+          "end_mm": [
+            -6.639461,
+            12.260001
+          ],
+          "diameter_mm": 1.020064,
+          "radius_mm": 0.510032,
+          "plated": true,
+          "kind": "component_pth"
+        },
+        {
+          "shape": "slot",
+          "start_mm": [
+            -6.644541,
+            9.720001
+          ],
+          "end_mm": [
+            -6.639461,
+            9.720001
+          ],
+          "diameter_mm": 1.020064,
+          "radius_mm": 0.510032,
+          "plated": true,
+          "kind": "component_pth"
+        },
+        {
+          "shape": "slot",
+          "start_mm": [
+            -9.184541,
+            14.800001
+          ],
+          "end_mm": [
+            -9.179461,
+            14.800001
+          ],
+          "diameter_mm": 1.020064,
+          "radius_mm": 0.510032,
+          "plated": true,
+          "kind": "component_pth"
+        },
+        {
+          "shape": "slot",
+          "start_mm": [
+            -9.184541,
+            12.260001
+          ],
+          "end_mm": [
+            -9.179461,
+            12.260001
+          ],
+          "diameter_mm": 1.020064,
+          "radius_mm": 0.510032,
+          "plated": true,
+          "kind": "component_pth"
+        },
+        {
+          "shape": "slot",
+          "start_mm": [
+            -9.184541,
+            9.720001
+          ],
+          "end_mm": [
+            -9.179461,
+            9.720001
+          ],
+          "diameter_mm": 1.020064,
+          "radius_mm": 0.510032,
+          "plated": true,
+          "kind": "component_pth"
+        }
+      ],
+      "hole_counts": {
+        "all": 181,
+        "via": 157,
+        "component_pth": 24
+      },
+      "faces": {
+        "top": {
+          "files": {
+            "basecolor": {
+              "file": "UpperLogic/top-basecolor.png",
+              "sha256": "5a1708057575733d003399dcf18738c61e7662981cf22239859654a2fdcf967c"
+            },
+            "metalness": {
+              "file": "UpperLogic/top-metalness.png",
+              "sha256": "46936f7ba0cbb7b61ed754a78450664f1b3e98763049207e38c303b7ca9072d1"
+            },
+            "roughness": {
+              "file": "UpperLogic/top-roughness.png",
+              "sha256": "e4d90cbbaaf6fb3a2fd56de0030f94b980942d678910b013b64a2dbba5eec49c"
+            },
+            "surface-opacity": {
+              "file": "UpperLogic/top-surface-opacity.png",
+              "sha256": "650704c34422bb33fb307801d2cd89c8f44701299a22b139afc23c278819d3eb"
+            },
+            "relief": {
+              "file": "UpperLogic/top-relief.png",
+              "sha256": "b7846e7a864dfe59a91c465c2635a6395aeeb1c42c4413ec525190d1f39842a5"
+            },
+            "copper-mask": {
+              "file": "UpperLogic/top-copper-mask.png",
+              "sha256": "3c88c82a734d83737978b86f6403da9389bf4562eb89693c58cbebe746fbc7d7"
+            },
+            "soldermask-openings": {
+              "file": "UpperLogic/top-soldermask-openings.png",
+              "sha256": "4edb6cb266f369261e9fb70ced6ac668147f9efd0a11c33fc3280c39e8c1de8b"
+            },
+            "silkscreen-mask": {
+              "file": "UpperLogic/top-silkscreen-mask.png",
+              "sha256": "7801c81d55d7e95f6a7794bd1bd7c8e5179aa01791f7c33a23985a37578f7dca"
+            }
+          },
+          "copper_area_mm2": 211.29383680555554,
+          "exposed_metal_area_mm2": 138.51681857638889,
+          "silk_area_mm2": 49.291775173611114,
+          "native_silk_clipped_at_mask_openings": true
+        },
+        "bottom": {
+          "files": {
+            "basecolor": {
+              "file": "UpperLogic/bottom-basecolor.png",
+              "sha256": "65e95c9fcf9f93407b0c0c6ac332e873d93e6acdd45996bd1fbb55b62116f21e"
+            },
+            "metalness": {
+              "file": "UpperLogic/bottom-metalness.png",
+              "sha256": "2279d4b148e54e96b7b600b38a511eb9b8b66dd0288ce12361d059a33e98bc19"
+            },
+            "roughness": {
+              "file": "UpperLogic/bottom-roughness.png",
+              "sha256": "ef6bdcf11a93d126b95df02edd53f5aa13d9f06ab1a23bb9178e2bc11f4db2d4"
+            },
+            "surface-opacity": {
+              "file": "UpperLogic/bottom-surface-opacity.png",
+              "sha256": "d95442a569bc664a0d1a91ff42ada2b0d0f8429aa66c0e21cfe94b447d774cf6"
+            },
+            "relief": {
+              "file": "UpperLogic/bottom-relief.png",
+              "sha256": "0f910a3e585c2f6f37afdfb85433714d3bd6d99d8f1aa026ade64d94b81e2808"
+            },
+            "copper-mask": {
+              "file": "UpperLogic/bottom-copper-mask.png",
+              "sha256": "09167c62f0b7d26926f4b767d7844abbbb383c2018107a263d0a2c456614ed69"
+            },
+            "soldermask-openings": {
+              "file": "UpperLogic/bottom-soldermask-openings.png",
+              "sha256": "f18add08d3df2c37483d48bf13da59d558e5801f4203a02351e902f0bf0fce3e"
+            },
+            "silkscreen-mask": {
+              "file": "UpperLogic/bottom-silkscreen-mask.png",
+              "sha256": "09542fed6d56c69f2c1298d9694e1091f1e4c0599d1d489a29cf1415bef4d756"
+            }
+          },
+          "copper_area_mm2": 226.1996527777778,
+          "exposed_metal_area_mm2": 162.56759982638889,
+          "silk_area_mm2": 65.22873263888889,
+          "native_silk_clipped_at_mask_openings": true
+        }
+      }
+    },
+    "LowerPower": {
+      "sources": {
+        "Drill_PTH_Through.DRL": "0852b69af5946fc685dbf19cb711eae0eb16e758ceb3c3670752afdcde6acee2",
+        "PCB\u4e0b\u5355\u5fc5\u8bfb.txt": "7bd5bac16cb8612e3a9fd98efbd0d7c22b3f93ce970801b0d9adc93bb590d9b9",
+        "Gerber_TopPasteMaskLayer.GTP": "424f3ac5400cb981aad8a685484f25a341eb22c7d27038670705d8992b60c8c7",
+        "Gerber_TopSilkscreenLayer.GTO": "439dc34987f37da0cb547085b17134e729643b592a7602993d0021283c4d2c60",
+        "Gerber_InnerLayer2.G2": "e2cb55d11afe78ff37db9fe8aa35b079fcf2868b9c09c4b944ec0ece5374b442",
+        "Gerber_BottomSilkscreenLayer.GBO": "5a3ae76115c62566f718796a2f73bd25f9d760b9799063bd9779194cf673d5cc",
+        "native-gerbers.zip": "72e6354b8b43863607c481e3e45b900577b3ecadd60b6523a67ee8c94fb98f85",
+        "Drill_PTH_Through_Via.DRL": "15486aaeba1016c85d049870841c756c0e216ebc8deb7edd035903c1133c119d",
+        "Gerber_BoardOutlineLayer.GKO": "ada1f32d9075fc6fa2ee3697b7121f764965107687a7be36c03f7ec784d7d783",
+        "Gerber_BottomSolderMaskLayer.GBS": "2c5609d45983275ad130f30088dc06bd5fb2700096dad36c7dd1f1867640ffad",
+        "FlyingProbeTesting.json": "8e1bf99c33abe7f4dbc4f91f5d161218ed3cfc4674f0f10dfc9dbeedaa026c2c",
+        "Gerber_TopLayer.GTL": "a82d030b5676ef65eff5b560e12439582c0284ff80cafc00d33099e366e412da",
+        "Gerber_InnerLayer3.G3": "ab51bb4039b2e74582551315db35ac36163db5ca7319b11da20b2f22f11f16c8",
+        "Gerber_BottomLayer.GBL": "6213a80c9166d009a04fe97f21b0cac24a8daad25b3c6e24a44c0930692fa513",
+        "Gerber_InnerLayer4.G4": "ebc9fda158009da8d8b60ad4664e82b810bcc589a0773b5284cf9ff775cb3458",
+        "Gerber_DocumentLayer.GDL": "6302dc1871ab3d9cdd8baf193742f19ad67c43fff70acdbb8202672607afd95f",
+        "Gerber_TopSolderMaskLayer.GTS": "f880c13873cb643dfb2bec36e6f36582111a14418c4e8c28aa69f96c39a680fb",
+        "Gerber_InnerLayer1.G1": "341b2ee88fb242b9fbfe6e2bb670bdfbefc83b4a1f540dac34cd9aaaffe32f8b",
+        "Gerber_BottomPasteMaskLayer.GBP": "a7010e10c2f135d1f958839941414c460ceb42cd24d733bb3971cb6744c56b63"
+      },
+      "holes": [
+        {
+          "shape": "circle",
+          "center_mm": [
+            0.0,
+            -0.900001
+          ],
+          "diameter_mm": 0.299999,
+          "radius_mm": 0.1499995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            0.0,
+            -2.5
+          ],
+          "diameter_mm": 0.299999,
+          "radius_mm": 0.1499995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            8.626135,
+            -3.300001
+          ],
+          "diameter_mm": 0.299999,
+          "radius_mm": 0.1499995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            9.276121,
+            -2.6
+          ],
+          "diameter_mm": 0.299999,
+          "radius_mm": 0.1499995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            2.100001,
+            3.300001
+          ],
+          "diameter_mm": 0.299999,
+          "radius_mm": 0.1499995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            2.799999,
+            3.300001
+          ],
+          "diameter_mm": 0.299999,
+          "radius_mm": 0.1499995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            5.2,
+            2.6
+          ],
+          "diameter_mm": 0.299999,
+          "radius_mm": 0.1499995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            4.500001,
+            3.099999
+          ],
+          "diameter_mm": 0.299999,
+          "radius_mm": 0.1499995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -1.775,
+            -10.682
+          ],
+          "diameter_mm": 0.299999,
+          "radius_mm": 0.1499995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -1.775,
+            -6.618
+          ],
+          "diameter_mm": 0.299999,
+          "radius_mm": 0.1499995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            0.765,
+            -10.682
+          ],
+          "diameter_mm": 0.299999,
+          "radius_mm": 0.1499995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            2.035,
+            -6.618
+          ],
+          "diameter_mm": 0.299999,
+          "radius_mm": 0.1499995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            3.305,
+            -6.618
+          ],
+          "diameter_mm": 0.299999,
+          "radius_mm": 0.1499995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            7.8,
+            1.599999
+          ],
+          "diameter_mm": 0.299999,
+          "radius_mm": 0.1499995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            9.102999,
+            3.95
+          ],
+          "diameter_mm": 0.299999,
+          "radius_mm": 0.1499995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            7.226,
+            0.927001
+          ],
+          "diameter_mm": 0.299999,
+          "radius_mm": 0.1499995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -9.0,
+            -0.297
+          ],
+          "diameter_mm": 0.299999,
+          "radius_mm": 0.1499995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -6.2,
+            -3.400001
+          ],
+          "diameter_mm": 0.299999,
+          "radius_mm": 0.1499995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -0.505,
+            -7.018
+          ],
+          "diameter_mm": 0.299999,
+          "radius_mm": 0.1499995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            4.575,
+            -7.217999
+          ],
+          "diameter_mm": 0.299999,
+          "radius_mm": 0.1499995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -9.095999,
+            7.877721
+          ],
+          "diameter_mm": 0.299999,
+          "radius_mm": 0.1499995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -8.651217,
+            10.988403
+          ],
+          "diameter_mm": 0.299999,
+          "radius_mm": 0.1499995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -6.736855,
+            7.802474
+          ],
+          "diameter_mm": 0.299999,
+          "radius_mm": 0.1499995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -3.053169,
+            2.432881
+          ],
+          "diameter_mm": 0.299999,
+          "radius_mm": 0.1499995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            1.418623,
+            0.945307
+          ],
+          "diameter_mm": 0.299999,
+          "radius_mm": 0.1499995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            1.202733,
+            -4.022905
+          ],
+          "diameter_mm": 0.299999,
+          "radius_mm": 0.1499995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            8.532139,
+            -6.534363
+          ],
+          "diameter_mm": 0.299999,
+          "radius_mm": 0.1499995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -9.650001,
+            -15.36
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -9.650001,
+            -14.680001
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -9.650001,
+            -14.0
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -9.650001,
+            -13.319999
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -9.650001,
+            -12.64
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -8.97,
+            -15.36
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -8.97,
+            -14.680001
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -8.97,
+            -14.0
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -8.97,
+            -13.319999
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -8.97,
+            -12.64
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -8.290001,
+            -15.36
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -8.290001,
+            -14.680001
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -8.290001,
+            -14.0
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -8.290001,
+            -13.319999
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -8.290001,
+            -12.64
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -7.61,
+            -15.36
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -7.61,
+            -14.680001
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -7.61,
+            -14.0
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -7.61,
+            -13.319999
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -7.61,
+            -12.64
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -6.929999,
+            -15.36
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -6.929999,
+            -14.680001
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -6.929999,
+            -14.0
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -6.929999,
+            -13.319999
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -6.929999,
+            -12.64
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -6.25,
+            -15.36
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -6.25,
+            -14.680001
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -6.25,
+            -14.0
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -6.25,
+            -13.319999
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -6.25,
+            -12.64
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -4.349999,
+            -15.36
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -4.349999,
+            -14.680001
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -4.349999,
+            -14.0
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -4.349999,
+            -13.319999
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -4.349999,
+            -12.64
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -3.67,
+            -15.36
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -3.67,
+            -14.680001
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -3.67,
+            -14.0
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -3.67,
+            -13.319999
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -3.67,
+            -12.64
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -2.989999,
+            -15.36
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -2.989999,
+            -14.680001
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -2.989999,
+            -14.0
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -2.989999,
+            -13.319999
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -2.989999,
+            -12.64
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -2.31,
+            -15.36
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -2.31,
+            -14.680001
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -2.31,
+            -14.0
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -2.31,
+            -13.319999
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -2.31,
+            -12.64
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -1.629999,
+            -15.36
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -1.629999,
+            -14.680001
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -1.629999,
+            -14.0
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -1.629999,
+            -13.319999
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -1.629999,
+            -12.64
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -0.950001,
+            -15.36
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -0.950001,
+            -14.680001
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -0.950001,
+            -14.0
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -0.950001,
+            -13.319999
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -0.950001,
+            -12.64
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            0.950001,
+            -15.36
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            0.950001,
+            -14.680001
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            0.950001,
+            -14.0
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            0.950001,
+            -13.319999
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            0.950001,
+            -12.64
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            1.629999,
+            -15.36
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            1.629999,
+            -14.680001
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            1.629999,
+            -14.0
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            1.629999,
+            -13.319999
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            1.629999,
+            -12.64
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            2.31,
+            -15.36
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            2.31,
+            -14.680001
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            2.31,
+            -14.0
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            2.31,
+            -13.319999
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            2.31,
+            -12.64
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            2.989999,
+            -15.36
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            2.989999,
+            -14.680001
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            2.989999,
+            -14.0
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            2.989999,
+            -13.319999
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            2.989999,
+            -12.64
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            3.67,
+            -15.36
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            3.67,
+            -14.680001
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            3.67,
+            -14.0
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            3.67,
+            -13.319999
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            3.67,
+            -12.64
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            4.349999,
+            -15.36
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            4.349999,
+            -14.680001
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            4.349999,
+            -14.0
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            4.349999,
+            -13.319999
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            4.349999,
+            -12.64
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            6.25,
+            -15.36
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            6.25,
+            -14.680001
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            6.25,
+            -14.0
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            6.25,
+            -13.319999
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            6.25,
+            -12.64
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            6.929999,
+            -15.36
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            6.929999,
+            -14.680001
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            6.929999,
+            -14.0
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            6.929999,
+            -13.319999
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            6.929999,
+            -12.64
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            7.61,
+            -15.36
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            7.61,
+            -14.680001
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            7.61,
+            -14.0
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            7.61,
+            -13.319999
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            7.61,
+            -12.64
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            8.290001,
+            -15.36
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            8.290001,
+            -14.680001
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            8.290001,
+            -14.0
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            8.290001,
+            -13.319999
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            8.290001,
+            -12.64
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            8.97,
+            -15.36
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            8.97,
+            -14.680001
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            8.97,
+            -14.0
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            8.97,
+            -13.319999
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            8.97,
+            -12.64
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            9.650001,
+            -15.36
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            9.650001,
+            -14.680001
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            9.650001,
+            -14.0
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            9.650001,
+            -13.319999
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            9.650001,
+            -12.64
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -5.17036,
+            -4.07926
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -5.17036,
+            -3.399259
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -5.17036,
+            -2.71926
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -5.17036,
+            -2.039259
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -5.17036,
+            -1.359261
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -5.17036,
+            -0.679259
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -5.17036,
+            0.000739
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -5.17036,
+            0.68074
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -4.490359,
+            -4.07926
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -4.490359,
+            -3.399259
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -4.490359,
+            -2.71926
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -4.490359,
+            -2.039259
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -4.490359,
+            -1.359261
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -4.490359,
+            -0.679259
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -4.490359,
+            0.000739
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -4.490359,
+            0.68074
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -3.810361,
+            -4.07926
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -3.810361,
+            -3.399259
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -3.810361,
+            -2.71926
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -3.810361,
+            -2.039259
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -3.810361,
+            -1.359261
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -3.810361,
+            -0.679259
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -3.810361,
+            0.000739
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -3.810361,
+            0.68074
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -3.13036,
+            -4.07926
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -3.13036,
+            -3.399259
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -3.13036,
+            -2.71926
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -3.13036,
+            -2.039259
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -3.13036,
+            -1.359261
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -3.13036,
+            -0.679259
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -3.13036,
+            0.000739
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -3.13036,
+            0.68074
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            3.13036,
+            -4.07926
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            3.13036,
+            -3.399259
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            3.13036,
+            -2.71926
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            3.13036,
+            -2.039259
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            3.13036,
+            -1.359261
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            3.13036,
+            -0.679259
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            3.13036,
+            0.000739
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            3.13036,
+            0.68074
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            3.810361,
+            -4.07926
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            3.810361,
+            -3.399259
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            3.810361,
+            -2.71926
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            3.810361,
+            -2.039259
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            3.810361,
+            -1.359261
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            3.810361,
+            -0.679259
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            3.810361,
+            0.000739
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            3.810361,
+            0.68074
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            4.490359,
+            -4.07926
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            4.490359,
+            -3.399259
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            4.490359,
+            -2.71926
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            4.490359,
+            -2.039259
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            4.490359,
+            -1.359261
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            4.490359,
+            -0.679259
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            4.490359,
+            0.000739
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            4.490359,
+            0.68074
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            5.170361,
+            -4.07926
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            5.170361,
+            -3.399259
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            5.170361,
+            -2.71926
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            5.170361,
+            -2.039259
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            5.170361,
+            -1.359261
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            5.170361,
+            -0.679259
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            5.170361,
+            0.000739
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            5.170361,
+            0.68074
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -7.8,
+            -5.599999
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -8.400001,
+            -1.799999
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            9.339999,
+            -8.2174
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            8.440001,
+            -0.7174
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            8.917399,
+            4.982601
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            7.55,
+            3.099999
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            9.299999,
+            -0.299999
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            8.300001,
+            -1.899999
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            8.199999,
+            -8.199999
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -8.8,
+            -6.899999
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -7.000001,
+            -1.699999
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -6.699999,
+            -5.1
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -9.600001,
+            6.4
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -8.7,
+            -5.900001
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -3.045,
+            -10.682
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -5.699999,
+            8.500001
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -3.8,
+            6.899999
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -10.35,
+            -15.36
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -10.35,
+            -14.680001
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -10.35,
+            -14.0
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -10.35,
+            -13.319999
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -10.35,
+            -12.64
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -5.549999,
+            -15.36
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -5.549999,
+            -14.680001
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -5.549999,
+            -14.0
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -5.549999,
+            -13.319999
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            5.549999,
+            -15.36
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            5.549999,
+            -14.680001
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            5.549999,
+            -14.0
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            5.549999,
+            -13.319999
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            5.549999,
+            -12.64
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            10.35,
+            -15.36
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            10.35,
+            -14.680001
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            10.35,
+            -14.0
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            10.35,
+            -13.319999
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            10.35,
+            -12.64
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -10.35,
+            -11.959999
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -10.35,
+            -11.28
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            10.35,
+            -11.959999
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            10.35,
+            -11.28
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -8.8,
+            -0.900001
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "circle",
+          "center_mm": [
+            -8.600001,
+            0.299999
+          ],
+          "diameter_mm": 0.399999,
+          "radius_mm": 0.1999995,
+          "plated": true,
+          "kind": "via"
+        },
+        {
+          "shape": "slot",
+          "start_mm": [
+            8.595459,
+            14.800001
+          ],
+          "end_mm": [
+            8.600539,
+            14.800001
+          ],
+          "diameter_mm": 1.020064,
+          "radius_mm": 0.510032,
+          "plated": true,
+          "kind": "component_pth"
+        },
+        {
+          "shape": "slot",
+          "start_mm": [
+            8.595459,
+            12.260001
+          ],
+          "end_mm": [
+            8.600539,
+            12.260001
+          ],
+          "diameter_mm": 1.020064,
+          "radius_mm": 0.510032,
+          "plated": true,
+          "kind": "component_pth"
+        },
+        {
+          "shape": "slot",
+          "start_mm": [
+            8.595459,
+            9.720001
+          ],
+          "end_mm": [
+            8.600539,
+            9.720001
+          ],
+          "diameter_mm": 1.020064,
+          "radius_mm": 0.510032,
+          "plated": true,
+          "kind": "component_pth"
+        },
+        {
+          "shape": "slot",
+          "start_mm": [
+            6.055459,
+            14.800001
+          ],
+          "end_mm": [
+            6.060539,
+            14.800001
+          ],
+          "diameter_mm": 1.020064,
+          "radius_mm": 0.510032,
+          "plated": true,
+          "kind": "component_pth"
+        },
+        {
+          "shape": "slot",
+          "start_mm": [
+            6.055459,
+            12.260001
+          ],
+          "end_mm": [
+            6.060539,
+            12.260001
+          ],
+          "diameter_mm": 1.020064,
+          "radius_mm": 0.510032,
+          "plated": true,
+          "kind": "component_pth"
+        },
+        {
+          "shape": "slot",
+          "start_mm": [
+            6.055459,
+            9.720001
+          ],
+          "end_mm": [
+            6.060539,
+            9.720001
+          ],
+          "diameter_mm": 1.020064,
+          "radius_mm": 0.510032,
+          "plated": true,
+          "kind": "component_pth"
+        },
+        {
+          "shape": "slot",
+          "start_mm": [
+            3.515459,
+            14.800001
+          ],
+          "end_mm": [
+            3.520539,
+            14.800001
+          ],
+          "diameter_mm": 1.020064,
+          "radius_mm": 0.510032,
+          "plated": true,
+          "kind": "component_pth"
+        },
+        {
+          "shape": "slot",
+          "start_mm": [
+            3.515459,
+            12.260001
+          ],
+          "end_mm": [
+            3.520539,
+            12.260001
+          ],
+          "diameter_mm": 1.020064,
+          "radius_mm": 0.510032,
+          "plated": true,
+          "kind": "component_pth"
+        },
+        {
+          "shape": "slot",
+          "start_mm": [
+            3.515459,
+            9.720001
+          ],
+          "end_mm": [
+            3.520539,
+            9.720001
+          ],
+          "diameter_mm": 1.020064,
+          "radius_mm": 0.510032,
+          "plated": true,
+          "kind": "component_pth"
+        },
+        {
+          "shape": "slot",
+          "start_mm": [
+            0.975459,
+            14.800001
+          ],
+          "end_mm": [
+            0.980539,
+            14.800001
+          ],
+          "diameter_mm": 1.020064,
+          "radius_mm": 0.510032,
+          "plated": true,
+          "kind": "component_pth"
+        },
+        {
+          "shape": "slot",
+          "start_mm": [
+            0.975459,
+            12.260001
+          ],
+          "end_mm": [
+            0.980539,
+            12.260001
+          ],
+          "diameter_mm": 1.020064,
+          "radius_mm": 0.510032,
+          "plated": true,
+          "kind": "component_pth"
+        },
+        {
+          "shape": "slot",
+          "start_mm": [
+            0.975459,
+            9.720001
+          ],
+          "end_mm": [
+            0.980539,
+            9.720001
+          ],
+          "diameter_mm": 1.020064,
+          "radius_mm": 0.510032,
+          "plated": true,
+          "kind": "component_pth"
+        },
+        {
+          "shape": "slot",
+          "start_mm": [
+            -1.564541,
+            14.800001
+          ],
+          "end_mm": [
+            -1.559461,
+            14.800001
+          ],
+          "diameter_mm": 1.020064,
+          "radius_mm": 0.510032,
+          "plated": true,
+          "kind": "component_pth"
+        },
+        {
+          "shape": "slot",
+          "start_mm": [
+            -1.564541,
+            12.260001
+          ],
+          "end_mm": [
+            -1.559461,
+            12.260001
+          ],
+          "diameter_mm": 1.020064,
+          "radius_mm": 0.510032,
+          "plated": true,
+          "kind": "component_pth"
+        },
+        {
+          "shape": "slot",
+          "start_mm": [
+            -1.564541,
+            9.720001
+          ],
+          "end_mm": [
+            -1.559461,
+            9.720001
+          ],
+          "diameter_mm": 1.020064,
+          "radius_mm": 0.510032,
+          "plated": true,
+          "kind": "component_pth"
+        },
+        {
+          "shape": "slot",
+          "start_mm": [
+            -4.104541,
+            14.800001
+          ],
+          "end_mm": [
+            -4.099461,
+            14.800001
+          ],
+          "diameter_mm": 1.020064,
+          "radius_mm": 0.510032,
+          "plated": true,
+          "kind": "component_pth"
+        },
+        {
+          "shape": "slot",
+          "start_mm": [
+            -4.104541,
+            12.260001
+          ],
+          "end_mm": [
+            -4.099461,
+            12.260001
+          ],
+          "diameter_mm": 1.020064,
+          "radius_mm": 0.510032,
+          "plated": true,
+          "kind": "component_pth"
+        },
+        {
+          "shape": "slot",
+          "start_mm": [
+            -4.104541,
+            9.720001
+          ],
+          "end_mm": [
+            -4.099461,
+            9.720001
+          ],
+          "diameter_mm": 1.020064,
+          "radius_mm": 0.510032,
+          "plated": true,
+          "kind": "component_pth"
+        },
+        {
+          "shape": "slot",
+          "start_mm": [
+            -6.644541,
+            14.800001
+          ],
+          "end_mm": [
+            -6.639461,
+            14.800001
+          ],
+          "diameter_mm": 1.020064,
+          "radius_mm": 0.510032,
+          "plated": true,
+          "kind": "component_pth"
+        },
+        {
+          "shape": "slot",
+          "start_mm": [
+            -6.644541,
+            12.260001
+          ],
+          "end_mm": [
+            -6.639461,
+            12.260001
+          ],
+          "diameter_mm": 1.020064,
+          "radius_mm": 0.510032,
+          "plated": true,
+          "kind": "component_pth"
+        },
+        {
+          "shape": "slot",
+          "start_mm": [
+            -6.644541,
+            9.720001
+          ],
+          "end_mm": [
+            -6.639461,
+            9.720001
+          ],
+          "diameter_mm": 1.020064,
+          "radius_mm": 0.510032,
+          "plated": true,
+          "kind": "component_pth"
+        },
+        {
+          "shape": "slot",
+          "start_mm": [
+            -9.184541,
+            14.800001
+          ],
+          "end_mm": [
+            -9.179461,
+            14.800001
+          ],
+          "diameter_mm": 1.020064,
+          "radius_mm": 0.510032,
+          "plated": true,
+          "kind": "component_pth"
+        },
+        {
+          "shape": "slot",
+          "start_mm": [
+            -9.184541,
+            12.260001
+          ],
+          "end_mm": [
+            -9.179461,
+            12.260001
+          ],
+          "diameter_mm": 1.020064,
+          "radius_mm": 0.510032,
+          "plated": true,
+          "kind": "component_pth"
+        },
+        {
+          "shape": "slot",
+          "start_mm": [
+            -9.184541,
+            9.720001
+          ],
+          "end_mm": [
+            -9.179461,
+            9.720001
+          ],
+          "diameter_mm": 1.020064,
+          "radius_mm": 0.510032,
+          "plated": true,
+          "kind": "component_pth"
+        }
+      ],
+      "hole_counts": {
+        "all": 277,
+        "via": 253,
+        "component_pth": 24
+      },
+      "faces": {
+        "top": {
+          "files": {
+            "basecolor": {
+              "file": "LowerPower/top-basecolor.png",
+              "sha256": "6b5aea399f0d5e09a769395c7e4d9de4d9ccdae325307a4775942c3740d99fc3"
+            },
+            "metalness": {
+              "file": "LowerPower/top-metalness.png",
+              "sha256": "96fa51e155b22f6579070863cdc5ffe9e1803aebac5d71072a34a3d2c5653578"
+            },
+            "roughness": {
+              "file": "LowerPower/top-roughness.png",
+              "sha256": "d232f49bac379b6d5efd25c5d29c0b5b2434ec16ef5461c765cb6230191ddfc2"
+            },
+            "surface-opacity": {
+              "file": "LowerPower/top-surface-opacity.png",
+              "sha256": "47d4eea8dbf5349f4ecc233f61cbf004fa6ae148d269c2a842f17e7d20dff99c"
+            },
+            "relief": {
+              "file": "LowerPower/top-relief.png",
+              "sha256": "3984d4e0afd87b521a66a8448693ab71d0e52ce90145bdb6c73b2a174db863a6"
+            },
+            "copper-mask": {
+              "file": "LowerPower/top-copper-mask.png",
+              "sha256": "ab97691fb1eb6d9f5eb9c880be85d8b5c51d2572b5dd4666c0c3e7e704890e4f"
+            },
+            "soldermask-openings": {
+              "file": "LowerPower/top-soldermask-openings.png",
+              "sha256": "571352536eb76ab3d760e9d46537a9df03e3d26254beb31747a981343f10b36d"
+            },
+            "silkscreen-mask": {
+              "file": "LowerPower/top-silkscreen-mask.png",
+              "sha256": "ab3bf07bd5d4b0dfe01575832f4424e878f9e3628b25b02296cff67807cdc3f5"
+            }
+          },
+          "copper_area_mm2": 533.9905598958333,
+          "exposed_metal_area_mm2": 200.90310329861111,
+          "silk_area_mm2": 45.94552951388889,
+          "native_silk_clipped_at_mask_openings": true
+        },
+        "bottom": {
+          "files": {
+            "basecolor": {
+              "file": "LowerPower/bottom-basecolor.png",
+              "sha256": "2c56ee5fa758ed2f51446ea46db360dc94393016d2f54122e3bdcd1777c0458e"
+            },
+            "metalness": {
+              "file": "LowerPower/bottom-metalness.png",
+              "sha256": "8816873144a1e600b12e958171f5e5ee80bebd7d9b4e68ce9fcd2ad0764a65f4"
+            },
+            "roughness": {
+              "file": "LowerPower/bottom-roughness.png",
+              "sha256": "eeae2a6c9afa997c0abc8e04eef895e65bd9fad88dc13d8fba126609eaa83a7e"
+            },
+            "surface-opacity": {
+              "file": "LowerPower/bottom-surface-opacity.png",
+              "sha256": "4238149a736498feebd97ad38804d80dc5c7c2536bcbd976cfcb6155810f48e3"
+            },
+            "relief": {
+              "file": "LowerPower/bottom-relief.png",
+              "sha256": "6f63255b733ac224184f839bf96901a54e0ad35ba07b4929db9fa02e5b1983c9"
+            },
+            "copper-mask": {
+              "file": "LowerPower/bottom-copper-mask.png",
+              "sha256": "715e82ae44174147115135e55579256523b74770e15bf930a839873f167c4993"
+            },
+            "soldermask-openings": {
+              "file": "LowerPower/bottom-soldermask-openings.png",
+              "sha256": "b17552f8edce34b6ce0d440c33e02f5a0323d08a95b8660d931bfac24670c032"
+            },
+            "silkscreen-mask": {
+              "file": "LowerPower/bottom-silkscreen-mask.png",
+              "sha256": "5fe9fd7d5beba004d9f708387c20b86b16f5c199de1db104dbd89f0149b24780"
+            }
+          },
+          "copper_area_mm2": 591.3661024305555,
+          "exposed_metal_area_mm2": 40.96571180555556,
+          "silk_area_mm2": 10.760633680555555,
+          "native_silk_clipped_at_mask_openings": true
+        }
+      }
+    }
+  }
+}
