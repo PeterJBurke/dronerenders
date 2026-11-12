@@ -1,0 +1,101 @@
+{
+  "date": "2026-11-12",
+  "cad_revision": "V4",
+  "cad_checkpoint": "abe43c2",
+  "frame": "MOD-L 4-inch regular arm v1-1 + HD_CARGO bottom v1-0/top v1-1 + cross v2-0",
+  "author": "ledroneclub / Thingiverse 4295478; CC Attribution",
+  "presentation_template": "https://peterjburke.github.io/dronerenders/quad4_ref_render.html",
+  "units": "mm; frame +Y is nose; Z up",
+  "sources_sha256": {
+    "references/mod-l-hd-cargo/files/MOD-L_bottom_cross_2mm_v2-0.stl": "a2b52cbbffc1e6481d28262af1c28339801f888323296096ce0d14ed99632df0",
+    "references/mod-l-hd-cargo/files/MOD-L_HD_CARGO_bottom_plate_2mm_v1-0.stl": "788b35e78ae2e5409d9175f72aef765aaa50e14506e9e664ec06c7c687fa2487",
+    "references/mod-l-hd-cargo/files/MOD-L_HD_CARGO_top_plate_2mm_v1-1.stl": "5a01e81fafb68821a627730463ac4adc634a8eeeedefb2346d0b372253ab87d5",
+    "references/mod-l-hd-cargo/files/MOD-L_arm_4in_3.5mm_v1-1.stl": "d53cd3ae1981e84e8ba8fc17f6717c700083cb728916972e9d8f8e21e6ddeb84",
+    "design/V4/routing/review/stack-study/FC-V4-stack-provisional.glb": "d33745cd5d6ea08eac1ae47b10e082842609ed52d58f52430a0210267435e417"
+  },
+  "source_arm_actual_thickness_mm": 3.000000000000173,
+  "source_arm_filename_thickness_mm": 3.5,
+  "source_discrepancy": "Named3.5mm arm is actually3.0mm in supplied STL; original geometry retained, matching user template.",
+  "assembly_z_mm": {
+    "cross": [
+      0,
+      2
+    ],
+    "arms": [
+      2,
+      5
+    ],
+    "bottom": [
+      5,
+      7
+    ],
+    "standoffs": [
+      7,
+      32
+    ],
+    "roof": [
+      32,
+      34
+    ]
+  },
+  "frame_translation_z_mm": {
+    "cross": 2,
+    "arms": 2,
+    "bottom": 1,
+    "top": 5
+  },
+  "fc_translation_mm": [
+    0,
+    0,
+    12.363373279571533
+  ],
+  "fc_bounds_mm": [
+    [
+      -10.987322807312012,
+      -15.987333297729492,
+      8.0
+    ],
+    [
+      10.987322807312012,
+      24.67317008972168,
+      30.1777204246802
+    ]
+  ],
+  "available_mesh_collision": false,
+  "collision_pairs": [],
+  "available_mesh_minimum_gap_mm": 1.0,
+  "nearest_mesh_pair": [
+    "V4/LowerPower/FC-V4-LowerPower-native.obj_2",
+    "Frame/Bottom"
+  ],
+  "bottom_component_to_plate_plane_gap_mm": 1.0,
+  "highest_component_to_roof_plane_gap_mm": 1.8222795753198007,
+  "central_mount_centres_mm": [
+    [
+      -10,
+      -10
+    ],
+    [
+      10,
+      -10
+    ],
+    [
+      10,
+      10
+    ],
+    [
+      -10,
+      10
+    ]
+  ],
+  "assumptions": [
+    "FC stack centred on the central20x20mm pattern; displayed position is provisional.",
+    "25mm frame standoff height,4.5mm outer diameter and six chosen positions follow the template; exact hardware not verified.",
+    "No carrier/grommets/fasteners are modeled. Display gap does not prove sufficient support height.",
+    "J20/J21 body models absent; native PCB slab thickness differs from saved fabrication stack.",
+    "Existing8.64mm inter-board face gap retained; assembly/tolerances and aircraft mounting not qualified.",
+    "Service board omitted because its placement is not defined; this view shows the main FC stack.",
+    "Motors,props,battery,other electronics and service cable omitted as requested."
+  ],
+  "status": "Provisional visual placement study, not a mechanical assembly release."
+}

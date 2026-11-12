@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "checked_utc": "2026-11-12T01:16:39.695887+00:00",
+  "browser": "Chrome headless with SwiftShader WebGL",
+  "offline_file_url": true,
+  "external_network_requests": [],
+  "browser_errors": [],
+  "checks": {
+    "mesh_counts": {
+      "frame": 12,
+      "roof": 1,
+      "fc": 286
+    },
+    "camera_controls": "iso, top, side, detail passed",
+    "roof_toggle": "passed",
+    "theme_toggle": "passed",
+    "label_toggle": "passed",
+    "mobile": {
+      "width": 390,
+      "documentWidth": 390,
+      "canvasWidth": 390,
+      "controls_visible": true
+    }
+  },
+  "visual_inspection": "All four final PNG views inspected; actual native PCB material colors and dark carbon frame verified.",
+  "render_sha256": {
+    "FC-V4-HD-Cargo-angled-open.png": "88c4c849d4480245e58948f59004df2263c5261d0fde1f22be72e34d744f323f",
+    "FC-V4-HD-Cargo-angled-roof.png": "7221cdde057d2b8f3423df0d424b8a24d427730359e2b09532a12fe1d36de660",
+    "FC-V4-HD-Cargo-fc-detail.png": "7a4e9f1f4feb7be079b696c72198c8e9e08f299ebf0fe692e8799ef1ced210a2",
+    "FC-V4-HD-Cargo-top-open.png": "dff45c92937bd793236e78217f1c97a4054e5b010023aaea6c1ef917b7f28770"
+  }
+}
