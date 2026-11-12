@@ -1,0 +1,97 @@
+{
+  "default": "Both boards, same scale, legend hidden, light theme",
+  "bounds": {
+    "UpperLogic": {
+      "isBox3": true,
+      "min": {
+        "x": -36.98732280731201,
+        "y": -15.987333297729492,
+        "z": 0
+      },
+      "max": {
+        "x": -15.012677192687988,
+        "y": 24.67317008972168,
+        "z": 12.124347686767578
+      }
+    },
+    "LowerPower": {
+      "isBox3": true,
+      "min": {
+        "x": -2.9873228073120117,
+        "y": -15.987333297729492,
+        "z": 0
+      },
+      "max": {
+        "x": 18.98732280731201,
+        "y": 24.67317008972168,
+        "z": 11.896242141723633
+      }
+    },
+    "penny": {
+      "isBox3": true,
+      "min": {
+        "x": 34.47500038146973,
+        "y": -9.524999618530273,
+        "z": 9.536741063520537e-09
+      },
+      "max": {
+        "x": 53.52499961853027,
+        "y": 9.524999618530273,
+        "z": 1.5199999904632588
+      }
+    },
+    "ruler": {
+      "isBox3": true,
+      "min": {
+        "x": -33,
+        "y": -40,
+        "z": -1.1920928966180355e-08
+      },
+      "max": {
+        "x": 41,
+        "y": -32,
+        "z": 0.600000011920929
+      }
+    }
+  },
+  "drag_directions": {
+    "right": {
+      "x": 0.07604803301778815,
+      "screenY": -0.010902881404877718
+    },
+    "left": {
+      "x": -0.07604803301778816,
+      "screenY": -0.01090288140487744
+    },
+    "down": {
+      "x": -7.554032772213405e-17,
+      "screenY": 0.050506118509364206
+    },
+    "up": {
+      "x": -5.079622016090741e-17,
+      "screenY": -0.07525371021917779
+    }
+  },
+  "right_drag_pan": "PASS",
+  "wheel_zoom": "PASS",
+  "selectors": "Both, Upper, Lower, Stack passed",
+  "mobile": {
+    "viewport": 390,
+    "document": 390,
+    "canvas": 390
+  },
+  "url_options": "top/dark/legend passed",
+  "browser_errors": [],
+  "links": "All local links resolve in portable and public copies",
+  "unchanged_assets_sha256": {
+    "assets/board-model.js": "9baf343947c4c66eff2cc4837caf598990832d8212a1677577da8d70021f8a48",
+    "assets/penny.js": "abd4f7da0ea9a50db15600b8c935de7a8191b706de19fabe0b3cbc51780019fb",
+    "v4-upper-studio.png": "f2adddf4d6be84ac8c9247136567d5405f6c49f292cdf40bae9a94d8897dc6fe",
+    "v4-lower-studio.png": "7b17241e7c4957836a1de6dd47f997ebf39acd8b7180127bc09f2cfdc7a96213",
+    "v4-stack-studio.png": "a481f718390c4adf40ef9d1a5f9abdcde50dcd948d11ecb35e8630d3c1999042"
+  },
+  "status": "PASS",
+  "checked_at_utc": "2026-11-12T02:01:11.751952+00:00",
+  "reference": "https://peterjburke.github.io/dronerenders/fc_comparison_render.html",
+  "geometry_changed": false
+}

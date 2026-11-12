@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "inspected": [
+    "desktop light",
+    "desktop dark",
+    "open legend",
+    "studio render dialog",
+    "390px mobile",
+    "390px mobile studio dialog"
+  ],
+  "reference": "https://peterjburke.github.io/dronerenders/fc_comparison_render.html",
+  "screenshots": "tools/board-layout-qa-2026-11-12/final-*.png",
+  "geometry_and_studio_images": "Unchanged; hashes verified in reference-layout-checks.json"
+}
