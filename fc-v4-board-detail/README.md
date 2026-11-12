@@ -2,7 +2,9 @@
 
 November 12, 2026. User requested a dedicated detailed photorealistic board-render page with a ruler and penny, linked from the frame viewer.
 
-The page presents three CAD-based Blender Cycles studio renders: Upper Logic, Lower Power and the provisional main stack. A separate interactive Three.js viewer allows either board or the main stack to rotate freely. Both studio and interactive views use actual V4 source meshes, green PCB substrate appearance (#086b32), a 70 mm metric ruler with 1 mm divisions and a US penny at19.05mm diameter and1.52mm thickness.
+The page uses the full-window layout of Peter Burke’s `fc_comparison_render.html`: a collapsible Legend, compact top-right view/theme controls, a 10 / 50 mm grid and in-scene board labels. It opens with both native boards side by side at the same scale. Board selectors provide individual and provisional-stack views, while **Studio renders** opens the detailed images and downloads. URL options `#top`, `#dark` and `#legend` are supported. The old `viewer.html` link remains a compatible entry point.
+
+The studio panel presents three CAD-based Blender Cycles renders: Upper Logic, Lower Power and the provisional main stack. The interactive Three.js scene allows both boards, either individual board or the main stack to rotate freely. Both studio and interactive views use actual V4 source meshes, green PCB substrate appearance (#086b32), a 70 mm metric ruler with 1 mm divisions and a US penny at19.05mm diameter and1.52mm thickness.
 
 These are rendered CAD models, not hardware photographs. Geometry derives from the November6 native V4 stack export at checkpoint`abe43c2`. Component colours are given plausible presentation roughness/metalness; substrate appearance is green as requested. No source component geometry, placement or routing changes were made. Fine solder, trace and silkscreen details absent from native meshes are not invented. J20/J21 body models are absent; library shapes are not manufacturer-certified; native slab thickness differs from fabrication layers. Service board position is undefined and it is omitted. Stack facing gap8.64mm remains provisional.
 
