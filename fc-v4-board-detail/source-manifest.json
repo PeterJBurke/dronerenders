@@ -1,0 +1,35 @@
+{
+  "cad_checkpoint": "abe43c2",
+  "source": "design/V4/routing/review/stack-study/FC-V4-stack-provisional.glb",
+  "source_sha256": "d33745cd5d6ea08eac1ae47b10e082842609ed52d58f52430a0210267435e417",
+  "mesh_count": 286,
+  "board_size_nominal_mm": [
+    22,
+    32
+  ],
+  "penny_diameter_mm": 19.05,
+  "penny_thickness_mm": 1.52,
+  "penny_texture_sha256": "3b12cd077a05c5802491b898e55b2f4e27a22ed338d26d8ce3630ea4e9132cdb",
+  "penny_texture_credit": "United States Mint, 2010 cent obverse, via Wikimedia Commons; public-domain US government work. Reused from Peter Burke reference gallery.",
+  "rendering": "Blender Cycles, original native mesh positions; display materials and scale props only.",
+  "missing_models": [
+    "UpperLogic J20",
+    "LowerPower J21"
+  ],
+  "limitations": [
+    "Library geometry is not manufacturer-certified.",
+    "No added invented component bodies or fabricated traces.",
+    "Native PCB mesh thickness differs from saved fabrication stack.",
+    "Stack gap8.64mm is provisional; Service board unplaced and omitted."
+  ],
+  "studio_render": {
+    "engine": "Blender 4.0.2 Cycles CPU",
+    "resolution": [
+      1800,
+      1200
+    ],
+    "samples_max": 48,
+    "adaptive_threshold": 0.06,
+    "denoising": "Intel Open Image Denoise 2.5.1 CPU; LDR, sRGB, quality high; raw Cycles images preserved."
+  }
+}

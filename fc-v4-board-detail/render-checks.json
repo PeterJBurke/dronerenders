@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "checked_at_utc": "2026-11-12T01:41:53.085892+00:00",
+  "visual_inspection": "Upper Logic, Lower Power and reframed stack studio renders inspected by parent and subagent; complete board geometry and scale props visible. Desktop and mobile page and interactive viewer screenshots inspected.",
+  "rendering": "Blender4.0.2 Cycles,1800x1200,48adaptive samples; OIDN2.5.1 LDR/sRGB high quality finishing.",
+  "raw_cycles_renders": {
+    "upper": "final-renders/v4-upper-studio.png",
+    "lower": "final-renders/v4-lower-studio.png",
+    "stack": "final-renders/v4-stack-studio-framed.png"
+  },
+  "native_scene": "V4-board-studio.blend",
+  "penny_texture_packed_in_native_scene": true,
+  "render_sha256": {
+    "v4-lower-studio.png": "7b17241e7c4957836a1de6dd47f997ebf39acd8b7180127bc09f2cfdc7a96213",
+    "v4-upper-studio.png": "f2adddf4d6be84ac8c9247136567d5405f6c49f292cdf40bae9a94d8897dc6fe",
+    "v4-stack-studio.png": "a481f718390c4adf40ef9d1a5f9abdcde50dcd948d11ecb35e8630d3c1999042"
+  },
+  "browser_checks": {
+    "board_meshes": {
+      "UpperLogic": 225,
+      "LowerPower": 61
+    },
+    "board_selectors": "pass",
+    "top_and_angle_controls": "pass",
+    "left_orbit_right_pan_wheel_zoom": "pass",
+    "mobile_viewport_width": 390,
+    "mobile_document_width": 390,
+    "mobile_canvas_width": 390,
+    "javascript_errors": []
+  },
+  "prop_clearances": "prop-clearances.json",
+  "stack_framing": "stack-framing-check.json",
+  "limitations": "CAD-based studio renders, not hardware photographs. No invented missing connector bodies, trace/silkscreen textures or solder fillets. Service board omitted; stack remains provisional."
+}
