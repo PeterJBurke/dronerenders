@@ -1,0 +1,158 @@
+{
+  "status": "PROPOSAL / NOT FABRICATION RELEASE",
+  "parameters_mm": {
+    "face_gap": 12.065,
+    "connector_center_x": 1.55,
+    "connector_center_y": -2.1,
+    "lower_thickness": 1.8633731603622437,
+    "upper_thickness": 1.641478300094605,
+    "slot_clearance": 0.15,
+    "lip": 0.8,
+    "screw_x": 15.0,
+    "screw_y": 14.0,
+    "standoff_length": 12.0,
+    "standoff_af": 4.0,
+    "grip_y_left": [
+      -10.2,
+      8.8
+    ],
+    "grip_y_right": [
+      -10.8,
+      8.8
+    ],
+    "grip_length": 0.8,
+    "grip_inner_x": 10.25,
+    "rail_inner_x": 11.15,
+    "rail_outer_x": 12.35,
+    "base_top": -5.16337328,
+    "base_thickness": 2.0,
+    "grommet_seat_diameter": 4.0,
+    "grommet_seat_status": "Unselected grommet; placeholder bore, not approved fit"
+  },
+  "board_geometry": "Final V5 placement export; new16pin UpperJ1 uses separately identified drawing-derived model because native binding is absent; routing/manufacturing not complete",
+  "sources_sha256": {
+    "design/V5/review/placement-final-native/LowerPower-placement.zip": "54556b43299fae046e61a097bfef1c238957b2dc26920ca58ac81f71fc23df15",
+    "design/V5/review/placement-final-native/UpperLogic-placement.zip": "1964bfcbc9cadb5bad927a5bf4b7af4d109c94d56010e459a69a5c914479ff29",
+    "design/V5/mechanical/header-model/header-geometry.json": "9ea87a2386d7a27194bd966050f88679ccada47b30230b46b5cb2aafc56b9770"
+  },
+  "component_carrier_collision": false,
+  "component_carrier_pairs": [],
+  "component_carrier_min_distance_mm": 0.5264871729743454,
+  "nearest_component_carrier": [
+    "V5_native/UpperLogic/FC-V5-UpperLogic-placement.obj_144",
+    "Upper_edge_rail_L"
+  ],
+  "pcb_hardware_collision": false,
+  "pcb_hardware_pairs": [],
+  "pcb_hardware_min_distance_mm": 1.7032758479255197,
+  "nearest_pcb_hardware": [
+    "V5_native/UpperLogic/FC-V5-UpperLogic-placement.obj",
+    "M2_standoff_L_rear"
+  ],
+  "frame_translation_z_mm": 17.163373280000002,
+  "frame_25mm_collision": true,
+  "frame_collision_pairs": [
+    [
+      "V5_native/UpperLogic/FC-V5-UpperLogic-placement.obj_174",
+      "Frame/Top"
+    ],
+    [
+      "V5_native/UpperLogic/FC-V5-UpperLogic-placement.obj_171",
+      "Frame/Top"
+    ],
+    [
+      "V5_drawing_UpperJ1_header-gold",
+      "Frame/Top"
+    ],
+    [
+      "V5_native/UpperLogic/FC-V5-UpperLogic-placement.obj_151",
+      "Frame/Top"
+    ],
+    [
+      "V5_native/UpperLogic/FC-V5-UpperLogic-placement.obj_193",
+      "Frame/Top"
+    ],
+    [
+      "V5_native/UpperLogic/FC-V5-UpperLogic-placement.obj_199",
+      "Frame/Top"
+    ],
+    [
+      "V5_native/UpperLogic/FC-V5-UpperLogic-placement.obj_185",
+      "Frame/Top"
+    ],
+    [
+      "V5_native/UpperLogic/FC-V5-UpperLogic-placement.obj_182",
+      "Frame/Top"
+    ],
+    [
+      "V5_drawing_UpperJ1_header-black",
+      "Frame/Top"
+    ],
+    [
+      "M2_upper_screw_R_front",
+      "Frame/Top"
+    ],
+    [
+      "V5_native/UpperLogic/FC-V5-UpperLogic-placement.obj_184",
+      "Frame/Top"
+    ],
+    [
+      "Upper_edge_rail_L",
+      "Frame/Top"
+    ],
+    [
+      "V5_native/UpperLogic/FC-V5-UpperLogic-placement.obj_194",
+      "Frame/Top"
+    ],
+    [
+      "Upper_edge_rail_R",
+      "Frame/Top"
+    ],
+    [
+      "M2_upper_screw_L_front",
+      "Frame/Top"
+    ],
+    [
+      "V5_native/UpperLogic/FC-V5-UpperLogic-placement.obj_200",
+      "Frame/Top"
+    ],
+    [
+      "V5_native/UpperLogic/FC-V5-UpperLogic-placement.obj_148",
+      "Frame/Top"
+    ],
+    [
+      "V5_native/UpperLogic/FC-V5-UpperLogic-placement.obj_172",
+      "Frame/Top"
+    ],
+    [
+      "V5_native/UpperLogic/FC-V5-UpperLogic-placement.obj_178",
+      "Frame/Top"
+    ]
+  ],
+  "minimum_frame_standoff_height_for_1p5mm_roof_gap": 30.929851580094606,
+  "max_assembly_z_without_frame_mm": 19.266478300094604,
+  "assembly_bounds_mm": [
+    [
+      -18.0,
+      -17.0,
+      -9.163372993469238
+    ],
+    [
+      18.0,
+      24.679403980000018,
+      19.266478300094604
+    ]
+  ],
+  "notes": [
+    "Carrier/PCB substrate contact at support fingers is intended; this report tests component bodies separately.",
+    "Four bottom M2x12 screws clamp saddle compression towers, lower rails and standoffs in one load path.",
+    "Four M2 female-female12mm spacers use4 M2x12 lower screws (3.837mm nominal engagement) and4 M2x6 upper screws (4mm engagement).",
+    "Slot dimensions use actual native slabs; fabrication stack reconciliation required.",
+    "Grommet bore4mm is a placeholder; exact grommet part/shoulder/retention not selected.",
+    "Metal spacers are outside PCB edges; insulating rails prevent intentional metal-PCB contact.",
+    "No revised PCB holes or routed-board outline changes.",
+    "Threads represented by envelopes, not helical geometry.",
+    "J20/J21 drawing-derived bodies supplied separately; cosmetic contact/pocket approximations and0.004mm nominal mating-body rounding overlap are not manufacturing interference evidence.",
+    "Side rails install laterally on each board before screw assembly; no snap-fit deflection is intended. Printed edge lips and strain need prototype validation."
+  ]
+}

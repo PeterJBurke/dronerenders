@@ -1,0 +1,16 @@
+{
+  "frame_standoffs_mm": 35,
+  "collision": false,
+  "pairs": [],
+  "minimum_mesh_distance_mm": 1.0000002865307636,
+  "nearest_pair": [
+    "M2_lower_screw_L_rear",
+    "Frame/Bottom"
+  ],
+  "roof_plane_gap_mm": 5.570148419905394,
+  "assumptions": [
+    "3mm isolation allowance below saddle; grommet part not selected",
+    "35mm frame posts proposed; purchased part/stiffness not assessed",
+    "Fresh V5 placement meshes; new16pin UpperJ1 and J20/J21 drawing models"
+  ]
+}
