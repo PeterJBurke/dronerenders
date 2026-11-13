@@ -1,14 +1,14 @@
 {
   "sources": {
     "design/V6/review/width31p5-native-meshes-2026-11-13/UpperLogic/extracted/FC-V6-UpperLogic-native.obj": "1e645c3983c1c2c4c3a55b2fe49a707ba3a5e33b0309ca309a7b8514f26006c2",
-    "design/V6/review/width31p5-native-meshes-2026-11-13/LowerPower/extracted/FC-V6-LowerPower-native.obj": "410d44c3f3a971770fb31c1f8833d7a2de837cada98b17f35bcd41bac0730ce5",
-    "design/V6/review/width31p5-placement-2026-11-13/UpperLogic.epcb": "67beb7b66fc57ffc3f2dab2b7ac6c0e3847e0cf80f8b3b95565a0946bccae4cd",
-    "design/V6/review/width31p5-placement-2026-11-13/LowerPower.epcb": "995fa9bff8a8ef1f7f4bdc62d97c6855b619b6e03e117fe468a1434b3f36534f",
-    "design/V6/review/width31p5-placement-2026-11-13/FC-V6-WIDTH31P5-PLACEMENT.epro": "54ef3a2213ad5f71359f6d0fe649a92ea95d4de7c556b4b1da4b83a91bdb6117",
-    "design/V6/review/width31p5-placement-2026-11-13/UpperLogic-components.json": "637cbf663298b423261e2856306acf4a1966f84b48ca1858630507b17178b854",
-    "design/V6/review/width31p5-placement-2026-11-13/LowerPower-components.json": "dff1000ec4bae696f1667f4ea93208ee9be2bfae7092bfe2a17175764021ea86",
-    "design/V6/review/width31p5-placement-2026-11-13/Service-components.json": "ff3e85b036340ff57c9ef633f8352044834db029f9a6e5220c2e4ea7f3a4584b",
-    "design/V6/review/width31p5-placement-2026-11-13/Service.epcb": "a20cec175b064bba18a8b15c67b4398d9b606e043b72dc5753ce6c202ade8f8c"
+    "design/V6/review/matek-pad-native-meshes-2026-11-13/LowerPower/extracted/FC-V6-LowerPower-native.obj": "9fdb081e9e26428385c44bf85df0c74b5824d7bb361fab4004de185c7a814647",
+    "design/V6/review/matek-pad-placement-2026-11-13/UpperLogic.epcb": "06ffadec3bea66350983e4a133e337c42eade8efd42418256f291967d61d3c10",
+    "design/V6/review/matek-pad-placement-2026-11-13/LowerPower.epcb": "232a8107caae1dbfd36dcd3bb5e4d5c482c83899b616e9f927c32c58c379fe86",
+    "design/V6/review/matek-pad-placement-2026-11-13/FC-V6-MATEK-PAD-PLACEMENT.epro": "79a8d5d86ce1a7571c7f4092b71d7cfc132c9379e0568fbf123b53dba0c53e9b",
+    "design/V6/review/matek-pad-placement-2026-11-13/UpperLogic-components.json": "637cbf663298b423261e2856306acf4a1966f84b48ca1858630507b17178b854",
+    "design/V6/review/matek-pad-placement-2026-11-13/LowerPower-components.json": "295aa4720a6f81302940ed1914567f3157c778aaf790b9f5b4da9b9299d550f8",
+    "design/V6/review/matek-pad-placement-2026-11-13/Service-components.json": "ff3e85b036340ff57c9ef633f8352044834db029f9a6e5220c2e4ea7f3a4584b",
+    "design/V6/review/matek-pad-placement-2026-11-13/Service.epcb": "19f2de69ba5df71a4a9eac464726df52c4c4485eb2006de8384623f230bb5c54"
   },
   "boards": {
     "UpperLogic": {
@@ -40,7 +40,10 @@
     "UpperLogic": 1.6414782829565662,
     "LowerPower": 1.8633731267462534
   },
-  "revision": "V6 31.5 \u00d7 48 mm edge-header correction",
+  "known_model_limitations": [
+    "The native J20 model sits about 0.0635 mm nearer the PCB than its drawing model, with flattened tin feet; native vertices are preserved and connector mating remains unqualified."
+  ],
+  "revision": "V6 enlarged power pads, 31.5 \u00d7 48 mm",
   "floor_z": 0,
   "provisional_face_gap_mm": 12.1,
   "frame_roof_conflict": false,
@@ -70,7 +73,8 @@
       "unmatched": [],
       "missing_refs": [],
       "previous_obj_sha256": "f93b11d38b25730006dfaa73ca97088551910282b0c699a5dc9f280c2d5cb351",
-      "method": "Rigid model identity reconciliation; no old render geometry reused."
+      "method": "Rigid model identity reconciliation; no old render geometry reused.",
+      "reuse_current_same_revision_upper": "All source records match previous current source excluding document metadata, record tickets and equivalent rotation normalization; no upper edits."
     },
     "LowerPower": {
       "source_matches_export_except_document_metadata_and_record_tickets": true,
@@ -84,7 +88,7 @@
       "all_component_refs_mapped": true,
       "unmatched": [],
       "missing_refs": [],
-      "previous_obj_sha256": "0607cfcf99aedf74f090fb9a8d1bf4e14cde29316e248bbe0dc5623116e5bfda",
+      "previous_obj_sha256": "410d44c3f3a971770fb31c1f8833d7a2de837cada98b17f35bcd41bac0730ce5",
       "method": "Rigid model identity reconciliation; no old render geometry reused."
     }
   },
@@ -102,8 +106,5 @@
     "retained_records": 13,
     "transformation": "none"
   },
-  "upper_countersink_geometry": "Not used: simple \u00d82.2 mm through bores and ordinary socket-head screws",
-  "known_model_limitations": [
-    "The native J20 model sits about 0.0635 mm nearer the PCB than its drawing model, with flattened tin feet; native vertices are preserved and connector mating remains unqualified."
-  ]
+  "upper_countersink_geometry": "Not used: simple \u00d82.2 mm through bores and ordinary socket-head screws"
 }

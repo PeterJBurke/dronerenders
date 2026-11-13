@@ -1,13 +1,13 @@
 {
   "metadata": {
     "source_revision": "V6 compact correction",
-    "generated_utc": "2026-11-13T15:07:56.722370+00:00",
+    "generated_utc": "2026-11-13T18:21:02.745945+00:00",
     "status": "Current schematic pin data; geometry freshness independently required for viewer build",
     "sources": {
-      "/root/fc/design/V6/review/width31p5-placement-2026-11-13/UpperLogic-components.json": "637cbf663298b423261e2856306acf4a1966f84b48ca1858630507b17178b854",
-      "/root/fc/design/V6/review/width31p5-placement-2026-11-13/LowerPower-components.json": "dff1000ec4bae696f1667f4ea93208ee9be2bfae7092bfe2a17175764021ea86",
-      "/root/fc/design/V6/review/width31p5-placement-2026-11-13/Service-components.json": "ff3e85b036340ff57c9ef633f8352044834db029f9a6e5220c2e4ea7f3a4584b",
-      "/root/fc/design/V6/review/width31p5-placement-2026-11-13/LowerPower.epcb": "995fa9bff8a8ef1f7f4bdc62d97c6855b619b6e03e117fe468a1434b3f36534f"
+      "/root/fc/design/V6/review/matek-pad-placement-2026-11-13/UpperLogic-components.json": "637cbf663298b423261e2856306acf4a1966f84b48ca1858630507b17178b854",
+      "/root/fc/design/V6/review/matek-pad-placement-2026-11-13/LowerPower-components.json": "295aa4720a6f81302940ed1914567f3157c778aaf790b9f5b4da9b9299d550f8",
+      "/root/fc/design/V6/review/matek-pad-placement-2026-11-13/Service-components.json": "ff3e85b036340ff57c9ef633f8352044834db029f9a6e5220c2e4ea7f3a4584b",
+      "/root/fc/design/V6/review/matek-pad-placement-2026-11-13/LowerPower.epcb": "232a8107caae1dbfd36dcd3bb5e4d5c482c83899b616e9f927c32c58c379fe86"
     },
     "group_count": 8,
     "row_count": 128
