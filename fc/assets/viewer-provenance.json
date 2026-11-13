@@ -1,89 +1,33 @@
 {
   "sources": {
-    "design/V6/review/native-meshes-2026-11-13/UpperLogic/extracted-web/FC-V6-UpperLogic-native.obj": "d7b5096d2ea97b538171dda31319304dc1b30f4502e120380e1061d67f444c68",
-    "design/V6/review/native-meshes-corrected-2026-11-13/LowerPower/extracted-web/FC-V6-LowerPower-native.obj": "f7c958fa04c1c4f2af14d4361b9e923dccdf3271242bf527e4cb1d1f96957e82",
-    "design/V6/readback/pin-silkscreen-2026-11-13/UpperLogic/source-after.epcb": "1a7e35a34f7edc9b83a092e1c8795c13b4ce8149cb228df5818c8071d5756a62",
-    "design/V6/readback/pin-silkscreen-2026-11-13/LowerPower/source-after.epcb": "fcd4b11ecfa62a893aec555742314757d2bd3ed5747a531b56c8dc4e7940c5e8"
+    "design/V6/review/compact-native-meshes-2026-11-13/UpperLogic/extracted/FC-V6-UpperLogic-native.obj": "f93b11d38b25730006dfaa73ca97088551910282b0c699a5dc9f280c2d5cb351",
+    "design/V6/review/compact-native-meshes-2026-11-13/LowerPower/extracted/FC-V6-LowerPower-native.obj": "0607cfcf99aedf74f090fb9a8d1bf4e14cde29316e248bbe0dc5623116e5bfda",
+    "design/V6/review/compact-placement-2026-11-13/UpperLogic.epcb": "3e616ad1472ac87dacb749b117264009911eadacb0738e6ebe9bee327c7bb9c2",
+    "design/V6/review/compact-placement-2026-11-13/LowerPower.epcb": "04e6a47330a9aa3d4563baf1aa6b6f93af2b1bacfbab799bd64d23149acc6dd9",
+    "design/V6/review/compact-placement-2026-11-13/FC-V6-COMPACT-PLACEMENT.epro": "39c7088922e5329c5e6f468451270f0d979231f180ff72a1e05e2f825e506773",
+    "design/V6/review/compact-placement-2026-11-13/UpperLogic-components.json": "27d2f93f0e474ef43cfeaf6b3665ccd43446fe701365499bf87b81f560d1600c",
+    "design/V6/review/compact-placement-2026-11-13/LowerPower-components.json": "5f18d6c5b16593c0fd5b71c764287c5378d3ed5851952b97bb9590ac5240a95a",
+    "design/V6/review/compact-placement-2026-11-13/Service-components.json": "ff3e85b036340ff57c9ef633f8352044834db029f9a6e5220c2e4ea7f3a4584b",
+    "design/V6/review/compact-placement-2026-11-13/Service.epcb": "f9f74c90d9774981dda701009d668fa358013f58a093d12e9af129e2a9d58bef"
   },
   "boards": {
     "UpperLogic": {
-      "native_component_count": 85,
-      "mapped_refs": 84,
-      "missing_model_refs": [
-        "J20"
-      ],
-      "large_classification_offsets": [
-        [
-          "FC-V6-UpperLogic-native.obj_45",
-          "U5",
-          3.525725873149044
-        ],
-        [
-          "FC-V6-UpperLogic-native.obj_150",
-          "C34",
-          9.822449224841826
-        ],
-        [
-          "FC-V6-UpperLogic-native.obj_152",
-          "C10",
-          14.822330594663027
-        ],
-        [
-          "FC-V6-UpperLogic-native.obj_155",
-          "U12",
-          14.138722472764448
-        ],
-        [
-          "FC-V6-UpperLogic-native.obj_158",
-          "U12",
-          11.266901440792035
-        ],
-        [
-          "FC-V6-UpperLogic-native.obj_161",
-          "R58",
-          6.198959388212466
-        ],
-        [
-          "FC-V6-UpperLogic-native.obj_164",
-          "D2",
-          10.01172839360615
-        ],
-        [
-          "FC-V6-UpperLogic-native.obj_167",
-          "L4",
-          7.602501101766196
-        ],
-        [
-          "FC-V6-UpperLogic-native.obj_170",
-          "C29",
-          7.877974954706974
-        ],
-        [
-          "FC-V6-UpperLogic-native.obj_185",
-          "C3",
-          3.5985766626755304
-        ]
-      ],
-      "native_nodes": 283,
-      "current_holes": 38,
-      "silk_strings": 72
+      "native_component_count": 79,
+      "mapped_refs": 79,
+      "missing_model_refs": [],
+      "large_classification_offsets": [],
+      "native_nodes": 377,
+      "current_holes": 40,
+      "silk_strings": 80
     },
     "LowerPower": {
-      "native_component_count": 56,
-      "mapped_refs": 55,
-      "missing_model_refs": [
-        "J21"
-      ],
-      "large_classification_offsets": [
-        [
-          "FC-V6-LowerPower-native.obj_192",
-          "C49",
-          3.1763845736926104
-        ]
-      ],
-      "native_nodes": 204,
+      "native_component_count": 54,
+      "mapped_refs": 54,
+      "missing_model_refs": [],
+      "large_classification_offsets": [],
+      "native_nodes": 277,
       "current_holes": 28,
-      "silk_strings": 56
+      "silk_strings": 47
     }
   },
   "placement_only": true,
@@ -96,58 +40,622 @@
     "UpperLogic": 1.6414782829565662,
     "LowerPower": 1.8633731267462534
   },
-  "revision": "V6",
+  "revision": "V6 compact correction",
   "floor_z": 0,
   "provisional_face_gap_mm": 12.1,
-  "native_headers": "Lower J2/J22/J23 binding rotations corrected in native CAD; header pad geometry unchanged",
-  "hardware_source": {
-    "path": "design/V6/mechanical/hardware-models-2026-11-13/assets/geometry-assembly-native-slabs-12p1.json",
-    "sha256": "86f05f8bdf813d231ca5ab0edff033138b92def8820866292be9f735313f9909"
+  "frame_roof_conflict": true,
+  "frame_geometry_changed": false,
+  "fastening": "Drawing-derived flush countersunk upper heads; machining and fit unqualified",
+  "drawing_replacements": [],
+  "hardware_sources": [
+    {
+      "path": "design/V6/mechanical/hardware-models-2026-11-13/assets/geometry-assembly-native-slabs-12p1.json",
+      "sha256": "86f05f8bdf813d231ca5ab0edff033138b92def8820866292be9f735313f9909"
+    },
+    {
+      "path": "design/V6/mechanical/upper-flush-screw-study-2026-11-13/M2x4_D3p8_countersunk_ENVELOPE.stl",
+      "sha256": "7e97a7d8d027d1b4d3cea949648dc3ef59e6a3bcd5520361927d746d1c143da5"
+    }
+  ],
+  "assembly_status": "Provisional fixed-height stack; flush upper fasteners require fabrication qualification. Existing frame roof conflicts with triple bank; frame unchanged.",
+  "frame_source": {
+    "path": "tools/github-dronerenders-2026-11-12/fc/assets/drone-model.js",
+    "sha256": "5b5e49f35c80252ea5f95a467c3103df955119ce94e52d0d3eea747ce461e1e6",
+    "retained_records": 13,
+    "transformation": "none"
   },
-  "mesh_tag_overrides": {
+  "upper_countersink_geometry": "Drawing-derived \u00d84.0 mm, 90\u00b0 recess, 0.9 mm deep; retained \u00d82.2 mm through bore",
+  "native_mesh_review": {
     "UpperLogic": {
-      "149": "J10",
-      "150": "J10",
-      "151": "J10",
-      "152": "J9",
-      "153": "J9",
-      "154": "J8",
-      "155": "J8",
-      "156": "J8",
-      "157": "J7",
-      "158": "J7",
-      "159": "J7",
-      "160": "J6",
-      "161": "J6",
-      "162": "J6",
-      "163": "J5",
-      "164": "J5",
-      "165": "J5",
-      "166": "J4",
-      "167": "J4",
-      "168": "J4",
-      "169": "J1",
-      "170": "J1",
-      "171": "J1",
-      "185": "U1"
+      "board": "UpperLogic",
+      "native_component_count": 79,
+      "native_nodes": 377,
+      "all_component_refs_mapped": true,
+      "exact_template_nodes": 326,
+      "reviewed_other_nodes": [
+        {
+          "node": "FC-V6-UpperLogic-native.obj_90",
+          "ref": "L4",
+          "reason": "Inductor marking lies on L4front face atY10.2, inside the ferrite body bounds."
+        },
+        {
+          "node": "FC-V6-UpperLogic-native.obj_94",
+          "ref": "J20",
+          "reason": "West-side socket material block. Native importer merges contact-strip pairs and flattens tin feet at PCB; XY location and2x10repeat identify J20. Native vertices retained; Z datum discrepancy recorded."
+        },
+        {
+          "node": "FC-V6-UpperLogic-native.obj_95",
+          "ref": "J20",
+          "reason": "West-side socket material block. Native importer merges contact-strip pairs and flattens tin feet at PCB; XY location and2x10repeat identify J20. Native vertices retained; Z datum discrepancy recorded."
+        },
+        {
+          "node": "FC-V6-UpperLogic-native.obj_96",
+          "ref": "J20",
+          "reason": "West-side socket material block. Native importer merges contact-strip pairs and flattens tin feet at PCB; XY location and2x10repeat identify J20. Native vertices retained; Z datum discrepancy recorded."
+        },
+        {
+          "node": "FC-V6-UpperLogic-native.obj_97",
+          "ref": "J20",
+          "reason": "West-side socket material block. Native importer merges contact-strip pairs and flattens tin feet at PCB; XY location and2x10repeat identify J20. Native vertices retained; Z datum discrepancy recorded."
+        },
+        {
+          "node": "FC-V6-UpperLogic-native.obj_98",
+          "ref": "J20",
+          "reason": "West-side socket material block. Native importer merges contact-strip pairs and flattens tin feet at PCB; XY location and2x10repeat identify J20. Native vertices retained; Z datum discrepancy recorded."
+        },
+        {
+          "node": "FC-V6-UpperLogic-native.obj_99",
+          "ref": "J20",
+          "reason": "West-side socket material block. Native importer merges contact-strip pairs and flattens tin feet at PCB; XY location and2x10repeat identify J20. Native vertices retained; Z datum discrepancy recorded."
+        },
+        {
+          "node": "FC-V6-UpperLogic-native.obj_100",
+          "ref": "J20",
+          "reason": "West-side socket material block. Native importer merges contact-strip pairs and flattens tin feet at PCB; XY location and2x10repeat identify J20. Native vertices retained; Z datum discrepancy recorded."
+        },
+        {
+          "node": "FC-V6-UpperLogic-native.obj_101",
+          "ref": "J20",
+          "reason": "West-side socket material block. Native importer merges contact-strip pairs and flattens tin feet at PCB; XY location and2x10repeat identify J20. Native vertices retained; Z datum discrepancy recorded."
+        },
+        {
+          "node": "FC-V6-UpperLogic-native.obj_102",
+          "ref": "J20",
+          "reason": "West-side socket material block. Native importer merges contact-strip pairs and flattens tin feet at PCB; XY location and2x10repeat identify J20. Native vertices retained; Z datum discrepancy recorded."
+        },
+        {
+          "node": "FC-V6-UpperLogic-native.obj_103",
+          "ref": "J20",
+          "reason": "West-side socket material block. Native importer merges contact-strip pairs and flattens tin feet at PCB; XY location and2x10repeat identify J20. Native vertices retained; Z datum discrepancy recorded."
+        },
+        {
+          "node": "FC-V6-UpperLogic-native.obj_104",
+          "ref": "J20",
+          "reason": "West-side socket material block. Native importer merges contact-strip pairs and flattens tin feet at PCB; XY location and2x10repeat identify J20. Native vertices retained; Z datum discrepancy recorded."
+        },
+        {
+          "node": "FC-V6-UpperLogic-native.obj_105",
+          "ref": "J20",
+          "reason": "West-side socket material block. Native importer merges contact-strip pairs and flattens tin feet at PCB; XY location and2x10repeat identify J20. Native vertices retained; Z datum discrepancy recorded."
+        },
+        {
+          "node": "FC-V6-UpperLogic-native.obj_106",
+          "ref": "J20",
+          "reason": "West-side socket material block. Native importer merges contact-strip pairs and flattens tin feet at PCB; XY location and2x10repeat identify J20. Native vertices retained; Z datum discrepancy recorded."
+        },
+        {
+          "node": "FC-V6-UpperLogic-native.obj_107",
+          "ref": "J20",
+          "reason": "West-side socket material block. Native importer merges contact-strip pairs and flattens tin feet at PCB; XY location and2x10repeat identify J20. Native vertices retained; Z datum discrepancy recorded."
+        },
+        {
+          "node": "FC-V6-UpperLogic-native.obj_108",
+          "ref": "J20",
+          "reason": "West-side socket material block. Native importer merges contact-strip pairs and flattens tin feet at PCB; XY location and2x10repeat identify J20. Native vertices retained; Z datum discrepancy recorded."
+        },
+        {
+          "node": "FC-V6-UpperLogic-native.obj_109",
+          "ref": "J20",
+          "reason": "West-side socket material block. Native importer merges contact-strip pairs and flattens tin feet at PCB; XY location and2x10repeat identify J20. Native vertices retained; Z datum discrepancy recorded."
+        },
+        {
+          "node": "FC-V6-UpperLogic-native.obj_110",
+          "ref": "J20",
+          "reason": "West-side socket material block. Native importer merges contact-strip pairs and flattens tin feet at PCB; XY location and2x10repeat identify J20. Native vertices retained; Z datum discrepancy recorded."
+        },
+        {
+          "node": "FC-V6-UpperLogic-native.obj_111",
+          "ref": "J20",
+          "reason": "West-side socket material block. Native importer merges contact-strip pairs and flattens tin feet at PCB; XY location and2x10repeat identify J20. Native vertices retained; Z datum discrepancy recorded."
+        },
+        {
+          "node": "FC-V6-UpperLogic-native.obj_112",
+          "ref": "J20",
+          "reason": "West-side socket material block. Native importer merges contact-strip pairs and flattens tin feet at PCB; XY location and2x10repeat identify J20. Native vertices retained; Z datum discrepancy recorded."
+        },
+        {
+          "node": "FC-V6-UpperLogic-native.obj_113",
+          "ref": "J20",
+          "reason": "West-side socket material block. Native importer merges contact-strip pairs and flattens tin feet at PCB; XY location and2x10repeat identify J20. Native vertices retained; Z datum discrepancy recorded."
+        },
+        {
+          "node": "FC-V6-UpperLogic-native.obj_114",
+          "ref": "J20",
+          "reason": "West-side socket material block. Native importer merges contact-strip pairs and flattens tin feet at PCB; XY location and2x10repeat identify J20. Native vertices retained; Z datum discrepancy recorded."
+        },
+        {
+          "node": "FC-V6-UpperLogic-native.obj_115",
+          "ref": "J20",
+          "reason": "West-side socket material block. Native importer merges contact-strip pairs and flattens tin feet at PCB; XY location and2x10repeat identify J20. Native vertices retained; Z datum discrepancy recorded."
+        },
+        {
+          "node": "FC-V6-UpperLogic-native.obj_116",
+          "ref": "J20",
+          "reason": "West-side socket material block. Native importer merges contact-strip pairs and flattens tin feet at PCB; XY location and2x10repeat identify J20. Native vertices retained; Z datum discrepancy recorded."
+        },
+        {
+          "node": "FC-V6-UpperLogic-native.obj_117",
+          "ref": "J20",
+          "reason": "West-side socket material block. Native importer merges contact-strip pairs and flattens tin feet at PCB; XY location and2x10repeat identify J20. Native vertices retained; Z datum discrepancy recorded."
+        },
+        {
+          "node": "FC-V6-UpperLogic-native.obj_118",
+          "ref": "J20",
+          "reason": "West-side socket material block. Native importer merges contact-strip pairs and flattens tin feet at PCB; XY location and2x10repeat identify J20. Native vertices retained; Z datum discrepancy recorded."
+        },
+        {
+          "node": "FC-V6-UpperLogic-native.obj_119",
+          "ref": "J20",
+          "reason": "West-side socket material block. Native importer merges contact-strip pairs and flattens tin feet at PCB; XY location and2x10repeat identify J20. Native vertices retained; Z datum discrepancy recorded."
+        },
+        {
+          "node": "FC-V6-UpperLogic-native.obj_120",
+          "ref": "J20",
+          "reason": "West-side socket material block. Native importer merges contact-strip pairs and flattens tin feet at PCB; XY location and2x10repeat identify J20. Native vertices retained; Z datum discrepancy recorded."
+        },
+        {
+          "node": "FC-V6-UpperLogic-native.obj_121",
+          "ref": "J20",
+          "reason": "West-side socket material block. Native importer merges contact-strip pairs and flattens tin feet at PCB; XY location and2x10repeat identify J20. Native vertices retained; Z datum discrepancy recorded."
+        },
+        {
+          "node": "FC-V6-UpperLogic-native.obj_122",
+          "ref": "J20",
+          "reason": "West-side socket material block. Native importer merges contact-strip pairs and flattens tin feet at PCB; XY location and2x10repeat identify J20. Native vertices retained; Z datum discrepancy recorded."
+        },
+        {
+          "node": "FC-V6-UpperLogic-native.obj_123",
+          "ref": "J20",
+          "reason": "West-side socket material block. Native importer merges contact-strip pairs and flattens tin feet at PCB; XY location and2x10repeat identify J20. Native vertices retained; Z datum discrepancy recorded."
+        },
+        {
+          "node": "FC-V6-UpperLogic-native.obj_124",
+          "ref": "J20",
+          "reason": "West-side socket material block. Native importer merges contact-strip pairs and flattens tin feet at PCB; XY location and2x10repeat identify J20. Native vertices retained; Z datum discrepancy recorded."
+        },
+        {
+          "node": "FC-V6-UpperLogic-native.obj_125",
+          "ref": "J20",
+          "reason": "West-side socket material block. Native importer merges contact-strip pairs and flattens tin feet at PCB; XY location and2x10repeat identify J20. Native vertices retained; Z datum discrepancy recorded."
+        },
+        {
+          "node": "FC-V6-UpperLogic-native.obj_126",
+          "ref": "J20",
+          "reason": "West-side socket material block. Native importer merges contact-strip pairs and flattens tin feet at PCB; XY location and2x10repeat identify J20. Native vertices retained; Z datum discrepancy recorded."
+        },
+        {
+          "node": "FC-V6-UpperLogic-native.obj_127",
+          "ref": "J20",
+          "reason": "West-side socket material block. Native importer merges contact-strip pairs and flattens tin feet at PCB; XY location and2x10repeat identify J20. Native vertices retained; Z datum discrepancy recorded."
+        },
+        {
+          "node": "FC-V6-UpperLogic-native.obj_128",
+          "ref": "J20",
+          "reason": "West-side socket material block. Native importer merges contact-strip pairs and flattens tin feet at PCB; XY location and2x10repeat identify J20. Native vertices retained; Z datum discrepancy recorded."
+        },
+        {
+          "node": "FC-V6-UpperLogic-native.obj_129",
+          "ref": "J20",
+          "reason": "West-side socket material block. Native importer merges contact-strip pairs and flattens tin feet at PCB; XY location and2x10repeat identify J20. Native vertices retained; Z datum discrepancy recorded."
+        },
+        {
+          "node": "FC-V6-UpperLogic-native.obj_130",
+          "ref": "J20",
+          "reason": "West-side socket material block. Native importer merges contact-strip pairs and flattens tin feet at PCB; XY location and2x10repeat identify J20. Native vertices retained; Z datum discrepancy recorded."
+        },
+        {
+          "node": "FC-V6-UpperLogic-native.obj_131",
+          "ref": "J20",
+          "reason": "West-side socket material block. Native importer merges contact-strip pairs and flattens tin feet at PCB; XY location and2x10repeat identify J20. Native vertices retained; Z datum discrepancy recorded."
+        },
+        {
+          "node": "FC-V6-UpperLogic-native.obj_132",
+          "ref": "J20",
+          "reason": "West-side socket material block. Native importer merges contact-strip pairs and flattens tin feet at PCB; XY location and2x10repeat identify J20. Native vertices retained; Z datum discrepancy recorded."
+        },
+        {
+          "node": "FC-V6-UpperLogic-native.obj_133",
+          "ref": "J20",
+          "reason": "West-side socket material block. Native importer merges contact-strip pairs and flattens tin feet at PCB; XY location and2x10repeat identify J20. Native vertices retained; Z datum discrepancy recorded."
+        },
+        {
+          "node": "FC-V6-UpperLogic-native.obj_134",
+          "ref": "J20",
+          "reason": "West-side socket material block. Native importer merges contact-strip pairs and flattens tin feet at PCB; XY location and2x10repeat identify J20. Native vertices retained; Z datum discrepancy recorded."
+        },
+        {
+          "node": "FC-V6-UpperLogic-native.obj_185",
+          "ref": "Q1",
+          "reason": "New SOT23body/contact/marking block, isolated at currentQ1pose; all vertices within its native package envelope."
+        },
+        {
+          "node": "FC-V6-UpperLogic-native.obj_186",
+          "ref": "Q1",
+          "reason": "New SOT23body/contact/marking block, isolated at currentQ1pose; all vertices within its native package envelope."
+        },
+        {
+          "node": "FC-V6-UpperLogic-native.obj_187",
+          "ref": "Q1",
+          "reason": "New SOT23body/contact/marking block, isolated at currentQ1pose; all vertices within its native package envelope."
+        },
+        {
+          "node": "FC-V6-UpperLogic-native.obj_188",
+          "ref": "Q1",
+          "reason": "New SOT23body/contact/marking block, isolated at currentQ1pose; all vertices within its native package envelope."
+        },
+        {
+          "node": "FC-V6-UpperLogic-native.obj_189",
+          "ref": "J15",
+          "reason": "New six-pin JST metal/plastic/marking block. Inner contacts extend toward+X, connector mouth faces\u2212X at board left edge."
+        },
+        {
+          "node": "FC-V6-UpperLogic-native.obj_190",
+          "ref": "J15",
+          "reason": "New six-pin JST metal/plastic/marking block. Inner contacts extend toward+X, connector mouth faces\u2212X at board left edge."
+        },
+        {
+          "node": "FC-V6-UpperLogic-native.obj_191",
+          "ref": "J15",
+          "reason": "New six-pin JST metal/plastic/marking block. Inner contacts extend toward+X, connector mouth faces\u2212X at board left edge."
+        },
+        {
+          "node": "FC-V6-UpperLogic-native.obj_285",
+          "ref": "U1",
+          "reason": "MCU corner marking atZ1.471mm on U1topface. Not the nearby0.5mm-high C1; corrected legacy nearest-centre label."
+        }
+      ],
+      "dimension_warnings": [
+        {
+          "ref": "U1",
+          "span_mm": [
+            16.0,
+            16.0,
+            1.4723012167960405
+          ],
+          "expected_mm": [
+            15.999967999999999,
+            15.999967999999999,
+            1.4
+          ],
+          "axes": [
+            2
+          ]
+        }
+      ],
+      "dupont_tail_fit": {
+        "ref": "J1",
+        "count": 36,
+        "checks": [
+          {
+            "pin": "1",
+            "tail_vertex_radius_mm": 0.44991813624950366,
+            "nominal_hole_radius_mm": 0.55
+          },
+          {
+            "pin": "2",
+            "tail_vertex_radius_mm": 0.44991454095214334,
+            "nominal_hole_radius_mm": 0.55
+          },
+          {
+            "pin": "3",
+            "tail_vertex_radius_mm": 0.44991094568374007,
+            "nominal_hole_radius_mm": 0.55
+          },
+          {
+            "pin": "4",
+            "tail_vertex_radius_mm": 0.44991461126932547,
+            "nominal_hole_radius_mm": 0.55
+          },
+          {
+            "pin": "5",
+            "tail_vertex_radius_mm": 0.44991101594379657,
+            "nominal_hole_radius_mm": 0.55
+          },
+          {
+            "pin": "6",
+            "tail_vertex_radius_mm": 0.44990742064722444,
+            "nominal_hole_radius_mm": 0.55
+          },
+          {
+            "pin": "7",
+            "tail_vertex_radius_mm": 0.4499110863165506,
+            "nominal_hole_radius_mm": 0.55
+          },
+          {
+            "pin": "8",
+            "tail_vertex_radius_mm": 0.4499074909628529,
+            "nominal_hole_radius_mm": 0.55
+          },
+          {
+            "pin": "9",
+            "tail_vertex_radius_mm": 0.4499038956381118,
+            "nominal_hole_radius_mm": 0.55
+          },
+          {
+            "pin": "10",
+            "tail_vertex_radius_mm": 0.4499072235625853,
+            "nominal_hole_radius_mm": 0.55
+          },
+          {
+            "pin": "11",
+            "tail_vertex_radius_mm": 0.4499036281780188,
+            "nominal_hole_radius_mm": 0.55
+          },
+          {
+            "pin": "12",
+            "tail_vertex_radius_mm": 0.44990003282240876,
+            "nominal_hole_radius_mm": 0.55
+          },
+          {
+            "pin": "13",
+            "tail_vertex_radius_mm": 0.44990369866724217,
+            "nominal_hole_radius_mm": 0.55
+          },
+          {
+            "pin": "14",
+            "tail_vertex_radius_mm": 0.4499001032545064,
+            "nominal_hole_radius_mm": 0.55
+          },
+          {
+            "pin": "15",
+            "tail_vertex_radius_mm": 0.4498965078707269,
+            "nominal_hole_radius_mm": 0.55
+          },
+          {
+            "pin": "16",
+            "tail_vertex_radius_mm": 0.44990008934350784,
+            "nominal_hole_radius_mm": 0.55
+          },
+          {
+            "pin": "17",
+            "tail_vertex_radius_mm": 0.44989649390192765,
+            "nominal_hole_radius_mm": 0.55
+          },
+          {
+            "pin": "18",
+            "tail_vertex_radius_mm": 0.4498928984893034,
+            "nominal_hole_radius_mm": 0.55
+          },
+          {
+            "pin": "19",
+            "tail_vertex_radius_mm": 0.44989656450362964,
+            "nominal_hole_radius_mm": 0.55
+          },
+          {
+            "pin": "20",
+            "tail_vertex_radius_mm": 0.44989296903387976,
+            "nominal_hole_radius_mm": 0.55
+          },
+          {
+            "pin": "21",
+            "tail_vertex_radius_mm": 0.4498893735930856,
+            "nominal_hole_radius_mm": 0.55
+          },
+          {
+            "pin": "22",
+            "tail_vertex_radius_mm": 0.44989295523669093,
+            "nominal_hole_radius_mm": 0.55
+          },
+          {
+            "pin": "23",
+            "tail_vertex_radius_mm": 0.44988935973809613,
+            "nominal_hole_radius_mm": 0.55
+          },
+          {
+            "pin": "24",
+            "tail_vertex_radius_mm": 0.4498857642684569,
+            "nominal_hole_radius_mm": 0.55
+          },
+          {
+            "pin": "25",
+            "tail_vertex_radius_mm": 0.4498895993599164,
+            "nominal_hole_radius_mm": 0.55
+          },
+          {
+            "pin": "26",
+            "tail_vertex_radius_mm": 0.4498860038345014,
+            "nominal_hole_radius_mm": 0.55
+          },
+          {
+            "pin": "27",
+            "tail_vertex_radius_mm": 0.44988240833804166,
+            "nominal_hole_radius_mm": 0.55
+          },
+          {
+            "pin": "28",
+            "tail_vertex_radius_mm": 0.44988573678902066,
+            "nominal_hole_radius_mm": 0.55
+          },
+          {
+            "pin": "29",
+            "tail_vertex_radius_mm": 0.4498821412327354,
+            "nominal_hole_radius_mm": 0.55
+          },
+          {
+            "pin": "30",
+            "tail_vertex_radius_mm": 0.44987854570540514,
+            "nominal_hole_radius_mm": 0.55
+          },
+          {
+            "pin": "31",
+            "tail_vertex_radius_mm": 0.44988221206073803,
+            "nominal_hole_radius_mm": 0.55
+          },
+          {
+            "pin": "32",
+            "tail_vertex_radius_mm": 0.44987861647628213,
+            "nominal_hole_radius_mm": 0.55
+          },
+          {
+            "pin": "33",
+            "tail_vertex_radius_mm": 0.449875020920781,
+            "nominal_hole_radius_mm": 0.55
+          },
+          {
+            "pin": "34",
+            "tail_vertex_radius_mm": 0.44987868735986336,
+            "nominal_hole_radius_mm": 0.55
+          },
+          {
+            "pin": "35",
+            "tail_vertex_radius_mm": 0.4498750917472366,
+            "nominal_hole_radius_mm": 0.55
+          },
+          {
+            "pin": "36",
+            "tail_vertex_radius_mm": 0.44987149616356453,
+            "nominal_hole_radius_mm": 0.55
+          }
+        ]
+      },
+      "limits": [
+        "Nominal mesh/pad fit, not fabrication tolerance qualification.",
+        "Native J20body datum differs from drawing source by~0.0635mm toward PCB, and tin feet exportflat; native geometry retained."
+      ]
     },
     "LowerPower": {
-      "151": "J23",
-      "152": "J23",
-      "153": "J23",
-      "154": "J22",
-      "155": "J22",
-      "156": "J22",
-      "157": "J2",
-      "158": "J2",
-      "159": "J2",
-      "192": "L3"
+      "board": "LowerPower",
+      "native_component_count": 54,
+      "native_nodes": 277,
+      "all_component_refs_mapped": true,
+      "exact_template_nodes": 275,
+      "reviewed_other_nodes": [
+        {
+          "node": "FC-V6-LowerPower-native.obj_267",
+          "ref": "J21",
+          "reason": "Native STEP importer merges the two same-colour insulators; combinedXY/Z envelope matches source insulator pair."
+        }
+      ],
+      "dimension_warnings": [],
+      "dupont_tail_fit": {
+        "ref": "J2",
+        "count": 20,
+        "checks": [
+          {
+            "pin": "20",
+            "tail_vertex_radius_mm": 0.4492251963988532,
+            "nominal_hole_radius_mm": 0.51
+          },
+          {
+            "pin": "19",
+            "tail_vertex_radius_mm": 0.4492216640038007,
+            "nominal_hole_radius_mm": 0.51
+          },
+          {
+            "pin": "18",
+            "tail_vertex_radius_mm": 0.44922166681541953,
+            "nominal_hole_radius_mm": 0.51
+          },
+          {
+            "pin": "17",
+            "tail_vertex_radius_mm": 0.4492181343926124,
+            "nominal_hole_radius_mm": 0.51
+          },
+          {
+            "pin": "16",
+            "tail_vertex_radius_mm": 0.4492178002240027,
+            "nominal_hole_radius_mm": 0.51
+          },
+          {
+            "pin": "15",
+            "tail_vertex_radius_mm": 0.44921426777079043,
+            "nominal_hole_radius_mm": 0.51
+          },
+          {
+            "pin": "14",
+            "tail_vertex_radius_mm": 0.449214270698775,
+            "nominal_hole_radius_mm": 0.51
+          },
+          {
+            "pin": "13",
+            "tail_vertex_radius_mm": 0.4492107382178076,
+            "nominal_hole_radius_mm": 0.51
+          },
+          {
+            "pin": "12",
+            "tail_vertex_radius_mm": 0.44921065694375284,
+            "nominal_hole_radius_mm": 0.51
+          },
+          {
+            "pin": "11",
+            "tail_vertex_radius_mm": 0.44920712443436767,
+            "nominal_hole_radius_mm": 0.51
+          },
+          {
+            "pin": "10",
+            "tail_vertex_radius_mm": 0.44921065694375284,
+            "nominal_hole_radius_mm": 0.51
+          },
+          {
+            "pin": "9",
+            "tail_vertex_radius_mm": 0.44920712443436767,
+            "nominal_hole_radius_mm": 0.51
+          },
+          {
+            "pin": "8",
+            "tail_vertex_radius_mm": 0.449214270698775,
+            "nominal_hole_radius_mm": 0.51
+          },
+          {
+            "pin": "7",
+            "tail_vertex_radius_mm": 0.4492107382178076,
+            "nominal_hole_radius_mm": 0.51
+          },
+          {
+            "pin": "6",
+            "tail_vertex_radius_mm": 0.4492178002240027,
+            "nominal_hole_radius_mm": 0.51
+          },
+          {
+            "pin": "5",
+            "tail_vertex_radius_mm": 0.44921426777079043,
+            "nominal_hole_radius_mm": 0.51
+          },
+          {
+            "pin": "4",
+            "tail_vertex_radius_mm": 0.44922166681541953,
+            "nominal_hole_radius_mm": 0.51
+          },
+          {
+            "pin": "3",
+            "tail_vertex_radius_mm": 0.4492181343926124,
+            "nominal_hole_radius_mm": 0.51
+          },
+          {
+            "pin": "2",
+            "tail_vertex_radius_mm": 0.4492251963988532,
+            "nominal_hole_radius_mm": 0.51
+          },
+          {
+            "pin": "1",
+            "tail_vertex_radius_mm": 0.4492216640038007,
+            "nominal_hole_radius_mm": 0.51
+          }
+        ]
+      },
+      "limits": [
+        "Nominal mesh/pad fit, not fabrication tolerance qualification."
+      ]
     }
-  },
-  "current_source_revision": "V6",
-  "model_gaps": [
-    "J20 and J21 use explicit drawing-derived bodies; native binding gap remains",
-    "Display lettering uses current native text/coordinates with an approximate font"
-  ],
-  "assembly_status": "Provisional12.1mm face gap using12mm posts+0.1mmshims; grommet groove deformation, connector engagement and tolerances unqualified"
+  }
 }

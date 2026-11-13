@@ -9,7 +9,7 @@ for(const host of document.querySelectorAll('[data-fc-pin-table]')){
   const note=document.createElement('p');note.textContent=g.note;section.append(note);
   const table=document.createElement('table');table.className='pin-table';table.setAttribute('aria-label',g.title);
   const head=table.createTHead().insertRow();for(const label of ['Pin / pad','Signal','Function']){const th=document.createElement('th');th.scope='col';th.textContent=label;head.append(th)}
-  const body=table.createTBody();for(const row of g.rows){const tr=body.insertRow(),th=document.createElement('th');th.scope='row';th.textContent=row.pin;tr.append(th);for(const value of [row.net||'NC',row.function]){const td=tr.insertCell();td.textContent=value}}
+  const body=table.createTBody();for(const row of g.rows){const tr=body.insertRow(),th=document.createElement('th');th.scope='row';th.textContent=row.pin+(row.location?' · '+row.location:'');tr.append(th);for(const value of [row.net||'NC',row.function]){const td=tr.insertCell();td.textContent=value}}
   section.append(table);host.append(section);
  }
  const scope=document.createElement('p');scope.className='pin-scope';scope.textContent='Includes all external connectors, interboard contacts, microSD and power pads. Service board is separate from the main stack. Power ratings and assembly fit remain design targets pending hardware qualification.';host.append(scope);
