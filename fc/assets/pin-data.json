@@ -1,13 +1,13 @@
 {
   "metadata": {
     "source_revision": "V6 compact correction",
-    "generated_utc": "2026-11-13T12:37:52.102928+00:00",
+    "generated_utc": "2026-11-13T15:07:56.722370+00:00",
     "status": "Current schematic pin data; geometry freshness independently required for viewer build",
     "sources": {
-      "/root/fc/design/V6/review/compact-placement-2026-11-13/UpperLogic-components.json": "27d2f93f0e474ef43cfeaf6b3665ccd43446fe701365499bf87b81f560d1600c",
-      "/root/fc/design/V6/review/compact-placement-2026-11-13/LowerPower-components.json": "5f18d6c5b16593c0fd5b71c764287c5378d3ed5851952b97bb9590ac5240a95a",
-      "/root/fc/design/V6/review/compact-placement-2026-11-13/Service-components.json": "ff3e85b036340ff57c9ef633f8352044834db029f9a6e5220c2e4ea7f3a4584b",
-      "/root/fc/design/V6/review/compact-placement-2026-11-13/LowerPower.epcb": "04e6a47330a9aa3d4563baf1aa6b6f93af2b1bacfbab799bd64d23149acc6dd9"
+      "/root/fc/design/V6/review/width31p5-placement-2026-11-13/UpperLogic-components.json": "637cbf663298b423261e2856306acf4a1966f84b48ca1858630507b17178b854",
+      "/root/fc/design/V6/review/width31p5-placement-2026-11-13/LowerPower-components.json": "dff1000ec4bae696f1667f4ea93208ee9be2bfae7092bfe2a17175764021ea86",
+      "/root/fc/design/V6/review/width31p5-placement-2026-11-13/Service-components.json": "ff3e85b036340ff57c9ef633f8352044834db029f9a6e5220c2e4ea7f3a4584b",
+      "/root/fc/design/V6/review/width31p5-placement-2026-11-13/LowerPower.epcb": "995fa9bff8a8ef1f7f4bdc62d97c6855b619b6e03e117fe468a1434b3f36534f"
     },
     "group_count": 8,
     "row_count": 128
