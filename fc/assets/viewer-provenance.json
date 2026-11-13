@@ -1,0 +1,153 @@
+{
+  "sources": {
+    "design/V6/review/native-meshes-2026-11-13/UpperLogic/extracted-web/FC-V6-UpperLogic-native.obj": "d7b5096d2ea97b538171dda31319304dc1b30f4502e120380e1061d67f444c68",
+    "design/V6/review/native-meshes-corrected-2026-11-13/LowerPower/extracted-web/FC-V6-LowerPower-native.obj": "f7c958fa04c1c4f2af14d4361b9e923dccdf3271242bf527e4cb1d1f96957e82",
+    "design/V6/readback/pin-silkscreen-2026-11-13/UpperLogic/source-after.epcb": "1a7e35a34f7edc9b83a092e1c8795c13b4ce8149cb228df5818c8071d5756a62",
+    "design/V6/readback/pin-silkscreen-2026-11-13/LowerPower/source-after.epcb": "fcd4b11ecfa62a893aec555742314757d2bd3ed5747a531b56c8dc4e7940c5e8"
+  },
+  "boards": {
+    "UpperLogic": {
+      "native_component_count": 85,
+      "mapped_refs": 84,
+      "missing_model_refs": [
+        "J20"
+      ],
+      "large_classification_offsets": [
+        [
+          "FC-V6-UpperLogic-native.obj_45",
+          "U5",
+          3.525725873149044
+        ],
+        [
+          "FC-V6-UpperLogic-native.obj_150",
+          "C34",
+          9.822449224841826
+        ],
+        [
+          "FC-V6-UpperLogic-native.obj_152",
+          "C10",
+          14.822330594663027
+        ],
+        [
+          "FC-V6-UpperLogic-native.obj_155",
+          "U12",
+          14.138722472764448
+        ],
+        [
+          "FC-V6-UpperLogic-native.obj_158",
+          "U12",
+          11.266901440792035
+        ],
+        [
+          "FC-V6-UpperLogic-native.obj_161",
+          "R58",
+          6.198959388212466
+        ],
+        [
+          "FC-V6-UpperLogic-native.obj_164",
+          "D2",
+          10.01172839360615
+        ],
+        [
+          "FC-V6-UpperLogic-native.obj_167",
+          "L4",
+          7.602501101766196
+        ],
+        [
+          "FC-V6-UpperLogic-native.obj_170",
+          "C29",
+          7.877974954706974
+        ],
+        [
+          "FC-V6-UpperLogic-native.obj_185",
+          "C3",
+          3.5985766626755304
+        ]
+      ],
+      "native_nodes": 283,
+      "current_holes": 38,
+      "silk_strings": 72
+    },
+    "LowerPower": {
+      "native_component_count": 56,
+      "mapped_refs": 55,
+      "missing_model_refs": [
+        "J21"
+      ],
+      "large_classification_offsets": [
+        [
+          "FC-V6-LowerPower-native.obj_192",
+          "C49",
+          3.1763845736926104
+        ]
+      ],
+      "native_nodes": 204,
+      "current_holes": 28,
+      "silk_strings": 56
+    }
+  },
+  "placement_only": true,
+  "artwork": "Current native pad geometry and STRING pin labels; no tracks, vias or pours; display font approximates native strokes.",
+  "tops_mm": {
+    "LowerPower": 6.963373126746253,
+    "UpperLogic": 20.70485140970282
+  },
+  "thickness_mm": {
+    "UpperLogic": 1.6414782829565662,
+    "LowerPower": 1.8633731267462534
+  },
+  "revision": "V6",
+  "floor_z": 0,
+  "provisional_face_gap_mm": 12.1,
+  "native_headers": "Lower J2/J22/J23 binding rotations corrected in native CAD; header pad geometry unchanged",
+  "hardware_source": {
+    "path": "design/V6/mechanical/hardware-models-2026-11-13/assets/geometry-assembly-native-slabs-12p1.json",
+    "sha256": "86f05f8bdf813d231ca5ab0edff033138b92def8820866292be9f735313f9909"
+  },
+  "mesh_tag_overrides": {
+    "UpperLogic": {
+      "149": "J10",
+      "150": "J10",
+      "151": "J10",
+      "152": "J9",
+      "153": "J9",
+      "154": "J8",
+      "155": "J8",
+      "156": "J8",
+      "157": "J7",
+      "158": "J7",
+      "159": "J7",
+      "160": "J6",
+      "161": "J6",
+      "162": "J6",
+      "163": "J5",
+      "164": "J5",
+      "165": "J5",
+      "166": "J4",
+      "167": "J4",
+      "168": "J4",
+      "169": "J1",
+      "170": "J1",
+      "171": "J1",
+      "185": "U1"
+    },
+    "LowerPower": {
+      "151": "J23",
+      "152": "J23",
+      "153": "J23",
+      "154": "J22",
+      "155": "J22",
+      "156": "J22",
+      "157": "J2",
+      "158": "J2",
+      "159": "J2",
+      "192": "L3"
+    }
+  },
+  "current_source_revision": "V6",
+  "model_gaps": [
+    "J20 and J21 use explicit drawing-derived bodies; native binding gap remains",
+    "Display lettering uses current native text/coordinates with an approximate font"
+  ],
+  "assembly_status": "Provisional12.1mm face gap using12mm posts+0.1mmshims; grommet groove deformation, connector engagement and tolerances unqualified"
+}

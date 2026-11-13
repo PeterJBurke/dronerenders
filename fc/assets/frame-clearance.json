@@ -1,0 +1,201 @@
+{
+  "status": "Current correctednative board/frame trianglemesh screen at selected12.1mm gap plus lowerdrawing/accessboxes; not tolerancequalification",
+  "source_revision": "V6",
+  "datums": {
+    "date": "2026-11-13",
+    "status": "Selectedprovisional12.1mmgap removesknownnominal12mmhousinginterference; tolerance/elasticfitstillunqualified",
+    "lower_native_thickness_mm": 1.8633731267462534,
+    "upper_native_thickness_mm": 1.641478282956566,
+    "lower_underside_z_mm": 5.1,
+    "lower_top_z_mm": 6.963373126746253,
+    "upper_underside_z_mm": 19.063373126746257,
+    "upper_top_z_mm": 20.704851409702822,
+    "post_length_mm": 12,
+    "grommet_free_groove_mm": 1.5,
+    "illustrated_installed_groove_mm": 1.8633731267462534,
+    "illustrated_groove_opening_mm": 0.36337312674625344,
+    "grommet_free_height_mm": 6.6,
+    "illustrated_installed_height_mm": 6.963373126746253,
+    "lower_M2x4_screw_thread_engagement_mm": 2.1366268732537463,
+    "upper_M2x4_screw_thread_engagement_mm": 2.258521717043434,
+    "important": "Nativeexportslabs differfromtarget1.6mmPCB. Grommetgrooveopeningandfabricationstackremainunqualified.12.1mmgapmodeluses12mmposts+explicit0.1mmshims, notinventedstock12.1mmpart. Nominalinsertion1.616mm excludes tolerances/solder/spacer/compression.",
+    "selected_provisional_face_gap_mm": 12.1,
+    "shim_thickness_mm": 0.1,
+    "shim_count": 4,
+    "shim_location": "Upperend ofeachpost, betweenpostandupperPCBunderside",
+    "shim_material": "Nonconductive polymer dimensionalplaceholder, exactpurchasingpartnotselected",
+    "shim_diameter_mm": 4,
+    "shim_bore_mm": 2.2,
+    "connector_nominal_entry_separation_mm": 0.035,
+    "connector_nominal_pin_insertion_mm": 1.616,
+    "connector_nominal_insertion_margin_above1p397_mm": 0.219,
+    "nominal_connector_body_overlap_mm3": 0
+  },
+  "frame_source": "design/V4/mechanical/hd-cargo-frame-study-2026-11-12/FC-V4-HD-Cargo-provisional.glb",
+  "checks": [
+    {
+      "name": "LowerPowernative_mesh",
+      "collision": false,
+      "frame_parts": [],
+      "minimum_distance_mm": 2.599999999999999,
+      "nearest_frame": "Frame/Bottom",
+      "world_bounds_mm": [
+        [
+          -27.411785063570132,
+          -18.98733792584773,
+          2.5999999999999996
+        ],
+        [
+          18.98733792584773,
+          27.484052067930442,
+          12.430842719163103
+        ]
+      ],
+      "source_sha256": "f7c958fa04c1c4f2af14d4361b9e923dccdf3271242bf527e4cb1d1f96957e82",
+      "triangles": 165051
+    },
+    {
+      "name": "UpperLogicnative_mesh",
+      "collision": false,
+      "frame_parts": [],
+      "minimum_distance_mm": 1.2245526679322083,
+      "nearest_frame": "Frame/Top",
+      "world_bounds_mm": [
+        [
+          -26.916786893573796,
+          -27.758940253850334,
+          16.96527917577219
+        ],
+        [
+          26.916786893573793,
+          18.98733792584773,
+          23.785447315759992
+        ]
+      ],
+      "source_sha256": "d7b5096d2ea97b538171dda31319304dc1b30f4502e120380e1061d67f444c68",
+      "triangles": 192734
+    },
+    {
+      "name": "J2_HTSW_body",
+      "collision": false,
+      "frame_parts": [],
+      "minimum_distance_mm": 6.963373126746252,
+      "nearest_frame": "Frame/Bottom",
+      "world_bounds_mm": [
+        [
+          -11.43,
+          19.19,
+          6.963373126746253
+        ],
+        [
+          11.43,
+          21.73,
+          13.063373126746253
+        ]
+      ]
+    },
+    {
+      "name": "J2_motor_mating_access",
+      "collision": false,
+      "frame_parts": [],
+      "minimum_distance_mm": 6.963373126746252,
+      "nearest_frame": "Frame/Bottom",
+      "world_bounds_mm": [
+        [
+          -11.68,
+          21.73,
+          6.963373126746253
+        ],
+        [
+          11.68,
+          35.57,
+          13.463373126746252
+        ]
+      ]
+    },
+    {
+      "name": "J22_TSW_body",
+      "collision": false,
+      "frame_parts": [],
+      "minimum_distance_mm": 6.963373126746252,
+      "nearest_frame": "Frame/Bottom",
+      "world_bounds_mm": [
+        [
+          -21.564,
+          1.5299999999999998,
+          6.963373126746253
+        ],
+        [
+          -19.024,
+          4.07,
+          9.983373126746255
+        ]
+      ]
+    },
+    {
+      "name": "J22_Pi_mating_access",
+      "collision": false,
+      "frame_parts": [],
+      "minimum_distance_mm": 6.9964211631493,
+      "nearest_frame": "Frame/Bottom",
+      "world_bounds_mm": [
+        [
+          -35.406,
+          1.2999999999999998,
+          6.963373126746253
+        ],
+        [
+          -21.564,
+          4.3,
+          10.463373126746252
+        ]
+      ]
+    },
+    {
+      "name": "J23_TSW_body",
+      "collision": false,
+      "frame_parts": [],
+      "minimum_distance_mm": 6.963373126746252,
+      "nearest_frame": "Frame/Bottom",
+      "world_bounds_mm": [
+        [
+          -21.564,
+          4.07,
+          6.963373126746253
+        ],
+        [
+          -19.024,
+          6.609999999999999,
+          9.983373126746255
+        ]
+      ]
+    },
+    {
+      "name": "J23_Pi_mating_access",
+      "collision": false,
+      "frame_parts": [],
+      "minimum_distance_mm": 7.008211414261347,
+      "nearest_frame": "Frame/Bottom",
+      "world_bounds_mm": [
+        [
+          -35.406,
+          3.84,
+          6.963373126746253
+        ],
+        [
+          -21.564,
+          6.84,
+          10.463373126746252
+        ]
+      ]
+    }
+  ],
+  "collision_count": 0,
+  "limitations": [
+    "Native missingmodelbindings absent; J20/J21/bodyoverrides andposts needfullassemblycheck",
+    "Motor/Piplug boxesassumed, upperplug/accessscreenfromseparatestudy",
+    "PCBnominaltarget1.6 differsfromexportslab; do not releasefabricationstack frommesh",
+    "12.1mmprovisionalgap haszero nominalconnectorhousinginterference; dimensionaltolerancesremainunqualified",
+    "Alltolerances, vibrationtravel, compression andcablebends unqualified"
+  ]
+}

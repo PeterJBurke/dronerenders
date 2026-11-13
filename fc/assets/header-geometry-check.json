@@ -1,0 +1,557 @@
+{
+  "source_revision": "V6",
+  "status": "PASS",
+  "sources": {
+    "design/V6/review/native-meshes-2026-11-13/LowerPower/extracted-web/FC-V6-LowerPower-native.obj": "5da816c56cab14707ee03eb44f83c562e763101e4cca7b2199376f8ba8e6a30e",
+    "design/V6/review/native-meshes-corrected-2026-11-13/LowerPower/extracted-frame-review/FC-V6-LowerPower-native.obj": "f7c958fa04c1c4f2af14d4361b9e923dccdf3271242bf527e4cb1d1f96957e82"
+  },
+  "unrelated_geometry_errors": [],
+  "header_checks": [
+    {
+      "ref": "J2",
+      "material_sections": [
+        44,
+        45,
+        46
+      ],
+      "model_rotation_about_component_origin_deg": 180,
+      "max_expected_rotation_vertex_error_mm": 6.560013121159614e-05,
+      "world_local_board_bounds_mm": [
+        [
+          -11.435001270002545,
+          14.816038932251566,
+          -2.3000000000000007
+        ],
+        [
+          11.435001270002543,
+          27.484052067930442,
+          5.46746959241685
+        ]
+      ],
+      "body_outward": true,
+      "tail_cluster_count": 18,
+      "tail_fits_nominal_holes": true,
+      "tail_clusters": [
+        {
+          "pad_anchor_mm": [
+            -10.16,
+            15.13
+          ],
+          "tail_envelope_center_mm": [
+            -10.155001388465976,
+            15.095200417899994
+          ],
+          "center_error_mm": 0.03515674944592001,
+          "tail_bbox_xy_mm": [
+            [
+              -10.446582576178475,
+              14.840594618237652
+            ],
+            [
+              -9.863420200753476,
+              15.349806217562335
+            ]
+          ],
+          "max_vertex_radial_distance_from_holecenter_mm": 0.40728988197855087,
+          "nominal_hole_radius_mm": 0.5100066
+        },
+        {
+          "pad_anchor_mm": [
+            -10.16,
+            17.67
+          ],
+          "tail_envelope_center_mm": [
+            -10.155001388465974,
+            17.635200912981105
+          ],
+          "center_error_mm": 0.035156259394549215,
+          "tail_bbox_xy_mm": [
+            [
+              -10.4465835298529,
+              17.380597259086226
+            ],
+            [
+              -9.86341924707905,
+              17.889804566875988
+            ]
+          ],
+          "max_vertex_radial_distance_from_holecenter_mm": 0.4072886765322033,
+          "nominal_hole_radius_mm": 0.5100066
+        },
+        {
+          "pad_anchor_mm": [
+            -7.62,
+            15.13
+          ],
+          "tail_envelope_center_mm": [
+            -7.615001370222076,
+            15.095200417899994
+          ],
+          "center_error_mm": 0.035156752039855355,
+          "tail_bbox_xy_mm": [
+            [
+              -7.906582319515968,
+              14.840594618237652
+            ],
+            [
+              -7.3234204209281835,
+              15.349806217562335
+            ]
+          ],
+          "max_vertex_radial_distance_from_holecenter_mm": 0.40728970138239773,
+          "nominal_hole_radius_mm": 0.5100066
+        },
+        {
+          "pad_anchor_mm": [
+            -7.62,
+            17.67
+          ],
+          "tail_envelope_center_mm": [
+            -7.6150013702220765,
+            17.635200912981105
+          ],
+          "center_error_mm": 0.035156261988520336,
+          "tail_bbox_xy_mm": [
+            [
+              -7.906583273190395,
+              17.380597259086226
+            ],
+            [
+              -7.323419467253757,
+              17.889804566875988
+            ]
+          ],
+          "max_vertex_radial_distance_from_holecenter_mm": 0.4072884959349165,
+          "nominal_hole_radius_mm": 0.5100066
+        },
+        {
+          "pad_anchor_mm": [
+            -5.08,
+            15.13
+          ],
+          "tail_envelope_center_mm": [
+            -5.075001113559569,
+            15.095200417899994
+          ],
+          "center_error_mm": 0.03515678853336072,
+          "tail_bbox_xy_mm": [
+            [
+              -5.366582062853461,
+              14.840594618237652
+            ],
+            [
+              -4.783420164265677,
+              15.349806217562335
+            ]
+          ],
+          "max_vertex_radial_distance_from_holecenter_mm": 0.40728952078632685,
+          "nominal_hole_radius_mm": 0.5100066
+        },
+        {
+          "pad_anchor_mm": [
+            -5.08,
+            17.67
+          ],
+          "tail_envelope_center_mm": [
+            -5.0750008751409625,
+            17.635200912981105
+          ],
+          "center_error_mm": 0.035156332384152104,
+          "tail_bbox_xy_mm": [
+            [
+              -5.366582539690675,
+              17.380597259086226
+            ],
+            [
+              -4.7834192105912505,
+              17.889804566875988
+            ]
+          ],
+          "max_vertex_radial_distance_from_holecenter_mm": 0.4072879798176751,
+          "nominal_hole_radius_mm": 0.5100066
+        },
+        {
+          "pad_anchor_mm": [
+            -2.54,
+            15.13
+          ],
+          "tail_envelope_center_mm": [
+            -2.5350006184784557,
+            15.095200417899992
+          ],
+          "center_error_mm": 0.0351568589315542,
+          "tail_bbox_xy_mm": [
+            [
+              -2.826581567772348,
+              14.84059461823765
+            ],
+            [
+              -2.2434196691845636,
+              15.349806217562335
+            ]
+          ],
+          "max_vertex_radial_distance_from_holecenter_mm": 0.40728917243141677,
+          "nominal_hole_radius_mm": 0.5100066
+        },
+        {
+          "pad_anchor_mm": [
+            -2.54,
+            17.67
+          ],
+          "tail_envelope_center_mm": [
+            -2.5350006184784553,
+            17.635200912981105
+          ],
+          "center_error_mm": 0.035156368881707596,
+          "tail_bbox_xy_mm": [
+            [
+              -2.8265825214467744,
+              17.380597259086226
+            ],
+            [
+              -2.243418715510136,
+              17.889804566875988
+            ]
+          ],
+          "max_vertex_radial_distance_from_holecenter_mm": 0.40728796698060793,
+          "nominal_hole_radius_mm": 0.5100066
+        },
+        {
+          "pad_anchor_mm": [
+            0.0,
+            15.13
+          ],
+          "tail_envelope_center_mm": [
+            0.004999638184050553,
+            15.095200417899992
+          ],
+          "center_error_mm": 0.03515689543043668,
+          "tail_bbox_xy_mm": [
+            [
+              -0.2865813111098414,
+              14.84059461823765
+            ],
+            [
+              0.2965805874779425,
+              15.349806217562335
+            ]
+          ],
+          "max_vertex_radial_distance_from_holecenter_mm": 0.4072889918355851,
+          "nominal_hole_radius_mm": 0.5100066
+        },
+        {
+          "pad_anchor_mm": [
+            0.0,
+            17.67
+          ],
+          "tail_envelope_center_mm": [
+            0.004999638184050886,
+            17.635200912981105
+          ],
+          "center_error_mm": 0.03515640538109883,
+          "tail_bbox_xy_mm": [
+            [
+              -0.28658217537729064,
+              17.380597259086226
+            ],
+            [
+              0.2965814517453924,
+              17.889804566875988
+            ]
+          ],
+          "max_vertex_radial_distance_from_holecenter_mm": 0.4072877234736963,
+          "nominal_hole_radius_mm": 0.5100066
+        },
+        {
+          "pad_anchor_mm": [
+            2.54,
+            15.13
+          ],
+          "tail_envelope_center_mm": [
+            2.544999894846557,
+            15.095200417899992
+          ],
+          "center_error_mm": 0.03515693193115507,
+          "tail_bbox_xy_mm": [
+            [
+              2.253418945552665,
+              14.84059461823765
+            ],
+            [
+              2.836580844140449,
+              15.349806217562335
+            ]
+          ],
+          "max_vertex_radial_distance_from_holecenter_mm": 0.40728881123983507,
+          "nominal_hole_radius_mm": 0.5100066
+        },
+        {
+          "pad_anchor_mm": [
+            2.54,
+            17.67
+          ],
+          "tail_envelope_center_mm": [
+            2.5449998948465575,
+            17.635200912981105
+          ],
+          "center_error_mm": 0.03515644188232602,
+          "tail_bbox_xy_mm": [
+            [
+              2.2534179918782384,
+              17.380597259086226
+            ],
+            [
+              2.8365817978148766,
+              17.889804566875988
+            ]
+          ],
+          "max_vertex_radial_distance_from_holecenter_mm": 0.40728760578675527,
+          "nominal_hole_radius_mm": 0.5100066
+        },
+        {
+          "pad_anchor_mm": [
+            5.08,
+            15.13
+          ],
+          "tail_envelope_center_mm": [
+            5.08500038992767,
+            15.095200417899992
+          ],
+          "center_error_mm": 0.03515700234325991,
+          "tail_bbox_xy_mm": [
+            [
+              4.793419440633778,
+              14.840594618237649
+            ],
+            [
+              5.376581339221562,
+              15.349806217562335
+            ]
+          ],
+          "max_vertex_radial_distance_from_holecenter_mm": 0.4072884628855446,
+          "nominal_hole_radius_mm": 0.5100066
+        },
+        {
+          "pad_anchor_mm": [
+            5.08,
+            17.67
+          ],
+          "tail_envelope_center_mm": [
+            5.085000151509063,
+            17.635200912981105
+          ],
+          "center_error_mm": 0.035156478385388934,
+          "tail_bbox_xy_mm": [
+            [
+              4.793418486959351,
+              17.380597259086223
+            ],
+            [
+              5.376581816058775,
+              17.889804566875988
+            ]
+          ],
+          "max_vertex_radial_distance_from_holecenter_mm": 0.4072872574302757,
+          "nominal_hole_radius_mm": 0.5100066
+        },
+        {
+          "pad_anchor_mm": [
+            7.62,
+            15.13
+          ],
+          "tail_envelope_center_mm": [
+            7.625000646590176,
+            15.095200417899992
+          ],
+          "center_error_mm": 0.03515703884935536,
+          "tail_bbox_xy_mm": [
+            [
+              7.333419697296284,
+              14.840594618237649
+            ],
+            [
+              7.916581595884068,
+              15.349806217562335
+            ]
+          ],
+          "max_vertex_radial_distance_from_holecenter_mm": 0.4072882822900337,
+          "nominal_hole_radius_mm": 0.5100066
+        },
+        {
+          "pad_anchor_mm": [
+            7.62,
+            17.67
+          ],
+          "tail_envelope_center_mm": [
+            7.625000646590177,
+            17.635200912981105
+          ],
+          "center_error_mm": 0.035156548802016706,
+          "tail_bbox_xy_mm": [
+            [
+              7.333418743621857,
+              17.380597259086223
+            ],
+            [
+              7.916582549558496,
+              17.889804566875988
+            ]
+          ],
+          "max_vertex_radial_distance_from_holecenter_mm": 0.4072870768336294,
+          "nominal_hole_radius_mm": 0.5100066
+        },
+        {
+          "pad_anchor_mm": [
+            10.16,
+            15.13
+          ],
+          "tail_envelope_center_mm": [
+            10.165000664834075,
+            15.095200417899992
+          ],
+          "center_error_mm": 0.03515704144432514,
+          "tail_bbox_xy_mm": [
+            [
+              9.873419477121576,
+              14.840594618237649
+            ],
+            [
+              10.456581852546575,
+              15.349806217562335
+            ]
+          ],
+          "max_vertex_radial_distance_from_holecenter_mm": 0.4072884372116197,
+          "nominal_hole_radius_mm": 0.5100066
+        },
+        {
+          "pad_anchor_mm": [
+            10.16,
+            17.67
+          ],
+          "tail_envelope_center_mm": [
+            10.165000664834077,
+            17.635200912981105
+          ],
+          "center_error_mm": 0.03515655139702279,
+          "tail_bbox_xy_mm": [
+            [
+              9.873418523447151,
+              17.380597259086223
+            ],
+            [
+              10.456582806221002,
+              17.889804566875988
+            ]
+          ],
+          "max_vertex_radial_distance_from_holecenter_mm": 0.4072872317561882,
+          "nominal_hole_radius_mm": 0.5100066
+        }
+      ]
+    },
+    {
+      "ref": "J22",
+      "material_sections": [
+        47,
+        48,
+        49
+      ],
+      "model_rotation_about_component_origin_deg": 180,
+      "max_expected_rotation_vertex_error_mm": 7.000014000979604e-05,
+      "world_local_board_bounds_mm": [
+        [
+          -27.411785063570132,
+          1.5250056096796096,
+          -2.3000000000000003
+        ],
+        [
+          -17.188284936569875,
+          4.075005590342789,
+          3.008600007895733
+        ]
+      ],
+      "body_outward": true,
+      "tail_cluster_count": 1,
+      "tail_fits_nominal_holes": true,
+      "tail_clusters": [
+        {
+          "pad_anchor_mm": [
+            -17.5,
+            2.8
+          ],
+          "tail_envelope_center_mm": [
+            -17.50578505454026,
+            2.805005595298409
+          ],
+          "center_error_mm": 0.0076500222434486495,
+          "tail_bbox_xy_mm": [
+            [
+              -17.823285172510648,
+              2.4875055965373143
+            ],
+            [
+              -17.188284936569875,
+              3.1225055940595037
+            ]
+          ],
+          "max_vertex_radial_distance_from_holecenter_mm": 0.4566433629922949,
+          "nominal_hole_radius_mm": 0.5100066
+        }
+      ]
+    },
+    {
+      "ref": "J23",
+      "material_sections": [
+        50,
+        51,
+        52
+      ],
+      "model_rotation_about_component_origin_deg": 180,
+      "max_expected_rotation_vertex_error_mm": 7.000014000979604e-05,
+      "world_local_board_bounds_mm": [
+        [
+          -27.411785063570132,
+          4.065010689689769,
+          -2.3000000000000003
+        ],
+        [
+          -17.188284936569875,
+          6.615010670352948,
+          3.008600007895733
+        ]
+      ],
+      "body_outward": true,
+      "tail_cluster_count": 1,
+      "tail_fits_nominal_holes": true,
+      "tail_clusters": [
+        {
+          "pad_anchor_mm": [
+            -17.5,
+            5.34
+          ],
+          "tail_envelope_center_mm": [
+            -17.50578505454026,
+            5.345010675308569
+          ],
+          "center_error_mm": 0.007653347181574133,
+          "tail_bbox_xy_mm": [
+            [
+              -17.823285172510648,
+              5.027510676547474
+            ],
+            [
+              -17.188284936569875,
+              5.662510674069664
+            ]
+          ],
+          "max_vertex_radial_distance_from_holecenter_mm": 0.4566469507771935,
+          "nominal_hole_radius_mm": 0.5100066
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Actualpinmesh fits nominaldrillcircles; componentpadnets/poses separatelyverifiedbyparentnativeaudit",
+    "Mold/metalmesh maydifferfromsuppliermaxdimensions; tailfitnotmanufacturingtolerancequalification",
+    "NativeplanefirstZ0; tails<-.25mmselectedtoexcludeaboveboardbends"
+  ]
+}
