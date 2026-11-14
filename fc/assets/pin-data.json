@@ -10,7 +10,16 @@
       "/root/fc/design/V6/review/matek-pad-placement-2026-11-13/LowerPower.epcb": "232a8107caae1dbfd36dcd3bb5e4d5c482c83899b616e9f927c32c58c379fe86"
     },
     "group_count": 8,
-    "row_count": 128
+    "row_count": 128,
+    "auxiliary_update": {
+      "date": "2026-11-14",
+      "source": {
+        "design/V6/review/matek-pad-placement-2026-11-13/LowerPower.epcb": "232a8107caae1dbfd36dcd3bb5e4d5c482c83899b616e9f927c32c58c379fe86",
+        "design/V6/readback/auxiliary-power-import-2026-11-14/LowerPower-after-refill.epcb": "bc77e8e53956c738f5d3d6aa873da279b935c56afb1f9d96906dbce6a6644393"
+      },
+      "scope": "Only Lower J2 supply pins 3/4/9/10/15/16 changed to protected auxiliary rail; all other pin rows preserved",
+      "targets_not_measured": "Auxiliary shared 1.5 A; Pi 3 A; hardware unqualified"
+    }
   },
   "groups": [
     {
@@ -257,14 +266,14 @@
         },
         {
           "pin": "3",
-          "net": "5V_MAIN",
-          "function": "Main regulated 5 V supply",
+          "net": "5V_AUX_PROTECTED",
+          "function": "Protected auxiliary 5 V output; shared 1.5 A design target across six supply contacts, not yet qualified",
           "location": "Row 1, column 2"
         },
         {
           "pin": "4",
-          "net": "5V_MAIN",
-          "function": "Main regulated 5 V supply",
+          "net": "5V_AUX_PROTECTED",
+          "function": "Protected auxiliary 5 V output; shared 1.5 A design target across six supply contacts, not yet qualified",
           "location": "Row 2, column 2"
         },
         {
@@ -293,14 +302,14 @@
         },
         {
           "pin": "9",
-          "net": "5V_MAIN",
-          "function": "Main regulated 5 V supply",
+          "net": "5V_AUX_PROTECTED",
+          "function": "Protected auxiliary 5 V output; shared 1.5 A design target across six supply contacts, not yet qualified",
           "location": "Row 1, column 5"
         },
         {
           "pin": "10",
-          "net": "5V_MAIN",
-          "function": "Main regulated 5 V supply",
+          "net": "5V_AUX_PROTECTED",
+          "function": "Protected auxiliary 5 V output; shared 1.5 A design target across six supply contacts, not yet qualified",
           "location": "Row 2, column 5"
         },
         {
@@ -329,14 +338,14 @@
         },
         {
           "pin": "15",
-          "net": "5V_MAIN",
-          "function": "Main regulated 5 V supply",
+          "net": "5V_AUX_PROTECTED",
+          "function": "Protected auxiliary 5 V output; shared 1.5 A design target across six supply contacts, not yet qualified",
           "location": "Row 1, column 8"
         },
         {
           "pin": "16",
-          "net": "5V_MAIN",
-          "function": "Main regulated 5 V supply",
+          "net": "5V_AUX_PROTECTED",
+          "function": "Protected auxiliary 5 V output; shared 1.5 A design target across six supply contacts, not yet qualified",
           "location": "Row 2, column 8"
         },
         {
