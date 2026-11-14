@@ -28,9 +28,9 @@
     env = new THREE.CanvasTexture(c); env.mapping = THREE.EquirectangularReflectionMapping; env.colorSpace = THREE.SRGBColorSpace;
     return env;
   }
-  function tex(THREE, uri, rot) {
+  function tex(THREE, uri, rot,onLoad) {
     var img = new Image(), t = new THREE.Texture(img);
-    img.onload = function () { t.needsUpdate = true; textureLoads++; global.PENNY_TEXTURES_READY = textureLoads >= 2; if(global.carrierViewer) global.carrierViewer.update(); };
+    img.onload = function () { t.needsUpdate = true; textureLoads++; global.PENNY_TEXTURES_READY = textureLoads >= 2; if(global.carrierViewer) global.carrierViewer.update();if(onLoad)onLoad(); };
     img.src = uri;
     t.colorSpace = THREE.SRGBColorSpace; t.anisotropy = 8; t.center.set(0.5, 0.5); t.rotation = rot || 0;
     if (img.complete) t.needsUpdate = true;
@@ -41,12 +41,12 @@
     var e = envMap(THREE);
     var copper = { metalness: 0.9, roughness: 0.35, envMap: e, envMapIntensity: 1.0 };
     var edge = new THREE.MeshStandardMaterial(Object.assign({ color: 0xc27a52 }, copper));
-    var top = new THREE.MeshStandardMaterial(Object.assign({ color: 0xffffff, map: tex(THREE, OBV, opts.obvRot !== undefined ? opts.obvRot : Math.PI / 2) }, copper));
-    var bot = new THREE.MeshStandardMaterial(Object.assign({ color: 0xffffff, map: tex(THREE, REV, opts.revRot !== undefined ? opts.revRot : -Math.PI / 2) }, copper));
+    var top = new THREE.MeshStandardMaterial(Object.assign({ color: 0xffffff, map: tex(THREE, OBV, opts.obvRot !== undefined ? opts.obvRot : Math.PI / 2,opts.onLoad) }, copper));
+    var bot = new THREE.MeshStandardMaterial(Object.assign({ color: 0xffffff, map: tex(THREE, REV, opts.revRot !== undefined ? opts.revRot : -Math.PI / 2,opts.onLoad) }, copper));
     var geo = new THREE.CylinderGeometry(D / 2, D / 2, T, 96, 1, false);   // groups: 0 edge, 1 top cap, 2 bottom cap
     var m = new THREE.Mesh(geo, [edge, top, bot]);
     m.position.y = T / 2; m.castShadow = true; m.receiveShadow = true;
-    var g = new THREE.Group(); g.add(m); g.name = 'US penny';
+    var g = new THREE.Group(); g.add(m); g.name = 'US penny';g.userData={diameterMm:D,thicknessMm:T,referenceObject:true};
     if (opts.yaw) g.rotation.y = opts.yaw;
     return g;
   }
