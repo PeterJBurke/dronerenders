@@ -234,15 +234,15 @@
   },
   "upper_refresh": {
     "date": "2026-11-14",
-    "scope": "Upper MAIN power: C61/R1/R50/R51 moved; C62/C63 added; no external pin or interface changes",
+    "scope": "Upper sensor power: C20/C22/C24 moved, C22 now0402, C21 scoped lands; no external pin/interface changes",
     "build_provenance": {
       "sources": {
-        "design/V6/review/main-power-native-meshes-2026-11-14/UpperLogic/extracted/FC-V6-UpperLogic-native.obj": "1bc69b79d5dab5757250f69034b2ed2630f30889cb8797cb68ef62ac8ab5e878",
+        "design/V6/review/sensor-power-native-meshes-2026-11-14/UpperLogic/extracted/FC-V6-UpperLogic-native.obj": "cf5a2921ccd4fd8bb30d00d38afebc8d4684994cbde5c739ed991bae19e1d07d",
         "design/V6/review/auxiliary-native-meshes-2026-11-14/LowerPower/extracted/FC-V6-LowerPower-native.obj": "548282932ef44272aa9bd699ea458a09d84e8a0f553422f8b05c40e32240dbab",
-        "design/V6/power/upper-main-pockets-apply-2026-11-14/UpperLogic-after-MAIN-pockets.epcb": "b23fe7b11b3005209f94e24ddaeec357d28a7a009f6c81586006cbaa5165ca6c",
+        "design/V6/review/sensor-power-native-meshes-2026-11-14/UpperLogic/UpperLogic-export-source.epcb": "612e49dd6fa06f80e9e10a0d476e0da092d3e8d52ca3e06bfffa9ce20fa22bab",
         "design/V6/readback/auxiliary-power-import-2026-11-14/LowerPower-after-refill.epcb": "bc77e8e53956c738f5d3d6aa873da279b935c56afb1f9d96906dbce6a6644393",
-        "design/V6/power/upper-divider-apply-2026-11-14/FC-V6-MAIN-CORE-PRECISION.epro": "a07fa681b611c8cd4b788fe6cc58cd39b96ca1c555bc3159e25c61ccb9bb4283",
-        "design/V6/review/main-power-native-meshes-2026-11-14/UpperLogic/UpperLogic-export-poses.json": "7b22431c9f8782c84cf88c0dae6a8b0c77807d65c5880888040b100ed2dd21d8",
+        "design/V6/review/sensor-power-native-meshes-2026-11-14/FC-V6-SENSOR-COMPLETE.epro": "1666aa5eab2ebc4081abd97869acb91afa571a90fe76edc5337147b4ff0eff26",
+        "design/V6/review/sensor-power-native-meshes-2026-11-14/UpperLogic/UpperLogic-export-poses.json": "add6aec13c50498e80df44122e59960737a8f51277097739c93a056f4a7288d8",
         "design/V6/readback/auxiliary-power-import-2026-11-14/components-after-placement.json": "cacbe9a34648efca9dc3cb98d15ed083ac39070e6d7a6deee2c9db6339c72534",
         "design/V6/review/matek-pad-placement-2026-11-13/Service-components.json": "ff3e85b036340ff57c9ef633f8352044834db029f9a6e5220c2e4ea7f3a4584b",
         "design/V6/review/matek-pad-placement-2026-11-13/Service.epcb": "19f2de69ba5df71a4a9eac464726df52c4c4485eb2006de8384623f230bb5c54"
@@ -280,7 +280,7 @@
       "known_model_limitations": [
         "The native J20 model sits about 0.0635 mm nearer the PCB than its drawing model, with flattened tin feet; native vertices are preserved and connector mating remains unqualified."
       ],
-      "revision": "V6 Upper MAIN power placement, 81 components, 2026-11-14",
+      "revision": "V6 Upper sensor-power placement and scoped C21 lands, 2026-11-14",
       "floor_z": 0,
       "provisional_face_gap_mm": 12.1,
       "frame_roof_conflict": false,
@@ -306,36 +306,30 @@
           "per_ref_piece_count_mismatches": {},
           "native_component_count": 81,
           "reviewed_moves": {
-            "C61": [
-              -1.8,
-              -1.4,
-              180
+            "C20": [
+              9.7,
+              5.1,
+              0
             ],
-            "R1": [
-              11.36500006,
-              -10.97500086,
-              90
+            "C22": [
+              7.22,
+              4.7,
+              270
             ],
-            "R50": [
-              -4.187869065644035,
-              12.662231334355962,
-              180
-            ],
-            "R51": [
-              1.5323333870336313,
-              5.635067212966368,
-              90
+            "C24": [
+              7.4,
+              -22,
+              270
             ]
           },
           "new_exact_model_prototypes": {
-            "C62": "C10",
-            "C63": "C9"
+            "C22": "C10"
           },
           "native_nodes": 383,
           "all_component_refs_mapped": true,
           "unmatched": [],
           "missing_refs": [],
-          "previous_obj_sha256": "8b72230a67cc5f65030afc7c9f59752112def1cfedadd33b6402e07b12664edf",
+          "previous_obj_sha256": "1bc69b79d5dab5757250f69034b2ed2630f30889cb8797cb68ef62ac8ab5e878",
           "method": "Rigid model identity reconciliation; no old render geometry reused."
         },
         "LowerPower": {
