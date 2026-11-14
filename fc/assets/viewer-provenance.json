@@ -231,5 +231,141 @@
       "upper_countersink_geometry": "Not used: simple \u00d82.2 mm through bores and ordinary socket-head screws"
     },
     "scope": "Only lower-board model/surface records replaced; UpperLogic, hardware, frame, Matek, controls and penny retained from baseline"
+  },
+  "upper_refresh": {
+    "date": "2026-11-14",
+    "scope": "Upper D1 Y+1mm and R42 Y-0.27mm; no pin or interface changes",
+    "build_provenance": {
+      "sources": {
+        "design/V6/review/buck-native-meshes-2026-11-14/UpperLogic/extracted/FC-V6-UpperLogic-native.obj": "8b72230a67cc5f65030afc7c9f59752112def1cfedadd33b6402e07b12664edf",
+        "design/V6/review/auxiliary-native-meshes-2026-11-14/LowerPower/extracted/FC-V6-LowerPower-native.obj": "548282932ef44272aa9bd699ea458a09d84e8a0f553422f8b05c40e32240dbab",
+        "design/V6/review/buck-native-meshes-2026-11-14/UpperLogic/UpperLogic-export-source.epcb": "457c6cd8ed40cf5fc988f8c96359e5ecb69b583059a3dfb2be21f0ef7ae97a5e",
+        "design/V6/readback/auxiliary-power-import-2026-11-14/LowerPower-after-refill.epcb": "bc77e8e53956c738f5d3d6aa873da279b935c56afb1f9d96906dbce6a6644393",
+        "design/V6/readback/auxiliary-power-import-2026-11-14/FC-V6-auxiliary-schematic.epro": "2d4f1b9e87f7a879b5a6b5f7342115879f081c88c484c51a9caa06ab0756bc37",
+        "design/V6/review/buck-native-meshes-2026-11-14/UpperLogic/UpperLogic-export-poses.json": "e4c36d1818e0d353c6732f80a7b31c2aa09a7917c5f1024dd027f2ea8eff939b",
+        "design/V6/readback/auxiliary-power-import-2026-11-14/components-after-placement.json": "cacbe9a34648efca9dc3cb98d15ed083ac39070e6d7a6deee2c9db6339c72534",
+        "design/V6/review/matek-pad-placement-2026-11-13/Service-components.json": "ff3e85b036340ff57c9ef633f8352044834db029f9a6e5220c2e4ea7f3a4584b",
+        "design/V6/review/matek-pad-placement-2026-11-13/Service.epcb": "19f2de69ba5df71a4a9eac464726df52c4c4485eb2006de8384623f230bb5c54"
+      },
+      "boards": {
+        "UpperLogic": {
+          "native_component_count": 79,
+          "mapped_refs": 79,
+          "missing_model_refs": [],
+          "large_classification_offsets": [],
+          "native_nodes": 377,
+          "current_holes": 40,
+          "silk_strings": 80
+        },
+        "LowerPower": {
+          "native_component_count": 65,
+          "mapped_refs": 65,
+          "missing_model_refs": [],
+          "large_classification_offsets": [],
+          "native_nodes": 323,
+          "current_holes": 28,
+          "silk_strings": 47
+        }
+      },
+      "placement_only": true,
+      "artwork": "Current native pad geometry and STRING pin labels; no tracks, vias or pours; display font approximates native strokes.",
+      "tops_mm": {
+        "LowerPower": 6.963373126746253,
+        "UpperLogic": 20.70485140970282
+      },
+      "thickness_mm": {
+        "UpperLogic": 1.6414782829565662,
+        "LowerPower": 1.8633731267462534
+      },
+      "known_model_limitations": [
+        "The native J20 model sits about 0.0635 mm nearer the PCB than its drawing model, with flattened tin feet; native vertices are preserved and connector mating remains unqualified."
+      ],
+      "revision": "V6 Upper buck D1/R42 reviewed placement, 2026-11-14",
+      "floor_z": 0,
+      "provisional_face_gap_mm": 12.1,
+      "frame_roof_conflict": false,
+      "frame_geometry_changed": true,
+      "frame_coordinate_shift_mm": [
+        0,
+        0,
+        -7
+      ],
+      "frame_post_length_mm": 30,
+      "board_dimensions_mm": [
+        31.5,
+        48
+      ],
+      "fastening": "Drawing-derived M2 socket-head screws with simple through bores; fit unqualified",
+      "native_mesh_review": {
+        "UpperLogic": {
+          "source_matches_export_except_document_metadata_and_record_tickets": true,
+          "source_differences": {
+            "only_export": [],
+            "only_final": []
+          },
+          "per_ref_piece_count_mismatches": {},
+          "native_component_count": 79,
+          "reviewed_pose_deltas": {
+            "D1": {
+              "dx_mm": -6.99999999298484e-07,
+              "dy_mm": 1.0000011400000002
+            },
+            "R42": {
+              "dx_mm": 8.999999998593466e-07,
+              "dy_mm": -0.26999976000000014
+            }
+          },
+          "unchanged_poses": 77,
+          "bindings_unchanged": true,
+          "native_nodes": 377,
+          "all_component_refs_mapped": true,
+          "unmatched": [],
+          "missing_refs": [],
+          "previous_obj_sha256": "1e645c3983c1c2c4c3a55b2fe49a707ba3a5e33b0309ca309a7b8514f26006c2",
+          "method": "Rigid model identity reconciliation; no old render geometry reused."
+        },
+        "LowerPower": {
+          "native_component_count": 65,
+          "native_nodes": 323,
+          "all_component_refs_mapped": true,
+          "missing_refs": [],
+          "unmatched": [],
+          "per_ref_piece_count_mismatches": {},
+          "existing_54_poses_unchanged": true,
+          "added_refs": [
+            "C88",
+            "C89",
+            "C90",
+            "C91",
+            "R82",
+            "R83",
+            "R84",
+            "R85",
+            "R86",
+            "R87",
+            "U16"
+          ],
+          "documented_repaired_binding": "R74 uses proven R73 R0603 model",
+          "source_matches_export_except_document_metadata_and_record_tickets": true,
+          "previous_obj_sha256": "9fdb081e9e26428385c44bf85df0c74b5824d7bb361fab4004de185c7a814647"
+        }
+      },
+      "drawing_replacements": [],
+      "hardware_sources": [
+        {
+          "path": "design/V6/mechanical/hardware-models-2026-11-13/assets/geometry-assembly-native-slabs-12p1.json",
+          "sha256": "86f05f8bdf813d231ca5ab0edff033138b92def8820866292be9f735313f9909"
+        }
+      ],
+      "assembly_status": "Provisional assembly with 30 mm frame posts and direct rubber-grommet mounting; nominal mesh clearance checked separately; tolerances and hardware unqualified.",
+      "frame_source": {
+        "path": "tools/github-dronerenders-2026-11-12/fc/assets/drone-model.js",
+        "sha256": "5b5e49f35c80252ea5f95a467c3103df955119ce94e52d0d3eea747ce461e1e6",
+        "retained_records": 13,
+        "transformation": "none"
+      },
+      "upper_countersink_geometry": "Not used: simple \u00d82.2 mm through bores and ordinary socket-head screws"
+    },
+    "preservation": "Published LowerPower, frame, hardware, Matek, pin reference, penny and control assets retained"
   }
 }
