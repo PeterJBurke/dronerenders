@@ -1,0 +1,75 @@
+{
+  "date_utc": "2026-11-14T14:05:03.399371+00:00",
+  "model": "Matek F405-WMO",
+  "type": "Photo-calibrated 3D reconstruction adapted from existing reference-viewer construction",
+  "manufacturer_cad": false,
+  "sources": [
+    {
+      "url": "https://peterjburke.github.io/dronerenders/fc_comparison_render.html",
+      "local_file": "source/fc_comparison_render.html",
+      "sha256": "47ba5fcb8848574e961a2227174a5ce6a641468e7e5943f53cb2377687e2456a",
+      "role": "Existing procedural 3D construction, nominal22x32outline, estimatedthickness/heights; model block extracted verbatim into source/extracted-matek-original.js."
+    },
+    {
+      "url": "https://www.mateksys.com/?portfolio=f405-wmo",
+      "local_file": "source/matek-product.html",
+      "sha256": "10178ed90c0abeb3a9ef8f207954e1168e75e26de0ce8d9f9faada9017d2e470",
+      "role": "Official board dimensions and component identification; source-link audit found no downloadable3Dmodel links."
+    },
+    {
+      "url": "https://www.mateksys.com/wp-content/uploads/2025/08/F405-WMO_2.jpg",
+      "local_file": "assets/matek-f405-wmo-original.jpg",
+      "sha256": "7717890782147990056bc49c2ed75bace41d847c63be10d4189cf9fc648a8f82",
+      "role": "Original untouched photograph. Rectified UV calibration supplies PCB and raised-component top-face appearance, visible part locations and sizes."
+    }
+  ],
+  "calibration": {
+    "image_pixels": [
+      1500,
+      600
+    ],
+    "pcb_dimensions_mm": [
+      22,
+      32
+    ],
+    "lower_photo_outline_px": [
+      121,
+      48,
+      470,
+      553
+    ],
+    "upper_photo_outline_px": [
+      577,
+      47,
+      927,
+      552
+    ],
+    "upper_underside_photo_outline_px": [
+      1025,
+      46,
+      1376,
+      551
+    ],
+    "lower_rotation_degrees": 180,
+    "top_z_mm": 0,
+    "board_thickness_mm_assumed": 1,
+    "interboard_spacer_height_mm_assumed": 5.5
+  },
+  "limitations": [
+    "No F405-WMO manufacturer STEP/STL/OBJ/GLB download was found on the product page or targeted search; this does not establish that none exists elsewhere.",
+    "Geometry is a visual reconstruction, not manufacturing geometry. Component heights, PCB thickness, pin dimensions and standoff geometry are estimated from the reference viewer and photographs.",
+    "Photo-derived positions and nominal outlines are suitable for visual comparison, not fit/tolerance checking. Perspective in elevated parts is retained in their textures.",
+    "Lower backside electronics are not invented. Upper underside SD/OSD/IMU bodies follow the available opposite-face photograph, with approximate heights.",
+    "The original reference has simple box components and an assumed stack gap; refinements preserve22x32PCB dimensions but improve visible component positions against the original photo.",
+    "Header pins are optional and default absent to match the manufacturer photograph. The board is shipped with loose headers."
+  ],
+  "attribution": {
+    "manufacturer_photographs": "MATEKSYS; original image and source attribution retained. No open-image license asserted.",
+    "reference_visualization": "Adapted from user-requested Peter J. Burke dronerenders reference viewer. No separate license for that procedural model was found in the inspected checkout.",
+    "third_party_library": "Uses existing site Three.js; retain its existing LICENSE file."
+  },
+  "assets": {
+    "assets/matek-f405-wmo-original.jpg": "7717890782147990056bc49c2ed75bace41d847c63be10d4189cf9fc648a8f82",
+    "assets/matek-model.js": "bce577143cd33189f6c24d6984f7cf8d9c6854c32ddeaf2955289790ca1f8434"
+  }
+}
