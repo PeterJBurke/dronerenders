@@ -375,5 +375,263 @@
       "upper_countersink_geometry": "Not used: simple \u00d82.2 mm through bores and ordinary socket-head screws"
     },
     "preservation": "Published LowerPower, frame, hardware, Matek, pin reference, penny and control assets retained"
+  },
+  "upper_surface_refresh": {
+    "date": "2026-11-14",
+    "status": "current_native_source_bound",
+    "scope": "C7/C8 Murata0603 scoped lands,0.7x0.8mm, same centers and component models. Internal VCAP net merge is not exposed in external pin tables.",
+    "native_source": "design/V6/power/upper-VCAP-common-apply-2026-11-14/after-route.epcb",
+    "native_source_sha256": "1a3b5beeffafcdb1ac627b4283e4f35e28377f9a4f3533590824c144ba994be0",
+    "footprint_project": "design/V6/power/upper-VCAP-common-apply-2026-11-14/pcb-import/after-import.epro",
+    "footprint_project_sha256": "49bb0a8dae3227c5b4e15466cac86896160d27f3e25951f771cb2e12ffab1cea",
+    "surface_evidence": {
+      "source": "design/V6/power/upper-VCAP-common-apply-2026-11-14/after-route.epcb",
+      "source_sha256": "1a3b5beeffafcdb1ac627b4283e4f35e28377f9a4f3533590824c144ba994be0",
+      "project": "design/V6/power/upper-VCAP-common-apply-2026-11-14/pcb-import/after-import.epro",
+      "project_sha256": "49bb0a8dae3227c5b4e15466cac86896160d27f3e25951f771cb2e12ffab1cea",
+      "components": 81,
+      "changed_footprints": {
+        "C7": {
+          "native_id": "d84a54fe542b4865",
+          "pose": {
+            "partitionId": "",
+            "groupId": 0,
+            "layerId": 1,
+            "x": -216.5354,
+            "y": 43.3071,
+            "angle": 180,
+            "attrs": {
+              "Description": "Capacitance: Tolerance:\u00b110% Tolerance:\u00b110% Voltage Rated: Temperature Coefficient:",
+              "Unique ID": "gge136",
+              "Reuse Block": "",
+              "Group ID": "",
+              "Channel ID": "$1I170"
+            },
+            "locked": false,
+            "zIndex": -1,
+            "id": "d84a54fe542b4865",
+            "footprint": "d9507c96ee79df05"
+          },
+          "attributes": {
+            "Footprint": "d9507c96ee79df05",
+            "Designator": "C7",
+            "Device": "9580193ed29e1b3f"
+          },
+          "pads": [
+            {
+              "native": [
+                "PAD",
+                "e17",
+                0,
+                "",
+                1,
+                "2",
+                27.56,
+                0,
+                0,
+                [
+                  "ROUND",
+                  0,
+                  0
+                ],
+                [
+                  "RECT",
+                  27.5591,
+                  31.4961,
+                  0
+                ],
+                [],
+                0,
+                0,
+                0,
+                1,
+                0,
+                1.9685,
+                1.9685,
+                0,
+                0,
+                0
+              ],
+              "bounds_mm": [
+                -6.5500237299999995,
+                0.6999998700000001,
+                -5.85002259,
+                1.50000081
+              ],
+              "center_mm": [
+                -6.200023160000001,
+                1.10000034
+              ]
+            },
+            {
+              "native": [
+                "PAD",
+                "e18",
+                0,
+                "",
+                1,
+                "1",
+                -27.56,
+                0,
+                0,
+                [
+                  "ROUND",
+                  0,
+                  0
+                ],
+                [
+                  "RECT",
+                  27.5591,
+                  31.4961,
+                  0
+                ],
+                [],
+                0,
+                0,
+                0,
+                1,
+                0,
+                1.9685,
+                1.9685,
+                0,
+                0,
+                0
+              ],
+              "bounds_mm": [
+                -5.1499757299999995,
+                0.6999998700000001,
+                -4.44997459,
+                1.50000081
+              ],
+              "center_mm": [
+                -4.79997516,
+                1.10000034
+              ]
+            }
+          ]
+        },
+        "C8": {
+          "native_id": "0a74c774372d1a81",
+          "pose": {
+            "partitionId": "",
+            "groupId": 0,
+            "layerId": 1,
+            "x": -358.2677,
+            "y": -531.4961,
+            "angle": -90,
+            "attrs": {
+              "Description": "Capacitance: Tolerance:\u00b110% Tolerance:\u00b110% Voltage Rated: Temperature Coefficient:",
+              "Unique ID": "gge137",
+              "Reuse Block": "",
+              "Group ID": "",
+              "Channel ID": "$1I171"
+            },
+            "locked": false,
+            "zIndex": -1,
+            "id": "0a74c774372d1a81",
+            "footprint": "d9507c96ee79df05"
+          },
+          "attributes": {
+            "Footprint": "d9507c96ee79df05",
+            "Designator": "C8",
+            "Device": "9580193ed29e1b3f"
+          },
+          "pads": [
+            {
+              "native": [
+                "PAD",
+                "e17",
+                0,
+                "",
+                1,
+                "2",
+                27.56,
+                0,
+                0,
+                [
+                  "ROUND",
+                  0,
+                  0
+                ],
+                [
+                  "RECT",
+                  27.5591,
+                  31.4961,
+                  0
+                ],
+                [],
+                0,
+                0,
+                0,
+                1,
+                0,
+                1.9685,
+                1.9685,
+                0,
+                0,
+                0
+              ],
+              "bounds_mm": [
+                -9.500000049999999,
+                -14.550025509999998,
+                -8.699999109999998,
+                -13.850024369999998
+              ],
+              "center_mm": [
+                -9.099999579999999,
+                -14.200024939999999
+              ]
+            },
+            {
+              "native": [
+                "PAD",
+                "e18",
+                0,
+                "",
+                1,
+                "1",
+                -27.56,
+                0,
+                0,
+                [
+                  "ROUND",
+                  0,
+                  0
+                ],
+                [
+                  "RECT",
+                  27.5591,
+                  31.4961,
+                  0
+                ],
+                [],
+                0,
+                0,
+                0,
+                1,
+                0,
+                1.9685,
+                1.9685,
+                0,
+                0,
+                0
+              ],
+              "bounds_mm": [
+                -9.500000049999999,
+                -13.149977509999998,
+                -8.699999109999998,
+                -12.449976369999998
+              ],
+              "center_mm": [
+                -9.099999579999999,
+                -12.799976939999997
+              ]
+            }
+          ]
+        }
+      },
+      "holes": 40
+    },
+    "preservation": "All model geometry, Lower textures, penny, frame, Matek, controls and external pin tables retained byte-identically. Tracks/vias/pours are not displayed."
   }
 }
