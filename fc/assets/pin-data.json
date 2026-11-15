@@ -440,7 +440,7 @@
       "board": "UpperLogic",
       "ref": "J20",
       "title": "Between boards \u00b7 Upper J20 \u2194 Lower J21",
-      "note": "20 contacts, 2\u00d710 at 1.27 mm / 0.050 inch pitch. Upper J20 male FTSH-110-01-L-DV mates with Lower J21 female FLE-110-01-G-DV; same-number contacts match. Matek\u2019s exact part number is unverified.",
+      "note": "20 contacts, 2\u00d710 at 1.27 mm / 0.050 inch pitch. Upper J20 male FTSH-110-02-L-DV mates with Lower J21 female FLE-110-01-G-DV; same-number contacts match. Matek\u2019s exact part number is unverified.",
       "rows": [
         {
           "pin": "1",

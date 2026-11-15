@@ -1,14 +1,12 @@
 {
   "sources": {
-    "design/V6/review/interboard-web-integration-2026-11-15/native/UpperLogic-stage037/extracted/FC-V6-UpperLogic-native.obj": "f67700769454ffac054066ffa2606023a822d24de619eae9186200bfa472be35",
-    "design/V6/review/interboard-web-integration-2026-11-15/native/LowerPower/segmented/FC-V6-LowerPower-native.obj": "5075cdc42b2ff2a9f0204cc0fe8b1ee29152eed5660ae4cf5a3a4f08b7bc147d",
-    "design/V6/routing/upper-FTSH-native-apply-2026-11-15/resume-stage037/local-fill-reference-fix-format-recovery/after.epcb": "5f40062070efdc8938be6e09698c3f0a8ce67e433c2eefb7dd91428e52d3bb8a",
-    "design/V6/review/interboard-web-integration-2026-11-15/native/LowerPower/LowerPower.epcb": "69dea9442d83e7a682e64f8afbd2e5d615755518e69448644a2c32745e6f5b8c",
-    "design/V6/routing/upper-FTSH-native-apply-2026-11-15/resume-stage037/local-fill-reference-fix-format-recovery/after.epro": "203773f13cd1d9ccf7b651c6bf0652638d7435663f8430764ce3dc3d010f034c",
-    "design/V6/review/interboard-web-integration-2026-11-15/native/UpperLogic-stage037/UpperLogic-components.json": "855529aad1dc267f21d5e15a507baf5779bc14c93b187bccbf3ab5b7fc6661f3",
-    "design/V6/review/interboard-web-integration-2026-11-15/native/LowerPower/LowerPower-components.json": "d54eca3861d77c879887eaba47c9b4b66659984d3fc544297ab6a364ea112a5f",
-    "design/V6/review/matek-pad-placement-2026-11-13/Service-components.json": "ff3e85b036340ff57c9ef633f8352044834db029f9a6e5220c2e4ea7f3a4584b",
-    "design/V6/review/matek-pad-placement-2026-11-13/Service.epcb": "19f2de69ba5df71a4a9eac464726df52c4c4485eb2006de8384623f230bb5c54"
+    "design/V6/review/FTSH02-web-native-segmented-v3-2026-11-15/UpperLogic/UpperLogic-current-native.obj": "76b384c00f8553a4e483a4973647477b1aa588d030d1e807d5d7b8bfbfc2c347",
+    "design/V6/review/FTSH02-web-native-segmented-v3-2026-11-15/LowerPower/LowerPower-current-native.obj": "cc13e329bb119f72fb760ae1e4e6020ef98dd191774a72049c33ed927e3c0c5f",
+    "design/V6/mechanical/interboard-FTSH02-library-rebase-2026-11-15/J20-status-finish-inherited-v5/after.epcb": "04bcdbe1ccb6b2db9ec902fa84c79809d58b486ee32cac50b79d2a75659e5492",
+    "design/V6/mechanical/interboard-FTSH02-library-rebase-2026-11-15/Lower-metadata-sync-v2/native-apply/LowerPower-reopened.source": "1877a43a6f03ca206ab6b1cc87b50ecfda7b8ecfcc3a881f1475782f2d6bf8b2",
+    "design/V6/mechanical/interboard-FTSH02-library-rebase-2026-11-15/Lower-metadata-sync-v2/native-apply/after.epro": "7649173ba913e471007370a8a7f31bdca40035b9693a16f31f792ca74f4b5471",
+    "design/V6/review/FTSH02-web-native-segmented-v3-2026-11-15/UpperLogic/UpperLogic-components.json": "3d437f937a9a2cbc19e7995532457300d6ac1710ca3da51ff428c34f10d9eb4a",
+    "design/V6/review/FTSH02-web-native-segmented-v3-2026-11-15/LowerPower/LowerPower-components.json": "975ad6f253f0a5cebbf339742f13163431222b6c19672904727dac0846e13cdc"
   },
   "boards": {
     "UpperLogic": {
@@ -16,7 +14,7 @@
       "mapped_refs": 81,
       "missing_model_refs": [],
       "large_classification_offsets": [],
-      "native_nodes": 344,
+      "native_nodes": 274,
       "current_holes": 40,
       "silk_strings": 80
     },
@@ -25,7 +23,7 @@
       "mapped_refs": 65,
       "missing_model_refs": [],
       "large_classification_offsets": [],
-      "native_nodes": 284,
+      "native_nodes": 246,
       "current_holes": 28,
       "silk_strings": 47
     }
@@ -33,19 +31,21 @@
   "placement_only": true,
   "artwork": "Current native pad geometry and STRING pin labels; no tracks, vias or pours; display font approximates native strokes.",
   "tops_mm": {
-    "LowerPower": 6.963373126746253,
-    "UpperLogic": 16.80485140970282
+    "LowerPower": 6.683362966725933,
+    "UpperLogic": 15.734084328168656
   },
   "thickness_mm": {
-    "UpperLogic": 1.6414782829565662,
-    "LowerPower": 1.8633731267462534
+    "UpperLogic": 1.580721361442723,
+    "LowerPower": 1.5833629667259335
   },
   "known_model_limitations": [
-    "Native FTSH/FLE bindings use reviewed manufacturer-drawing-derived models, not manufacturer CAD. Contacts/bends simplified; stock, loaded gap and usable screw thread engagement remain unqualified."
+    "Connector and mounting models are drawing-derived and simplify spring contacts, bends and screw threads.",
+    "Incoming assembly acceptance specifies fully seated connector/support fit, >=2.5mm effective full-thread overlap and >=0.3mm opposed-tip gap; actual dimensions must be inspected against those limits.",
+    "Prototype vibration, contact retention and load performance are not hardware-validated. Exact Matek connector MPN is unconfirmed."
   ],
-  "revision": "V6 current native connector adaptation, 2026-11-15; source rebind checked",
+  "revision": "V6 current native FTSH-02/FLE connector stack, 2026-11-15",
   "floor_z": 0,
-  "provisional_face_gap_mm": 8.2,
+  "provisional_face_gap_mm": 7.47,
   "frame_roof_conflict": false,
   "frame_geometry_changed": true,
   "frame_coordinate_shift_mm": [
@@ -61,178 +61,40 @@
   "fastening": "Drawing-derived M2 socket-head screws with simple through bores; fit unqualified",
   "native_mesh_review": {
     "UpperLogic": {
-      "native_component_count": 81,
-      "native_nodes": 344,
-      "all_component_refs_mapped": true,
-      "missing_refs": [],
-      "unmatched": [],
-      "per_ref_piece_count_mismatches": {},
-      "unchanged_pose_count": 79,
-      "approved_pose_changes": {
-        "R64": {
-          "x_mm": -7.724999639999999,
-          "y_mm": -0.9499987999999999,
-          "rotation": 0,
-          "layer": 2
-        },
-        "J20": {
-          "x_mm": -12,
-          "y_mm": 0,
-          "rotation": 90,
-          "layer": 2
-        }
-      },
-      "pose_allowlist_sha256": "3655653a4ede9c787500eb05e3a9c8d566108316025de4897ee03365abb0a85b",
-      "all_models_unchanged_except_reviewed_J20": true,
-      "connector_mesh_verification": "/root/fc/design/V6/mechanical/interboard-female-lower-2026-11-15/web-assembly-native-review/upper-mesh-stage037.json",
-      "connector_mesh_verification_sha256": "03979b25e7053dae7a7ca400a04498c88d8e7e227113e3a63d2241ce00d56b49",
-      "source_matches_export_except_document_metadata_and_record_tickets": false,
-      "previous_obj_sha256": "cf5a2921ccd4fd8bb30d00d38afebc8d4684994cbde5c739ed991bae19e1d07d",
-      "final_source_rebinding": {
-        "original_map": "/root/fc/design/V6/review/interboard-web-integration-2026-11-15/native/UpperLogic-stage037/mesh-map.json",
-        "original_map_sha256": "192a3ad49c5b1c9aa8d931b81beee83417ffa69cc3e0da94519d212dfb2126dc",
-        "original_source_sha256": "776842ff5523b80011c9f9b72b318dd9e4b86b04a20d5d7591eb7a9dff2b0575",
-        "final_source_sha256": "5f40062070efdc8938be6e09698c3f0a8ce67e433c2eefb7dd91428e52d3bb8a",
-        "proof": "/root/fc/design/V6/review/interboard-web-integration-2026-11-15/final-upper-geometry-rebind.json",
-        "proof_sha256": "eb23f8632079241b9b5556916607f9019598253b5d58be0a82fb9d1325bdcf2f",
-        "scope": "Final full source differs in non-rendered routing; all rendered records and active footprint library bytes exactly match the native component-only mesh checkpoint. Original OBJ remains unchanged."
-      }
+      "status": "PASS_ACTUAL_NATIVE_TRIANGLES_ALL_COMPONENTS",
+      "component_count": 81,
+      "proof": "/root/fc/design/V6/mechanical/native-thickness-audit-2026-11-15/upper-patched-geometry-proof/verification.json",
+      "proof_sha256": "33b70fa1fe619548677650c90ee4ad6ca390830215a6dc76f0463140112c22d7",
+      "native_obj": "/root/fc/design/V6/mechanical/native-thickness-audit-2026-11-15/upper-patched-geometry-proof/FC-V6-UpperLogic-native-patched.obj",
+      "native_obj_sha256": "fab5bec9cff15d74c20e22e3bb423d4cd8cb798ce0f5ae4f97aabfed04f221bd",
+      "all_triangle_coordinates_preserved": true,
+      "complete_multiset_precision_mm": 1e-06,
+      "matched_other_component_triangles": 69206,
+      "independently_verified_J20_triangles": 372,
+      "remaining": "Final metadata source/EPRO rebind and inspected-view manifests; candidate remains local."
     },
     "LowerPower": {
-      "native_component_count": 65,
-      "native_nodes": 284,
-      "all_component_refs_mapped": true,
-      "missing_refs": [],
-      "unmatched": [],
-      "per_ref_piece_count_mismatches": {},
-      "unchanged_pose_count": 55,
-      "approved_pose_changes": {
-        "C85": {
-          "x_mm": 2.39999854,
-          "y_mm": -1.6000018799999998,
-          "rotation": 90,
-          "layer": 1
-        },
-        "C84": {
-          "x_mm": -6.80000122,
-          "y_mm": -1.5000010799999999,
-          "rotation": 270,
-          "layer": 1
-        },
-        "C89": {
-          "x_mm": 2.39999854,
-          "y_mm": -8.60000312,
-          "rotation": 90,
-          "layer": 1
-        },
-        "C88": {
-          "x_mm": -5.750001220000001,
-          "y_mm": -7.30000232,
-          "rotation": 90,
-          "layer": 1
-        },
-        "C86": {
-          "x_mm": -2.3000006799999997,
-          "y_mm": -1.80000188,
-          "rotation": -90,
-          "layer": 1
-        },
-        "C90": {
-          "x_mm": -2.3000006799999997,
-          "y_mm": -8.800003120000001,
-          "rotation": -90,
-          "layer": 1
-        },
-        "R79": {
-          "x_mm": -1.8000014800000002,
-          "y_mm": -4.600001659999999,
-          "rotation": 90,
-          "layer": 1
-        },
-        "R85": {
-          "x_mm": -1.8000014800000002,
-          "y_mm": -11.6000029,
-          "rotation": 90,
-          "layer": 1
-        },
-        "R81": {
-          "x_mm": -1.6,
-          "y_mm": 0.9900004399999999,
-          "rotation": 0,
-          "layer": 1
-        },
-        "R87": {
-          "x_mm": -3.5000009199999997,
-          "y_mm": -6.849999499999998,
-          "rotation": 180,
-          "layer": 1
-        }
-      },
-      "pose_allowlist_sha256": "625b1cccf70844cce62679ff7295138ea85f052912c0e77bc52474be6490ba86",
-      "all_models_unchanged_except_reviewed_J21": true,
-      "connector_mesh_verification": "/root/fc/design/V6/mechanical/interboard-female-lower-2026-11-15/lower-FLE-physical-review/native-FLE-mesh-verification.json",
-      "connector_mesh_verification_sha256": "1b5d0b452eebd0c62e8bdb7239417fae84eba03fa69126244c56f361a6d5a930",
-      "source_matches_export_except_document_metadata_and_record_tickets": true,
-      "previous_obj_sha256": "d401cb6a62c708203ebb8053e6a323517cd25d14c55610104ee692028a52b354",
-      "lossless_obj_material_separation": {
-        "status": "PASS_MATERIAL_BOUNDARIES_ONLY",
-        "original_obj_sha256": "95e9aea9fccd147b4ab0f44565c5a024b6c77b5a93972bce6d556ae079fadf28",
-        "separated_obj_sha256": "5075cdc42b2ff2a9f0204cc0fe8b1ee29152eed5660ae4cf5a3a4f08b7bc147d",
-        "all_original_lines_byte_identical_and_in_order": true,
-        "only_duplicate_usemtl_commands_added": true,
-        "inserted_line_indices": [
-          4049,
-          5202,
-          5513
-        ],
-        "pieces": [
-          {
-            "ref": "C40",
-            "node": "FC-V6-LowerPower-native.obj_281",
-            "faces": 540,
-            "bounds_mm": [
-              [
-                12.719027993461642,
-                -4.623636629738904,
-                1.0693839937448504
-              ],
-              [
-                12.720027920982394,
-                -3.5436366464282045,
-                1.4077450037002566
-              ]
-            ]
-          },
-          {
-            "ref": "L3",
-            "node": "FC-V6-LowerPower-native.obj_280",
-            "faces": 124,
-            "bounds_mm": [
-              [
-                7.770022860045723,
-                -0.30514070576700414,
-                0.0
-              ],
-              [
-                14.630022860045722,
-                3.694859216382033,
-                1.8949998248353332
-              ]
-            ]
-          }
-        ],
-        "native_triangle_geometry_unchanged": true
-      }
+      "status": "PASS_ACTUAL_NATIVE_TRIANGLES_ALL_COMPONENTS",
+      "component_count": 65,
+      "proof": "/root/fc/design/V6/mechanical/native-thickness-audit-2026-11-15/lower-patched-geometry-proof/verification.json",
+      "proof_sha256": "4fd58487692a4f6fe10cf755ecf131f58ec5984eaf9520d1a8a0b4e1c5a47423",
+      "native_obj": "/root/fc/design/V6/mechanical/native-thickness-audit-2026-11-15/lower-patched-geometry-proof/FC-V6-LowerPower-native-patched.obj",
+      "native_obj_sha256": "f347a4728ea8bde8c5544b3222be6ad7e60c39be18acd794b73a07135de88ed7",
+      "all_triangle_coordinates_preserved": true,
+      "complete_multiset_precision_mm": 1e-06,
+      "matched_other_component_triangles": 90441,
+      "independently_verified_J20_triangles": 0,
+      "remaining": "Final metadata source/EPRO rebind and inspected-view manifests; candidate remains local."
     }
   },
   "drawing_replacements": [],
   "hardware_sources": [
     {
-      "path": "design/V6/mechanical/interboard-female-lower-2026-11-15/web-hardware-candidate/geometry-assembly.json",
-      "sha256": "463d613eef10bab434bcf62b00b473cbc8948db7f4e2cf93534c0784b7609ed0"
+      "path": "design/V6/mechanical/native-thickness-audit-2026-11-15/FTSH02-web-hardware/geometry-assembly.json",
+      "sha256": "fe969711fc699c6d394eb62c85892eec4b2bedaa798b9fa660fe86395dcc9baa"
     }
   ],
-  "assembly_status": "Conditional nominal8.2mm assembly; final local loaded gap8.10\u20138.25mm and hardware selection/fit/torque/creep remain unqualified. Current CAD bodies; not fabrication release.",
+  "assembly_status": "Nominal7.47mm fully-mated catalog reference. Matched supports and incoming effective-thread/tip-gap dimensional acceptance required. Drawing-derived native connectors; prototype hardware validation separate. Not fabrication release.",
   "frame_source": {
     "path": "tools/github-dronerenders-2026-11-12/fc/assets/drone-model.js",
     "sha256": "5b5e49f35c80252ea5f95a467c3103df955119ce94e52d0d3eea747ce461e1e6",
@@ -240,42 +102,39 @@
     "transformation": "none"
   },
   "upper_countersink_geometry": "Not used: simple \u00d82.2 mm through bores and ordinary socket-head screws",
-  "public_shell_revision": "612d56ba2f20ff42ea4b4e558a743fdf981381b1",
-  "native_view_inspections": {
-    "LowerPower": {
-      "path": "/root/fc/design/V6/review/native-3d-interboard-2026-11-15/LowerPower-inspection.json",
-      "sha256": "90dd741f2e35e236f1920c73e0a9767ed400e4e4055db3eb2671ae8995c6b441"
-    },
-    "UpperLogic": {
-      "path": "/root/fc/design/V6/review/native-3d-interboard-2026-11-15/UpperLogic-inspection.json",
-      "sha256": "1675044f6aa58dc87a9afcb12b65f29cd3d0cf0039a7ddf0e0bc1f6918603ea5"
-    }
-  },
+  "public_shell_revision": "323f7599609e9d0b025e6c5c04f63629051d517c",
   "connector_pair": {
     "LowerPower/J21": "FLE-110-01-G-DV female",
-    "UpperLogic/J20": "FTSH-110-01-L-DV male",
+    "UpperLogic/J20": "FTSH-110-02-L-DV male",
     "pitch_mm": 1.27,
-    "pins": 20,
-    "exact_Matek_MPN_verified": false,
-    "models": "Manufacturer-drawing-derived simplified native STEP models, not supplier CAD"
+    "contacts": 20,
+    "exact_Matek_MPN_confirmed": false
   },
-  "assembly_qualification": {
-    "nominal_facing_gap_mm": 8.2,
-    "nominal_posts_mm": 8,
-    "nominal_upper_washers_mm": 0.2,
-    "conditional_loaded_gap_target_mm": [
-      8.1,
-      8.25
-    ],
-    "selected_hardware_process_qualified": false,
-    "basis": "tools/mechanical-hardware-closure-2026-11-15/hardware-closure.json",
-    "limits": "Selected post/washer lengths, local board gap, seating lift, thread engagement, torque, creep and grommet fit remain engineering qualification requirements. Nominal geometry is not a procurement or fabrication release."
+  "native_view_inspections": {
+    "UpperLogic": "/root/fc/design/V6/review/FTSH02-web-native-segmented-v3-2026-11-15/final-binding/UpperLogic-inspection-rebound.json",
+    "LowerPower": "/root/fc/design/V6/review/FTSH02-web-native-segmented-v3-2026-11-15/final-binding/LowerPower-inspection-rebound.json"
   },
   "final_geometry_rebind_proofs": {
-    "UpperLogic": {
-      "path": "/root/fc/design/V6/review/interboard-web-integration-2026-11-15/final-upper-geometry-rebind.json",
-      "sha256": "eb23f8632079241b9b5556916607f9019598253b5d58be0a82fb9d1325bdcf2f"
-    }
+    "UpperLogic": "/root/fc/design/V6/review/FTSH02-web-native-segmented-v3-2026-11-15/final-binding/UpperLogic-geometry-rebind.json",
+    "LowerPower": "/root/fc/design/V6/review/FTSH02-web-native-segmented-v3-2026-11-15/final-binding/LowerPower-geometry-rebind.json"
   },
-  "website_copper_routing_shown": false
+  "assembly_acceptance": {
+    "nominal_reference_gap_mm": 7.47,
+    "process": "Fully seat selected connector pair, measure actual facing gap, match all four roundOD4 brass M2 supports. Verify effective full-thread overlap>=2.5mm for each screw and opposed tip gap>=.3mm. Hardware dimensional acceptance is distinct from prototype vibration/retention validation.",
+    "screws": "M2x5",
+    "head_washers": 0,
+    "grommet_fit": "Existing render retained; final groove/material specification not resolved by this viewer."
+  },
+  "fabrication_ready": false,
+  "website_copper_routing_shown": false,
+  "mounted_generic_grommets": {
+    "description": "Generic mounted elastomer visualization; exact stock part and incoming fit pending. Not a model of the 4.35 mm candidate.",
+    "lower_board_underside_mm": 5.1,
+    "individual_lift_mm": 2.0,
+    "lower_flange_mm": 3.1,
+    "mounted_groove_mm": 1.5833629667259335,
+    "upper_flange_mm": 2.0,
+    "overall_mounted_height_mm": 6.683362966725934,
+    "rebind": "Only upper groove/top-flange vertices lowered by 0.28001016002032 mm after corrected native board thickness. No board/component/frame/header movement."
+  }
 }
