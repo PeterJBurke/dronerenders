@@ -1,0 +1,65 @@
+{
+  "date_utc": "2026-11-15T01:12:26.022248+00:00",
+  "status": "Estimated visual assembly; not manufacturer CAD, mounting or connector qualification",
+  "sources": [
+    {
+      "url": "https://www.mateksys.com/?portfolio=f405-wmo",
+      "role": "Published32x22x12.7mm total bareassembly dimensions; no dimensioned interboard gap."
+    },
+    {
+      "url": "https://www.mateksys.com/wp-content/uploads/2025/08/F405-WMO_3.jpg",
+      "local_file": "sources/F405-WMO_3.jpg",
+      "sha256": "f8d083c32b649f8a2ff759a1d36fd73b2291e3b3ecd96a02749d62728061411c",
+      "role": "Official annotated sidephoto.12.7mm arrow spans approximateY287..497px. UpperPCBundersidearoundY366 andlowerPCBtoparoundY474 imply108/210*12.7=6.53mm gap. Pixel selection/perspective make this approximate, not metrology."
+    },
+    {
+      "url": "https://peterjburke.github.io/dronerenders/quad4_ref_render.html",
+      "local_file": "sources/quad4_ref_render.html",
+      "sha256": "461ef0b36333e9eadf883d6f9ea229a5e15267cd0976a9adb624a137cbf413ed",
+      "role": "Existingreference uses1.6mmassumedPCBs,1mmassumedVHBpad19x28mm; holepatternestimated18.1x12mm. Itsgap=12.7-2*1.6=9.5mm incorrectly allocatespublishedtotalheighttoPCB-onlystack,so thishelperdoesnotreuseit."
+    }
+  ],
+  "parameters": {
+    "pcb_outline_mm": [
+      22,
+      32
+    ],
+    "pcb_thickness_mm": 1.6,
+    "facing_gap_mm": 6.5,
+    "adhesive_pad_mm": [
+      19,
+      28,
+      1
+    ],
+    "lower_pcb_bottom_z_mm": 1,
+    "lower_pcb_top_z_mm": 2.6,
+    "upper_pcb_bottom_z_mm": 9.1,
+    "upper_pcb_top_z_mm": 10.7,
+    "highest_jst_z_mm": 13.7,
+    "header_pins": "Unfitted, as in manufacturerassembledphoto",
+    "mount_hole_pattern_mm": [
+      18.1,
+      12
+    ],
+    "frame_mount_pattern_mm": [
+      20,
+      20
+    ],
+    "frame_direct_grommet_fit": false
+  },
+  "orientation": "Both sourceboardrotationszero. The lowerfactorycomparison-only180rotationisundone; lowerpowerpadsandupperUARTbankatpositiveY,serviceconnectoratnegativeY. Anydroneorientationchangesmustrotateentireassemblytogether.",
+  "modifications": [
+    "PCBsubstrateandplatedbarrelnegativeZextent1.0to1.6mm; topfaceandallcomponentXYpositionsunchanged.",
+    "Upperundersidecomponentsandphoto translateddown0.6mm; theirdimensionsunchanged.",
+    "Lowerinterboardspacerheight5.5to6.5mm. Existinglowersocketbodyretains5.5mmheight.",
+    "Estimateduppermatingheader0.5mmbodyand12pinsadded fromopposite-facephotolocation/alignedsocketaxes;doesnotverifyfit.",
+    "1mmVHBsupportatmountingZ0perquadreference; no carrier/grommetadaptermodel."
+  ],
+  "limits": [
+    "1.6mmPCBthickness,6.5mmgap,componentheightsandadhesivearevisualestimates. Matching12.7mmenvelopeisnotindependentvalidation.",
+    "No claimthatMatek18.1x12mmM2holesfit20x20mmframegrommets. OurFCgrommets/liftfeet/screwsmustbehiddenwhenMatekselected.",
+    "Adhesiveplacementfromreferenceisnotaspecifiedorqualifiedattachmentdesign.",
+    "Do notchangethemainFC12.1mmgap; thisisMatek-onlyvisualassembly."
+  ],
+  "helper_sha256": "ab2cfd432da276c4c19dc01d44ab4340886ff6b5aed0b8407585d20c880ccec8"
+}

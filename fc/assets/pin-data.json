@@ -19,6 +19,12 @@
       },
       "scope": "Only Lower J2 supply pins 3/4/9/10/15/16 changed to protected auxiliary rail; all other pin rows preserved",
       "targets_not_measured": "Auxiliary shared 1.5 A; Pi 3 A; hardware unqualified"
+    },
+    "power_pad_row_update": {
+      "date": "2026-11-15",
+      "source": "/root/fc/design/V6/power/lower-shunt-row-apply-2026-11-15/priority-correction/after.epcb",
+      "source_sha256": "be38433531786d80d49fda24b8ac881a025ecf60bc442aa6f59d66998bf7a5b4",
+      "scope": "POWERgroup order and ground symbols only; all external connector rows unchanged"
     }
   },
   "groups": [
@@ -820,12 +826,12 @@
       "board": "LowerPower",
       "ref": "POWER",
       "title": "Lower \u00b7 Power solder pads",
-      "note": "Negative X to positive X in native top view. Shunt stays beside power pads.",
+      "note": "Negative X to positive X in the native top view: BAT+ | ESC+ | \u2212 | \u2212. R10 sits immediately above the positive pair.",
       "rows": [
         {
-          "pin": "G",
-          "net": "GND",
-          "function": "Ground / common return"
+          "pin": "BAT+",
+          "net": "BATTERY_SHUNT_HIGH",
+          "function": "Battery positive before current shunt"
         },
         {
           "pin": "ESC+",
@@ -833,12 +839,12 @@
           "function": "ESC supply after current shunt"
         },
         {
-          "pin": "BAT+",
-          "net": "BATTERY_SHUNT_HIGH",
-          "function": "Battery positive before current shunt"
+          "pin": "\u2212",
+          "net": "GND",
+          "function": "Ground / common return"
         },
         {
-          "pin": "G",
+          "pin": "\u2212",
           "net": "GND",
           "function": "Ground / common return"
         }

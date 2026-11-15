@@ -108,27 +108,29 @@
   },
   "upper_countersink_geometry": "Not used: simple \u00d82.2 mm through bores and ordinary socket-head screws",
   "lower_refresh": {
-    "date": "2026-11-14",
-    "source_revision": "V6 auxiliary power native placement",
+    "date": "2026-11-15",
+    "scope": "Native BAT+/ESC+/negative pad ordering and adjacentR10; allnonLowergeometry retained",
+    "native_source": "/root/fc/design/V6/power/lower-shunt-row-apply-2026-11-15/priority-correction/after.epcb",
+    "native_source_sha256": "be38433531786d80d49fda24b8ac881a025ecf60bc442aa6f59d66998bf7a5b4",
     "build_provenance": {
       "sources": {
-        "design/V6/review/width31p5-native-meshes-2026-11-13/UpperLogic/extracted/FC-V6-UpperLogic-native.obj": "1e645c3983c1c2c4c3a55b2fe49a707ba3a5e33b0309ca309a7b8514f26006c2",
-        "design/V6/review/auxiliary-native-meshes-2026-11-14/LowerPower/extracted/FC-V6-LowerPower-native.obj": "548282932ef44272aa9bd699ea458a09d84e8a0f553422f8b05c40e32240dbab",
-        "design/V6/review/matek-pad-placement-2026-11-13/UpperLogic.epcb": "06ffadec3bea66350983e4a133e337c42eade8efd42418256f291967d61d3c10",
-        "design/V6/readback/auxiliary-power-import-2026-11-14/LowerPower-after-refill.epcb": "bc77e8e53956c738f5d3d6aa873da279b935c56afb1f9d96906dbce6a6644393",
-        "design/V6/readback/auxiliary-power-import-2026-11-14/FC-V6-auxiliary-schematic.epro": "2d4f1b9e87f7a879b5a6b5f7342115879f081c88c484c51a9caa06ab0756bc37",
-        "design/V6/review/matek-pad-placement-2026-11-13/UpperLogic-components.json": "637cbf663298b423261e2856306acf4a1966f84b48ca1858630507b17178b854",
-        "design/V6/readback/auxiliary-power-import-2026-11-14/components-after-placement.json": "cacbe9a34648efca9dc3cb98d15ed083ac39070e6d7a6deee2c9db6339c72534",
+        "design/V6/review/sensor-power-native-meshes-2026-11-14/UpperLogic/extracted/FC-V6-UpperLogic-native.obj": "cf5a2921ccd4fd8bb30d00d38afebc8d4684994cbde5c739ed991bae19e1d07d",
+        "design/V6/review/shunt-row-final-native-meshes-2026-11-15/LowerPower/extracted/FC-V6-LowerPower-native.obj": "d401cb6a62c708203ebb8053e6a323517cd25d14c55610104ee692028a52b354",
+        "design/V6/review/sensor-power-native-meshes-2026-11-14/UpperLogic/UpperLogic-export-source.epcb": "612e49dd6fa06f80e9e10a0d476e0da092d3e8d52ca3e06bfffa9ce20fa22bab",
+        "design/V6/power/lower-shunt-row-apply-2026-11-15/priority-correction/after.epcb": "be38433531786d80d49fda24b8ac881a025ecf60bc442aa6f59d66998bf7a5b4",
+        "design/V6/review/Lower-shunt-row-checkpoint-2026-11-15/FC-V6-SHUNT-ROW.epro": "d191639a256153938e367aa63b49b221d7fcded34be9317b8be34085645f529c",
+        "design/V6/review/sensor-power-native-meshes-2026-11-14/UpperLogic/UpperLogic-export-poses.json": "add6aec13c50498e80df44122e59960737a8f51277097739c93a056f4a7288d8",
+        "design/V6/review/shunt-row-final-native-meshes-2026-11-15/LowerPower/LowerPower-export-poses.json": "b18c6a8f75dad13d9d7470ea8db47a64b93697fc902a85b9d008eef1a3d7c4e7",
         "design/V6/review/matek-pad-placement-2026-11-13/Service-components.json": "ff3e85b036340ff57c9ef633f8352044834db029f9a6e5220c2e4ea7f3a4584b",
         "design/V6/review/matek-pad-placement-2026-11-13/Service.epcb": "19f2de69ba5df71a4a9eac464726df52c4c4485eb2006de8384623f230bb5c54"
       },
       "boards": {
         "UpperLogic": {
-          "native_component_count": 79,
-          "mapped_refs": 79,
+          "native_component_count": 81,
+          "mapped_refs": 81,
           "missing_model_refs": [],
           "large_classification_offsets": [],
-          "native_nodes": 377,
+          "native_nodes": 383,
           "current_holes": 40,
           "silk_strings": 80
         },
@@ -155,7 +157,7 @@
       "known_model_limitations": [
         "The native J20 model sits about 0.0635 mm nearer the PCB than its drawing model, with flattened tin feet; native vertices are preserved and connector mating remains unqualified."
       ],
-      "revision": "V6 auxiliary power native placement, 65 LowerPower components, 2026-11-14",
+      "revision": "V6 native Lower power-pad order and adjacentR10,2026-11-15",
       "floor_z": 0,
       "provisional_face_gap_mm": 12.1,
       "frame_roof_conflict": false,
@@ -179,14 +181,33 @@
             "only_final": []
           },
           "per_ref_piece_count_mismatches": {},
-          "native_component_count": 79,
-          "native_nodes": 377,
+          "native_component_count": 81,
+          "reviewed_moves": {
+            "C20": [
+              9.7,
+              5.1,
+              0
+            ],
+            "C22": [
+              7.22,
+              4.7,
+              270
+            ],
+            "C24": [
+              7.4,
+              -22,
+              270
+            ]
+          },
+          "new_exact_model_prototypes": {
+            "C22": "C10"
+          },
+          "native_nodes": 383,
           "all_component_refs_mapped": true,
           "unmatched": [],
           "missing_refs": [],
-          "previous_obj_sha256": "f93b11d38b25730006dfaa73ca97088551910282b0c699a5dc9f280c2d5cb351",
-          "method": "Rigid model identity reconciliation; no old render geometry reused.",
-          "reuse_current_same_revision_upper": "All source records match previous current source excluding document metadata, record tickets and equivalent rotation normalization; no upper edits."
+          "previous_obj_sha256": "1bc69b79d5dab5757250f69034b2ed2630f30889cb8797cb68ef62ac8ab5e878",
+          "method": "Rigid model identity reconciliation; no old render geometry reused."
         },
         "LowerPower": {
           "native_component_count": 65,
@@ -195,23 +216,25 @@
           "missing_refs": [],
           "unmatched": [],
           "per_ref_piece_count_mismatches": {},
-          "existing_54_poses_unchanged": true,
-          "added_refs": [
-            "C88",
-            "C89",
-            "C90",
-            "C91",
-            "R82",
-            "R83",
-            "R84",
-            "R85",
-            "R86",
-            "R87",
-            "U16"
-          ],
-          "documented_repaired_binding": "R74 uses proven R73 R0603 model",
+          "existing_63_poses_unchanged": true,
+          "reviewed_move": {
+            "R10": [
+              -4.75,
+              -16.3,
+              0
+            ]
+          },
+          "prior_authorized_pose_refresh": {
+            "C73": {
+              "angle": -90,
+              "center_unchanged": true,
+              "source": "design/V6/power/lower-shunt-row-apply-2026-11-15/before.epcb",
+              "native_review": "design/V6/review/native-3d-Lower-U13-2026-11-15/LowerPower-render-manifest.json"
+            }
+          },
+          "all_models_unchanged": true,
           "source_matches_export_except_document_metadata_and_record_tickets": true,
-          "previous_obj_sha256": "9fdb081e9e26428385c44bf85df0c74b5824d7bb361fab4004de185c7a814647"
+          "previous_obj_sha256": "548282932ef44272aa9bd699ea458a09d84e8a0f553422f8b05c40e32240dbab"
         }
       },
       "drawing_replacements": [],
@@ -230,7 +253,38 @@
       },
       "upper_countersink_geometry": "Not used: simple \u00d82.2 mm through bores and ordinary socket-head screws"
     },
-    "scope": "Only lower-board model/surface records replaced; UpperLogic, hardware, frame, Matek, controls and penny retained from baseline"
+    "review_evidence": {
+      "design/V6/review/native-3d-shunt-row-2026-11-15/LowerPower-render-manifest.json": "c365c7759eefbd13c1dfdffd95daca405bd66937b09c427cdd87e96af64ab2e4",
+      "design/V6/review/native-3d-shunt-row-2026-11-15/inspection.json": "fdf2e8eed72daf38594c5fc0db293049c2684cdab4cf056392970008d935ee32",
+      "design/V6/power/lower-shunt-pad-order-review-2026-11-15/actual-native-verification-v1.json": "b6be3fb9b290ec56465628cb8b59ffe4e16728fc8f0b967016074762694dec31",
+      "design/V6/power/lower-shunt-row-apply-2026-11-15/priority-correction/preservation-verification.json": "8cbf04856ad69c664f1a02251f5514a3373ab8017ca38019ed9ee2f15c8481dd"
+    },
+    "native_render_review": {
+      "date": "2026-11-15T01:36:55.558707+00:00",
+      "status": "INSPECTED",
+      "revision": "V6",
+      "board": "LowerPower",
+      "engineering_source_sha256": "be38433531786d80d49fda24b8ac881a025ecf60bc442aa6f59d66998bf7a5b4",
+      "views": [
+        "FC-V6-LowerPower-top.png",
+        "FC-V6-LowerPower-bottom.png",
+        "FC-V6-LowerPower-top-angled.png",
+        "FC-V6-LowerPower-bottom-angled.png"
+      ],
+      "findings": [
+        "All four current native views inspected; full board and header models in frame.",
+        "TOP power-row order BAT+ ESC+ ESC- BAT- and R10 shift/rotation visually confirmed.",
+        "Green soldermask retained; mounting holes and other component positions unchanged.",
+        "All65components have native model bindings."
+      ],
+      "limitations": [
+        "R10 generic model marking C&B FL500 is not the selected Vishay MPN; body maximum checked independently in placement-review.json. Other generic markings/heights also require model qualification.",
+        "Overlapping native component designators remain for subsequent silkscreen cleanup; not fabrication-ready.",
+        "These are individual-board views, not a mechanically qualified native stack assembly."
+      ],
+      "render_geometry_unchanged": true
+    },
+    "geometry_note": "R10 native model generic marking is retained; it is not the selected Vishay MPN marking. Nominal maximumbody envelope independently reviewed; hardware unqualified."
   },
   "upper_refresh": {
     "date": "2026-11-14",
