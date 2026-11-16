@@ -1,0 +1,1 @@
+window.FC_VIEW_METADATA={"board_dimensions_mm": [31.5, 48], "floor_z": 0, "source": "Current native Upper OBJ + Lower STEP; geometry hash-bound", "top_planes_mm": {"UpperLogic": 20.664084328168723, "LowerPower": 10.583362966726}, "fabrication_ready": false};

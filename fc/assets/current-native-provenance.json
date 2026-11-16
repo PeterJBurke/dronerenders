@@ -1,0 +1,34 @@
+{
+  "status": "CURRENT_NATIVE_ENGINEERING_VIEW_NOT_FABRICATION_RELEASE",
+  "date": "2026-11-16",
+  "native_components": {
+    "Upper": 81,
+    "Lower": 65
+  },
+  "frame_objects": 13,
+  "nominal_board_gap_mm": 8.5,
+  "board_dimensions_mm": [
+    31.5,
+    48
+  ],
+  "geometry": "Exact current Upper native OBJ and Lower native STEP meshes; no invented power-pad solids. Geometry hashes/triangle correspondence checked offline and in browser.",
+  "display": "Standard dark-green display solder mask on identified Lower Board/TopCopper/BottomCopper green surfaces. Four actual Gerber mask domains assign gold only on three existing Lower copper surfaces. Native-local predicate stable under comparison display transforms.",
+  "headers": "Exact source-bound UpperJ1 and LowerJ2 visibility only; interboard pair unchanged.",
+  "model_limits": [
+    "Generic native component geometry/markings remain disclosed. Official neutral VishayR10 is current.",
+    "Samtec pair is drawing-derived; exact Matek connector MPN unverified.",
+    "Posts/rubber are provisional nominal illustrations; rubberprofile/retention and mechanicalqualification remain open.",
+    "Manufacturing clearance uses actual31.5x48 outlines and tolerances; STEPslab is slightlyinset.",
+    "Matek selection is a separately sourced photograph-derived reference, not manufacturerCAD."
+  ],
+  "hardware_objects": 48,
+  "fabrication_ready": false,
+  "bindings": {
+    "design/V6/review/current-stack-export-plan-2026-11-16/current-viewer-geometry-v1/proof.json": "ab85672791d54d4516197d9df563dc3f484f67f5a85dd59259972b2f53db15fd",
+    "design/V6/review/current-stack-export-plan-2026-11-16/current-header-ownership-v1/proof.json": "c442ed29dd1d4cc93b8cd9ef712639cdc34d1253c5eb5b0ba0d056c220a3f35a",
+    "design/V6/review/current-stack-export-plan-2026-11-16/frame-loader-stub-proof-v2/proof.json": "8b27f57b4da7eb203f9e99b2d2b1d5e51c1fe57ce52f995978f24a5b02535166",
+    "design/V6/review/current-stack-export-plan-2026-11-16/board-mobile-fit-browser-v1/proof.json": "2bcb893ccf94f41bccbe73ae24cd8de23e69c69f33c35b686a65f6209eae658a",
+    "design/V6/review/current-stack-export-plan-2026-11-16/current-scene-proposal-v1/scene-plan.json": "5756e0d7e62a7ba2144029b3cece4171446bfdc23e5bffd57adf2ed905e91164",
+    "design/V6/review/current-stack-export-plan-2026-11-16/current-assembly-stack-detail-final-v3/root-visual-review-v1.json": "8c70a1e705e35fd991758450d36c5e50c4114beae466ca12385242873e23747f"
+  }
+}
